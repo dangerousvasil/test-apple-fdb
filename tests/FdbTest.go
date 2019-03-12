@@ -66,73 +66,76 @@ func (t *FdbTest) TestLine(line string) {
 	}
 
 	//fmt.Println(ttlpart)
-	tr, e := t.fdb.CreateTransaction()
-	if e != nil {
-		panic(e)
-	}
-	defer tr.Commit()
+	aStr, err := t.fdb.Transact(func(tr fdb.Transaction) (result interface{}, err error) {
 
-	trOpt := tr.Options()
-	trOpt.SetReadLockAware()
+		trOpt := tr.Options()
+		trOpt.SetReadLockAware()
 
-	h1 := program.GetHkey1(ttlpart)
-	titles, err := directory.CreateOrOpen(tr, []string{`titleFiz`}, nil)
-	if err != nil {
-		log.Println(err)
-		t.TestLine(line)
-		return
-	}
-
-	listHK1 := titles.Sub(`hkey1`)
-	listId := titles.Sub(`list`)
-
-	rr := tr.GetRange(listHK1.Sub(*h1), fdb.RangeOptions{})
-	ri := rr.Iterator()
-	ttlCnt := 0
-	for ri.Advance() {
-
-		kv, e := ri.Get()
-		if e != nil {
-			fmt.Printf("Unable to read next value: %v\n", e)
+		h1 := program.GetHkey1(ttlpart)
+		titles, err := directory.CreateOrOpen(tr, []string{`titleFiz`}, nil)
+		if err != nil {
+			log.Println(err)
+			t.TestLine(line)
 			return
 		}
-		ttlCnt++
 
-		unkey, err := listHK1.Unpack(kv.Key)
+		listHK1 := titles.Sub(`hkey1`)
+		listId := titles.Sub(`list`)
 
-		if err != nil {
-			log.Fatalln(err)
+		rr := tr.GetRange(listHK1.Sub(*h1), fdb.RangeOptions{})
+		ri := rr.Iterator()
+		ttlCnt := 0
+		rezz := []string{}
+		for ri.Advance() {
+			var kv fdb.KeyValue
+			kv, err = ri.Get()
+			if err != nil {
+				fmt.Printf("Unable to read next value: %v\n", err)
+				return
+			}
+			ttlCnt++
+
+			var unkey tuple.Tuple
+			unkey, err = listHK1.Unpack(kv.Key)
+
+			if err != nil {
+				log.Println(err)
+				return
+			}
+
+			keyId := listId.Pack(tuple.Tuple{unkey[1].(string)})
+
+			fbyte := tr.Get(keyId)
+
+			var data []byte
+			data, err = fbyte.Get()
+			if err != nil {
+				return
+			}
+
+			rezz = append(rezz, string(data))
 		}
+		return rezz, err
+	})
 
-		keyId := listId.Pack(tuple.Tuple{unkey[1].(string)})
-
-		fbyte := tr.Get(keyId)
-		data, err := fbyte.Get()
-		if err != nil {
-			log.Fatalln(err)
-		}
-		//log.Println(string(data))
-		if len(data) == 0 {
-			log.Println(line)
-			log.Fatalln("EMPTY DOC")
-		}
-
-		if string(data) == line {
-			// log.Println("data equails")
-			// log.Println("\n",string(data) ,"\n",line)
-			t.correct++
-		} else {
-			log.Println(line)
-			log.Println("Not found")
-			log.Fatalln("Test not passed")
-		}
-
+	if len(aStr.([]string)) > 1 {
+		log.Println("Panic double ttitle", aStr)
+	} else if len(aStr.([]string)) == 0 {
+		log.Println(line)
+		log.Println("Not found")
+		log.Fatalln("Test not passed")
 	}
-	if ttlCnt > 1 {
-		log.Println("Panic double ttitle", *h1)
+
+	if string(aStr.([]string)[0]) == line {
+		t.correct++
+	} else {
+		log.Println(line)
+		log.Println("Not equail")
+		log.Fatalln("Test not passed")
 	}
 
 }
+
 func (t *FdbTest) readFile() {
 	defer close(t.titles)
 
