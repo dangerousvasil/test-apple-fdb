@@ -120,6 +120,7 @@ func (t *FdbTest) TestLine(line string) {
 
 	if len(aStr.([]string)) > 1 {
 		log.Println("Panic double ttitle", aStr)
+		return
 	} else if len(aStr.([]string)) == 0 {
 		log.Println(line)
 		log.Println("Not found")

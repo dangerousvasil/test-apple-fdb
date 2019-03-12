@@ -1,0 +1,1569 @@
+Internal Error @ ./flow/ThreadPrimitives.h 78:
+  addr2line -e libfdb_c.so-debug -p -C -f -i 0x3abf89 0xd6250 0xd6399 0xd52a5 0xffff808888b9ca40
+terminate called after throwing an instance of 'Error'
+SIGABRT: abort
+PC=0x7f777758953f m=5 sigcode=18446744073709551610
+
+goroutine 0 [idle]:
+runtime: unknown pc 0x7f777758953f
+stack: frame={sp:0x7f776f7fd3d0, fp:0x0} stack=[0x7f776effe188,0x7f776f7fdd88)
+00007f776f7fd2d0:  fffffffffffffff0  0000000000000001
+00007f776f7fd2e0:  0000000000000000  0000000000000000
+00007f776f7fd2f0:  0000000000000000  0000000000000000
+00007f776f7fd300:  0000000000000000  0000000000000000
+00007f776f7fd310:  fffffffffffffff8  0000000000000001
+00007f776f7fd320:  0000000000000000  0000000000000000
+00007f776f7fd330:  ffffffffffffffff  0000ff00000000ff
+00007f776f7fd340:  6468705f65746172  34646e6172730072
+00007f776f7fd350:  0000705f65746172  0000000000000000
+00007f776f7fd360:  6e61727300726468  65735f5f00383464
+00007f776f7fd370:  7830203939333664  7830203561323564
+00007f776f7fd380:  7830206531316361  7830203035323664
+00007f776f7fd390:  0000000000000000  0000000000000000
+00007f776f7fd3a0:  5000687361724300  6554737365636f72
+00007f776f7fd3b0:  0000000000000000  0000000000000000
+00007f776f7fd3c0:  0000000000000001  0000000000000002
+00007f776f7fd3d0: <0000000000000000  00a9f9cb219fe45e
+00007f776f7fd3e0:  000000c00009c970  0000000000000001
+00007f776f7fd3f0:  0405060700010203  0c0d0e0f08090a0b
+00007f776f7fd400:  0000000000000000  0000000000000000
+00007f776f7fd410:  0000000000000000  0000000000000000
+00007f776f7fd420:  00007f7700000000  000000726f727245
+00007f776f7fd430:  00007f7760004238  00007f7760004230
+00007f776f7fd440:  00007f776f7fd690  00007f776f7fdaf0
+00007f776f7fd450:  fffffffe7fffffff  ffffffffffffffff
+00007f776f7fd460:  ffffffffffffffff  ffffffffffffffff
+00007f776f7fd470:  ffffffffffffffff  ffffffffffffffff
+00007f776f7fd480:  ffffffffffffffff  ffffffffffffffff
+00007f776f7fd490:  ffffffffffffffff  ffffffffffffffff
+00007f776f7fd4a0:  ffffffffffffffff  ffffffffffffffff
+00007f776f7fd4b0:  ffffffffffffffff  ffffffffffffffff
+00007f776f7fd4c0:  ffffffffffffffff  ffffffffffffffff
+runtime: unknown pc 0x7f777758953f
+stack: frame={sp:0x7f776f7fd3d0, fp:0x0} stack=[0x7f776effe188,0x7f776f7fdd88)
+00007f776f7fd2d0:  fffffffffffffff0  0000000000000001
+00007f776f7fd2e0:  0000000000000000  0000000000000000
+00007f776f7fd2f0:  0000000000000000  0000000000000000
+00007f776f7fd300:  0000000000000000  0000000000000000
+00007f776f7fd310:  fffffffffffffff8  0000000000000001
+00007f776f7fd320:  0000000000000000  0000000000000000
+00007f776f7fd330:  ffffffffffffffff  0000ff00000000ff
+00007f776f7fd340:  6468705f65746172  34646e6172730072
+00007f776f7fd350:  0000705f65746172  0000000000000000
+00007f776f7fd360:  6e61727300726468  65735f5f00383464
+00007f776f7fd370:  7830203939333664  7830203561323564
+00007f776f7fd380:  7830206531316361  7830203035323664
+00007f776f7fd390:  0000000000000000  0000000000000000
+00007f776f7fd3a0:  5000687361724300  6554737365636f72
+00007f776f7fd3b0:  0000000000000000  0000000000000000
+00007f776f7fd3c0:  0000000000000001  0000000000000002
+00007f776f7fd3d0: <0000000000000000  00a9f9cb219fe45e
+00007f776f7fd3e0:  000000c00009c970  0000000000000001
+00007f776f7fd3f0:  0405060700010203  0c0d0e0f08090a0b
+00007f776f7fd400:  0000000000000000  0000000000000000
+00007f776f7fd410:  0000000000000000  0000000000000000
+00007f776f7fd420:  00007f7700000000  000000726f727245
+00007f776f7fd430:  00007f7760004238  00007f7760004230
+00007f776f7fd440:  00007f776f7fd690  00007f776f7fdaf0
+00007f776f7fd450:  fffffffe7fffffff  ffffffffffffffff
+00007f776f7fd460:  ffffffffffffffff  ffffffffffffffff
+00007f776f7fd470:  ffffffffffffffff  ffffffffffffffff
+00007f776f7fd480:  ffffffffffffffff  ffffffffffffffff
+00007f776f7fd490:  ffffffffffffffff  ffffffffffffffff
+00007f776f7fd4a0:  ffffffffffffffff  ffffffffffffffff
+00007f776f7fd4b0:  ffffffffffffffff  ffffffffffffffff
+00007f776f7fd4c0:  ffffffffffffffff  ffffffffffffffff
+
+goroutine 4 [syscall]:
+runtime.cgocall(0x606300, 0xc000037ed0, 0x0)
+/usr/lib/golang/src/runtime/cgocall.go:128 +0x5b fp=0xc000037ea0 sp=0xc000037e68 pc=0x4067bb
+github.com/apple/foundationdb/bindings/go/src/fdb._Cfunc_fdb_future_destroy(0x7f7768002270)
+_cgo_gotypes.go:223 +0x41 fp=0xc000037ed0 sp=0xc000037ea0 pc=0x4d5321
+github.com/apple/foundationdb/bindings/go/src/fdb.newFuture.func1.1(0xc000010310)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:81 +0x5e fp=0xc000037f10 sp=0xc000037ed0 pc=0x4dcace
+github.com/apple/foundationdb/bindings/go/src/fdb.newFuture.func1(0xc000010310)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:81 +0x2b fp=0xc000037f28 sp=0xc000037f10 pc=0x4dcb0b
+runtime.call32(0x0, 0x694508, 0xc000020130, 0x1000000010)
+/usr/lib/golang/src/runtime/asm_amd64.s:519 +0x3b fp=0xc000037f58 sp=0xc000037f28 pc=0x4585ab
+runtime.runfinq()
+/usr/lib/golang/src/runtime/mfinal.go:222 +0x1e2 fp=0xc000037fe0 sp=0xc000037f58 pc=0x41ae12
+runtime.goexit()
+/usr/lib/golang/src/runtime/asm_amd64.s:1337 +0x1 fp=0xc000037fe8 sp=0xc000037fe0 pc=0x45a2c1
+created by runtime.createfing
+/usr/lib/golang/src/runtime/mfinal.go:156 +0x61
+
+goroutine 1 [IO wait]:
+internal/poll.runtime_pollWait(0x7f777427df08, 0x72, 0x0)
+/usr/lib/golang/src/runtime/netpoll.go:182 +0x56
+internal/poll.(*pollDesc).wait(0xc0000e6018, 0x72, 0x0, 0x0, 0x684f07)
+/usr/lib/golang/src/internal/poll/fd_poll_runtime.go:87 +0x9b
+internal/poll.(*pollDesc).waitRead(...)
+/usr/lib/golang/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Accept(0xc0000e6000, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0)
+/usr/lib/golang/src/internal/poll/fd_unix.go:384 +0x1ba
+net.(*netFD).accept(0xc0000e6000, 0x20, 0xc000000180, 0x694c38)
+/usr/lib/golang/src/net/fd_unix.go:238 +0x42
+net.(*TCPListener).accept(0xc0000d6028, 0x694c48, 0x0, 0x592700)
+/usr/lib/golang/src/net/tcpsock_posix.go:139 +0x32
+net.(*TCPListener).Accept(0xc0000d6028, 0x694c48, 0x0, 0x0, 0x0)
+/usr/lib/golang/src/net/tcpsock.go:260 +0x48
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*Server).Run(0xc0000e0000, 0xd05)
+/data/projects/golang/lib-streamservice/lib/Run.go:40 +0x1d0
+main.main()
+/data/projects/golang/FDBConnector/main.go:31 +0x1d0
+
+goroutine 6 [runnable, locked to thread]:
+github.com/apple/foundationdb/bindings/go/src/fdb._Cfunc_fdb_run_network(0x0)
+_cgo_gotypes.go:419 +0x49
+github.com/apple/foundationdb/bindings/go/src/fdb.startNetwork.func1()
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/fdb.go:214 +0x26
+created by github.com/apple/foundationdb/bindings/go/src/fdb.startNetwork
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/fdb.go:213 +0x6d
+
+goroutine 18 [sleep]:
+runtime.goparkunlock(...)
+/usr/lib/golang/src/runtime/proc.go:307
+time.Sleep(0x3b9aca00)
+/usr/lib/golang/src/runtime/time.go:105 +0x159
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*Server).status(0xc0000e0000)
+/data/projects/golang/lib-streamservice/lib/Run.go:18 +0xb9
+created by gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*Server).Run
+/data/projects/golang/lib-streamservice/lib/Run.go:36 +0x2be
+
+goroutine 68 [runnable]:
+sync.runtime_SemacquireMutex(0xc00002113c, 0x7f7748001f00)
+/usr/lib/golang/src/runtime/sema.go:71 +0x3d
+sync.(*Mutex).Lock(0xc000021138)
+/usr/lib/golang/src/sync/mutex.go:134 +0xff
+github.com/apple/foundationdb/bindings/go/src/fdb.fdb_future_block_until_ready(0x7f7748001f30)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:100 +0x89
+github.com/apple/foundationdb/bindings/go/src/fdb.future.BlockUntilReady(...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:104
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get.func1()
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:147 +0x8f
+sync.(*Once).Do(0xc00005c3f0, 0xc00023ad00)
+/usr/lib/golang/src/sync/once.go:44 +0xb3
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get(0xc00005c3c0, 0x6d4360, 0xc00005c3c0, 0xc00000ed40, 0x4dacc0, 0xc00000ed20)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:142 +0x58
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).MustGet(0xc00005c3c0, 0x6d5260, 0xc0003494c0, 0x6d4360)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:164 +0x2b
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.find(0x6d5740, 0xc00000e120, 0x6d5740, 0xc00000e140, 0x0, 0x6d5740, 0xc00000e1e0, 0x6d5740, 0xc00000e200, 0x6d5740, ...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:595 +0x38c
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.createOrOpen(0x6d5740, 0xc00000e120, 0x6d5740, 0xc00000e140, 0x0, 0x6d5740, 0xc00000e1e0, 0x6d5740, 0xc00000e200, 0x6d5740, ...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:90 +0x192
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.CreateOrOpen.func1(0xc0003494c0, 0x694510, 0xc00023b3c0, 0x1, 0xc00009a9a0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:181 +0x115
+github.com/apple/foundationdb/bindings/go/src/fdb.Transaction.Transact(0xc0003494c0, 0xc00009a9a0, 0x0, 0x0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/transaction.go:116 +0x67
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.CreateOrOpen(0x6d5740, 0xc00000e120, 0x6d5740, 0xc00000e140, 0x0, 0x6d5740, 0xc00000e1e0, 0x6d5740, 0xc00000e200, 0x6d5740, ...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:180 +0xf9
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.CreateOrOpen(...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directory.go:176
+FDBConnector/Class/title.(*Class).SetTitle.func1(0xc0003494c0, 0x694510, 0xc00023b778, 0x7f77774dd460, 0x0)
+/data/projects/golang/FDBConnector/Class/title/SetTitle.go:35 +0x211
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact.func1(0x0, 0x0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:136 +0x7d
+github.com/apple/foundationdb/bindings/go/src/fdb.retryable(0xc0001ae3c0, 0xc00023b7e0, 0x0, 0x0, 0x40f478, 0x20)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:87 +0x2b
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact(0xc0000d6018, 0xc0001ae3a0, 0xc000080c00, 0x8, 0xc00003aa80, 0x7f77774dd460)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:145 +0xb2
+FDBConnector/Class/title.(*Class).SetTitle(0xc0001ae340, 0x0, 0x0, 0x0, 0x0)
+/data/projects/golang/FDBConnector/Class/title/SetTitle.go:15 +0x86
+reflect.Value.call(0x65bea0, 0xc0001ae340, 0x1213, 0x682ec5, 0x4, 0xc00023bb90, 0x0, 0x0, 0xc0000104a8, 0x13, ...)
+/usr/lib/golang/src/reflect/value.go:447 +0x461
+reflect.Value.Call(0x65bea0, 0xc0001ae340, 0x1213, 0xc00023bb90, 0x0, 0x0, 0xc0001ae340, 0x1213, 0xc000060300)
+/usr/lib/golang/src/reflect/value.go:308 +0xa4
+FDBConnector/A1Version.(*QueryV1).RunMethod(0xc0003042d0, 0x6d3ee0, 0xc0001ae340, 0x5, 0x682d5c, 0x3, 0x669000)
+/data/projects/golang/FDBConnector/A1Version/QueryV1Run.go:37 +0x205
+FDBConnector/A1Version.(*QueryV1).Run(0xc0003042d0, 0xc00013fd10, 0xc0003042d0, 0x0, 0x0, 0x0)
+/data/projects/golang/FDBConnector/A1Version/QueryV1Run.go:27 +0x151
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).execQ(0xc0002c84e0, 0xc0001616c0, 0x1a0)
+/data/projects/golang/lib-streamservice/lib/execQ.go:45 +0x2ca
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).tRun.func2()
+/data/projects/golang/lib-streamservice/lib/tRun.go:45 +0x43
+gitlab.hub.local/golang-tools/components/exception%2egit.Block.Do(0xc00023bee8, 0xc00023bed0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/gitlab.hub.local/golang-tools/components/exception.git@v1.0.0/exception.go:36 +0x3f
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).tRun(0xc0002c84e0, 0xc0000e0000)
+/data/projects/golang/lib-streamservice/lib/tRun.go:66 +0x33f
+created by gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*Server).Run.func2
+/data/projects/golang/lib-streamservice/lib/Run.go:53 +0xe6
+
+goroutine 41 [runnable]:
+sync.runtime_nanotime(0x4)
+/usr/lib/golang/src/runtime/sema.go:612 +0x3a
+sync.(*Mutex).Lock(0xc000021ba0)
+/usr/lib/golang/src/sync/mutex.go:132 +0x1bc
+github.com/apple/foundationdb/bindings/go/src/fdb.fdb_future_block_until_ready(0x7f773c001d80)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:100 +0x89
+github.com/apple/foundationdb/bindings/go/src/fdb.future.BlockUntilReady(...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:104
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get.func1()
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:147 +0x8f
+sync.(*Once).Do(0xc00005c870, 0xc0005a2d00)
+/usr/lib/golang/src/sync/once.go:44 +0xb3
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get(0xc00005c840, 0xf, 0xf, 0x0, 0x6d4360, 0xc00005c840)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:142 +0x58
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).MustGet(0xc00005c840, 0x7f7774282158, 0xc00000f3e0, 0x6d4360)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:164 +0x2b
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.find(0x6d5740, 0xc00000e120, 0x6d5740, 0xc00000e140, 0x0, 0x6d5740, 0xc00000e1e0, 0x6d5740, 0xc00000e200, 0x6d5740, ...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:594 +0x269
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.createOrOpen(0x6d5740, 0xc00000e120, 0x6d5740, 0xc00000e140, 0x0, 0x6d5740, 0xc00000e1e0, 0x6d5740, 0xc00000e200, 0x6d5740, ...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:90 +0x192
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.CreateOrOpen.func1(0xc0000d8070, 0x694510, 0xc0005a33c0, 0x1, 0xc0002500b0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:181 +0x115
+github.com/apple/foundationdb/bindings/go/src/fdb.Transaction.Transact(0xc0000d8070, 0xc0002500b0, 0x0, 0x0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/transaction.go:116 +0x67
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.CreateOrOpen(0x6d5740, 0xc00000e120, 0x6d5740, 0xc00000e140, 0x0, 0x6d5740, 0xc00000e1e0, 0x6d5740, 0xc00000e200, 0x6d5740, ...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:180 +0xf9
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.CreateOrOpen(...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directory.go:176
+FDBConnector/Class/title.(*Class).SetTitle.func1(0xc0000d8070, 0x694510, 0xc000045778, 0x7f77774dc008, 0x0)
+/data/projects/golang/FDBConnector/Class/title/SetTitle.go:35 +0x211
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact.func1(0x0, 0x0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:136 +0x7d
+github.com/apple/foundationdb/bindings/go/src/fdb.retryable(0xc00000e160, 0xc0005a37e0, 0x0, 0x0, 0x40f478, 0x20)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:87 +0x2b
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact(0xc0000d6018, 0xc00000e100, 0xc000080c00, 0x8, 0xc00003bc00, 0x7f77774dc008)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:145 +0xb2
+FDBConnector/Class/title.(*Class).SetTitle(0xc00000e040, 0x0, 0x0, 0x0, 0x0)
+/data/projects/golang/FDBConnector/Class/title/SetTitle.go:15 +0x86
+reflect.Value.call(0x65bea0, 0xc00000e040, 0x1213, 0x682ec5, 0x4, 0xc000045b90, 0x0, 0x0, 0xc0000d6010, 0x13, ...)
+/usr/lib/golang/src/reflect/value.go:447 +0x461
+reflect.Value.Call(0x65bea0, 0xc00000e040, 0x1213, 0xc000045b90, 0x0, 0x0, 0xc00000e040, 0x1213, 0xc000060300)
+/usr/lib/golang/src/reflect/value.go:308 +0xa4
+FDBConnector/A1Version.(*QueryV1).RunMethod(0xc0003840c0, 0x6d3ee0, 0xc00000e040, 0x5, 0x682d5c, 0x3, 0x669000)
+/data/projects/golang/FDBConnector/A1Version/QueryV1Run.go:37 +0x205
+FDBConnector/A1Version.(*QueryV1).Run(0xc0003840c0, 0xc00008a0f0, 0xc0003840c0, 0x0, 0x0, 0x0)
+/data/projects/golang/FDBConnector/A1Version/QueryV1Run.go:27 +0x151
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).execQ(0xc0000ea720, 0xc0001e4c40, 0x1b4)
+/data/projects/golang/lib-streamservice/lib/execQ.go:45 +0x2ca
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).tRun.func2()
+/data/projects/golang/lib-streamservice/lib/tRun.go:45 +0x43
+gitlab.hub.local/golang-tools/components/exception%2egit.Block.Do(0xc000045ee8, 0xc000045ed0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/gitlab.hub.local/golang-tools/components/exception.git@v1.0.0/exception.go:36 +0x3f
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).tRun(0xc0000ea720, 0xc0000e0000)
+/data/projects/golang/lib-streamservice/lib/tRun.go:66 +0x33f
+created by gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*Server).Run.func2
+/data/projects/golang/lib-streamservice/lib/Run.go:53 +0xe6
+
+goroutine 12 [runnable]:
+sync.runtime_SemacquireMutex(0xc0001be7a4, 0x7f773c002300)
+/usr/lib/golang/src/runtime/sema.go:71 +0x3d
+sync.(*Mutex).Lock(0xc0001be7a0)
+/usr/lib/golang/src/sync/mutex.go:134 +0xff
+github.com/apple/foundationdb/bindings/go/src/fdb.fdb_future_block_until_ready(0x7f773c0023a0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:100 +0x89
+github.com/apple/foundationdb/bindings/go/src/fdb.future.BlockUntilReady(...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:104
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get.func1()
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:147 +0x8f
+sync.(*Once).Do(0xc00020a2f0, 0xc0005a0d00)
+/usr/lib/golang/src/sync/once.go:44 +0xb3
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get(0xc00020a2c0, 0x6d4360, 0xc00020a2c0, 0xc0000e28a0, 0x4dacc0, 0xc0000e2880)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:142 +0x58
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).MustGet(0xc00020a2c0, 0x6d5260, 0xc0000d9f40, 0x6d4360)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:164 +0x2b
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.find(0x6d5740, 0xc00000e120, 0x6d5740, 0xc00000e140, 0x0, 0x6d5740, 0xc00000e1e0, 0x6d5740, 0xc00000e200, 0x6d5740, ...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:595 +0x38c
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.createOrOpen(0x6d5740, 0xc00000e120, 0x6d5740, 0xc00000e140, 0x0, 0x6d5740, 0xc00000e1e0, 0x6d5740, 0xc00000e200, 0x6d5740, ...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:90 +0x192
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.CreateOrOpen.func1(0xc0000d9f40, 0x694510, 0xc0005a13c0, 0x1, 0xc000250c60)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:181 +0x115
+github.com/apple/foundationdb/bindings/go/src/fdb.Transaction.Transact(0xc0000d9f40, 0xc000250c60, 0x0, 0x0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/transaction.go:116 +0x67
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.CreateOrOpen(0x6d5740, 0xc00000e120, 0x6d5740, 0xc00000e140, 0x0, 0x6d5740, 0xc00000e1e0, 0x6d5740, 0xc00000e200, 0x6d5740, ...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:180 +0xf9
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.CreateOrOpen(...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directory.go:176
+FDBConnector/Class/title.(*Class).SetTitle.func1(0xc0000d9f40, 0x694510, 0xc0005a1778, 0x7f77774dcd98, 0x0)
+/data/projects/golang/FDBConnector/Class/title/SetTitle.go:35 +0x211
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact.func1(0x0, 0x0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:136 +0x7d
+github.com/apple/foundationdb/bindings/go/src/fdb.retryable(0xc000505880, 0xc0005a17e0, 0x0, 0x0, 0x40f478, 0x20)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:87 +0x2b
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact(0xc0000d6018, 0xc000505860, 0xc000080c00, 0x8, 0xc000104700, 0x7f77774dcd98)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:145 +0xb2
+FDBConnector/Class/title.(*Class).SetTitle(0xc000505800, 0x0, 0x0, 0x0, 0x0)
+/data/projects/golang/FDBConnector/Class/title/SetTitle.go:15 +0x86
+reflect.Value.call(0x65bea0, 0xc000505800, 0x1213, 0x682ec5, 0x4, 0xc0005a1b90, 0x0, 0x0, 0xc0000d6810, 0x13, ...)
+/usr/lib/golang/src/reflect/value.go:447 +0x461
+reflect.Value.Call(0x65bea0, 0xc000505800, 0x1213, 0xc0005a1b90, 0x0, 0x0, 0xc000505800, 0x1213, 0xc000060300)
+/usr/lib/golang/src/reflect/value.go:308 +0xa4
+FDBConnector/A1Version.(*QueryV1).RunMethod(0xc0003845d0, 0x6d3ee0, 0xc000505800, 0x5, 0x682d5c, 0x3, 0x669000)
+/data/projects/golang/FDBConnector/A1Version/QueryV1Run.go:37 +0x205
+FDBConnector/A1Version.(*QueryV1).Run(0xc0003845d0, 0xc0001f38b0, 0xc0003845d0, 0x0, 0x0, 0x0)
+/data/projects/golang/FDBConnector/A1Version/QueryV1Run.go:27 +0x151
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).execQ(0xc0004fe060, 0xc0001e4540, 0x1a0)
+/data/projects/golang/lib-streamservice/lib/execQ.go:45 +0x2ca
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).tRun.func2()
+/data/projects/golang/lib-streamservice/lib/tRun.go:45 +0x43
+gitlab.hub.local/golang-tools/components/exception%2egit.Block.Do(0xc0005a1ee8, 0xc0005a1ed0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/gitlab.hub.local/golang-tools/components/exception.git@v1.0.0/exception.go:36 +0x3f
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).tRun(0xc0004fe060, 0xc0000e0000)
+/data/projects/golang/lib-streamservice/lib/tRun.go:66 +0x33f
+created by gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*Server).Run.func2
+/data/projects/golang/lib-streamservice/lib/Run.go:53 +0xe6
+
+goroutine 14 [semacquire]:
+sync.runtime_SemacquireMutex(0xc0001be6cc, 0x7f7748004400)
+/usr/lib/golang/src/runtime/sema.go:71 +0x3d
+sync.(*Mutex).Lock(0xc0001be6c8)
+/usr/lib/golang/src/sync/mutex.go:134 +0xff
+github.com/apple/foundationdb/bindings/go/src/fdb.fdb_future_block_until_ready(0x7f7748004460)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:100 +0x89
+github.com/apple/foundationdb/bindings/go/src/fdb.future.BlockUntilReady(...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:104
+github.com/apple/foundationdb/bindings/go/src/fdb.futureNil.Get(0xc0001220e0, 0xc0001220e8, 0xc0001220e0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:244 +0x2f
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact.func1(0x62a480, 0xc0000e2560, 0x0, 0x0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:139 +0xdc
+github.com/apple/foundationdb/bindings/go/src/fdb.retryable(0xc00014cb60, 0xc00023d7e0, 0x0, 0x0, 0x40f478, 0x20)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:87 +0x2b
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact(0xc0000d6018, 0xc00014cb40, 0xc000080c00, 0x8, 0xc00003b500, 0x7f77774dc008)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:145 +0xb2
+FDBConnector/Class/title.(*Class).SetTitle(0xc00014cae0, 0x0, 0x0, 0x0, 0x0)
+/data/projects/golang/FDBConnector/Class/title/SetTitle.go:15 +0x86
+reflect.Value.call(0x65bea0, 0xc00014cae0, 0x1213, 0x682ec5, 0x4, 0xc00023db90, 0x0, 0x0, 0xc0001222e0, 0x13, ...)
+/usr/lib/golang/src/reflect/value.go:447 +0x461
+reflect.Value.Call(0x65bea0, 0xc00014cae0, 0x1213, 0xc00023db90, 0x0, 0x0, 0xc00014cae0, 0x1213, 0xc000060300)
+/usr/lib/golang/src/reflect/value.go:308 +0xa4
+FDBConnector/A1Version.(*QueryV1).RunMethod(0xc0000e5620, 0x6d3ee0, 0xc00014cae0, 0x5, 0x682d5c, 0x3, 0x669000)
+/data/projects/golang/FDBConnector/A1Version/QueryV1Run.go:37 +0x205
+FDBConnector/A1Version.(*QueryV1).Run(0xc0000e5620, 0xc000227270, 0xc0000e5620, 0x0, 0x0, 0x0)
+/data/projects/golang/FDBConnector/A1Version/QueryV1Run.go:27 +0x151
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).execQ(0xc0004fe1e0, 0xc000519200, 0x170)
+/data/projects/golang/lib-streamservice/lib/execQ.go:45 +0x2ca
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).tRun.func2()
+/data/projects/golang/lib-streamservice/lib/tRun.go:45 +0x43
+gitlab.hub.local/golang-tools/components/exception%2egit.Block.Do(0xc00023dee8, 0xc00023ded0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/gitlab.hub.local/golang-tools/components/exception.git@v1.0.0/exception.go:36 +0x3f
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).tRun(0xc0004fe1e0, 0xc0000e0000)
+/data/projects/golang/lib-streamservice/lib/tRun.go:66 +0x33f
+created by gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*Server).Run.func2
+/data/projects/golang/lib-streamservice/lib/Run.go:53 +0xe6
+
+goroutine 66 [runnable]:
+bufio.(*Reader).Read(0xc00056ff68, 0xc000514108, 0x1, 0x1, 0x1, 0xc0003d18c0, 0x141)
+/usr/lib/golang/src/bufio/bufio.go:197 +0x3e6
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).tRun(0xc0002c8000, 0xc0000e0000)
+/data/projects/golang/lib-streamservice/lib/tRun.go:29 +0x156
+created by gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*Server).Run.func2
+/data/projects/golang/lib-streamservice/lib/Run.go:53 +0xe6
+
+goroutine 13 [semacquire]:
+sync.runtime_SemacquireMutex(0xc000274014, 0x7f7748002e00)
+/usr/lib/golang/src/runtime/sema.go:71 +0x3d
+sync.(*Mutex).Lock(0xc000274010)
+/usr/lib/golang/src/sync/mutex.go:134 +0xff
+github.com/apple/foundationdb/bindings/go/src/fdb.fdb_future_block_until_ready(0x7f7748002e80)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:100 +0x89
+github.com/apple/foundationdb/bindings/go/src/fdb.future.BlockUntilReady(...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:104
+github.com/apple/foundationdb/bindings/go/src/fdb.futureNil.Get(0xc000010540, 0xc000010548, 0xc000010540)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:244 +0x2f
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact.func1(0x62a480, 0xc0001ae820, 0x0, 0x0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:139 +0xdc
+github.com/apple/foundationdb/bindings/go/src/fdb.retryable(0xc00000ef00, 0xc0001937e0, 0x0, 0x0, 0x40f478, 0x20)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:87 +0x2b
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact(0xc0000d6018, 0xc00000eee0, 0xc000080c00, 0x8, 0xc00003aa80, 0x7f77774dd460)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:145 +0xb2
+FDBConnector/Class/title.(*Class).SetTitle(0xc00000ee80, 0x0, 0x0, 0x0, 0x0)
+/data/projects/golang/FDBConnector/Class/title/SetTitle.go:15 +0x86
+reflect.Value.call(0x65bea0, 0xc00000ee80, 0x1213, 0x682ec5, 0x4, 0xc000193b90, 0x0, 0x0, 0xc000010230, 0x13, ...)
+/usr/lib/golang/src/reflect/value.go:447 +0x461
+reflect.Value.Call(0x65bea0, 0xc00000ee80, 0x1213, 0xc000193b90, 0x0, 0x0, 0xc00000ee80, 0x1213, 0xc000060300)
+/usr/lib/golang/src/reflect/value.go:308 +0xa4
+FDBConnector/A1Version.(*QueryV1).RunMethod(0xc0004e50e0, 0x6d3ee0, 0xc00000ee80, 0x5, 0x682d5c, 0x3, 0x669000)
+/data/projects/golang/FDBConnector/A1Version/QueryV1Run.go:37 +0x205
+FDBConnector/A1Version.(*QueryV1).Run(0xc0004e50e0, 0xc00013ef00, 0xc0004e50e0, 0x0, 0x0, 0x0)
+/data/projects/golang/FDBConnector/A1Version/QueryV1Run.go:27 +0x151
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).execQ(0xc0004fe9c0, 0xc0001cd380, 0x198)
+/data/projects/golang/lib-streamservice/lib/execQ.go:45 +0x2ca
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).tRun.func2()
+/data/projects/golang/lib-streamservice/lib/tRun.go:45 +0x43
+gitlab.hub.local/golang-tools/components/exception%2egit.Block.Do(0xc000193ee8, 0xc000193ed0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/gitlab.hub.local/golang-tools/components/exception.git@v1.0.0/exception.go:36 +0x3f
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).tRun(0xc0004fe9c0, 0xc0000e0000)
+/data/projects/golang/lib-streamservice/lib/tRun.go:66 +0x33f
+created by gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*Server).Run.func2
+/data/projects/golang/lib-streamservice/lib/Run.go:53 +0xe6
+
+goroutine 67 [semacquire]:
+sync.runtime_SemacquireMutex(0xc00002144c, 0x7f7748002800)
+/usr/lib/golang/src/runtime/sema.go:71 +0x3d
+sync.(*Mutex).Lock(0xc000021448)
+/usr/lib/golang/src/sync/mutex.go:134 +0xff
+github.com/apple/foundationdb/bindings/go/src/fdb.fdb_future_block_until_ready(0x7f7748002830)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:100 +0x89
+github.com/apple/foundationdb/bindings/go/src/fdb.future.BlockUntilReady(...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:104
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get.func1()
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:147 +0x8f
+sync.(*Once).Do(0xc00005c430, 0xc00022ec78)
+/usr/lib/golang/src/sync/once.go:44 +0xb3
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get(0xc00005c400, 0x7f7774282158, 0xc00000ef20, 0x6d4360, 0xc00005c400, 0xc00000ef20)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:142 +0x58
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.checkVersion(0x6d5740, 0xc00000e120, 0x6d5740, 0xc00000e140, 0x0, 0x6d5740, 0xc00000e1e0, 0x6d5740, 0xc00000e200, 0x6d5740, ...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:510 +0x15b
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.createOrOpen(0x6d5740, 0xc00000e120, 0x6d5740, 0xc00000e140, 0x0, 0x6d5740, 0xc00000e1e0, 0x6d5740, 0xc00000e200, 0x6d5740, ...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:75 +0x7b
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.CreateOrOpen.func1(0xc0000d87b0, 0x694510, 0xc00022f3c0, 0x1, 0xc000250370)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:181 +0x115
+github.com/apple/foundationdb/bindings/go/src/fdb.Transaction.Transact(0xc0000d87b0, 0xc000250370, 0x0, 0x0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/transaction.go:116 +0x67
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.CreateOrOpen(0x6d5740, 0xc00000e120, 0x6d5740, 0xc00000e140, 0x0, 0x6d5740, 0xc00000e1e0, 0x6d5740, 0xc00000e200, 0x6d5740, ...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:180 +0xf9
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.CreateOrOpen(...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directory.go:176
+FDBConnector/Class/title.(*Class).SetTitle.func1(0xc0000d87b0, 0x694510, 0xc00022f778, 0x7f77774dc008, 0x0)
+/data/projects/golang/FDBConnector/Class/title/SetTitle.go:35 +0x211
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact.func1(0x0, 0x0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:136 +0x7d
+github.com/apple/foundationdb/bindings/go/src/fdb.retryable(0xc00000ede0, 0xc00022f7e0, 0x0, 0x0, 0x40f478, 0x20)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:87 +0x2b
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact(0xc0000d6018, 0xc00000edc0, 0xc000080c00, 0x8, 0xc00003b500, 0x7f77774dc008)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:145 +0xb2
+FDBConnector/Class/title.(*Class).SetTitle(0xc00000ed60, 0x0, 0x0, 0x0, 0x0)
+/data/projects/golang/FDBConnector/Class/title/SetTitle.go:15 +0x86
+reflect.Value.call(0x65bea0, 0xc00000ed60, 0x1213, 0x682ec5, 0x4, 0xc00022fb90, 0x0, 0x0, 0xc0000d6228, 0x13, ...)
+/usr/lib/golang/src/reflect/value.go:447 +0x461
+reflect.Value.Call(0x65bea0, 0xc00000ed60, 0x1213, 0xc00022fb90, 0x0, 0x0, 0xc00000ed60, 0x1213, 0xc000060300)
+/usr/lib/golang/src/reflect/value.go:308 +0xa4
+FDBConnector/A1Version.(*QueryV1).RunMethod(0xc000384ea0, 0x6d3ee0, 0xc00000ed60, 0x5, 0x682d5c, 0x3, 0x669000)
+/data/projects/golang/FDBConnector/A1Version/QueryV1Run.go:37 +0x205
+FDBConnector/A1Version.(*QueryV1).Run(0xc000384ea0, 0xc00008ac80, 0xc000384ea0, 0x0, 0x0, 0x0)
+/data/projects/golang/FDBConnector/A1Version/QueryV1Run.go:27 +0x151
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).execQ(0xc0002c8480, 0xc0002fd860, 0x194)
+/data/projects/golang/lib-streamservice/lib/execQ.go:45 +0x2ca
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).tRun.func2()
+/data/projects/golang/lib-streamservice/lib/tRun.go:45 +0x43
+gitlab.hub.local/golang-tools/components/exception%2egit.Block.Do(0xc00022fee8, 0xc00022fed0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/gitlab.hub.local/golang-tools/components/exception.git@v1.0.0/exception.go:36 +0x3f
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).tRun(0xc0002c8480, 0xc0000e0000)
+/data/projects/golang/lib-streamservice/lib/tRun.go:66 +0x33f
+created by gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*Server).Run.func2
+/data/projects/golang/lib-streamservice/lib/Run.go:53 +0xe6
+
+goroutine 55 [semacquire]:
+sync.runtime_SemacquireMutex(0xc00002198c, 0x7f773c000f00)
+/usr/lib/golang/src/runtime/sema.go:71 +0x3d
+sync.(*Mutex).Lock(0xc000021988)
+/usr/lib/golang/src/sync/mutex.go:134 +0xff
+github.com/apple/foundationdb/bindings/go/src/fdb.fdb_future_block_until_ready(0x7f773c000fe0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:100 +0x89
+github.com/apple/foundationdb/bindings/go/src/fdb.future.BlockUntilReady(...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:104
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get.func1()
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:147 +0x8f
+sync.(*Once).Do(0xc00005c4b0, 0xc000238c78)
+/usr/lib/golang/src/sync/once.go:44 +0xb3
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get(0xc00005c480, 0x7f7774282158, 0xc00000f220, 0x6d4360, 0xc00005c480, 0xc00000f220)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:142 +0x58
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.checkVersion(0x6d5740, 0xc00000e120, 0x6d5740, 0xc00000e140, 0x0, 0x6d5740, 0xc00000e1e0, 0x6d5740, 0xc00000e200, 0x6d5740, ...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:510 +0x15b
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.createOrOpen(0x6d5740, 0xc00000e120, 0x6d5740, 0xc00000e140, 0x0, 0x6d5740, 0xc00000e1e0, 0x6d5740, 0xc00000e200, 0x6d5740, ...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:75 +0x7b
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.CreateOrOpen.func1(0xc0000d8a80, 0x694510, 0xc0002393c0, 0x1, 0xc0002504d0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:181 +0x115
+github.com/apple/foundationdb/bindings/go/src/fdb.Transaction.Transact(0xc0000d8a80, 0xc0002504d0, 0x0, 0x0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/transaction.go:116 +0x67
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.CreateOrOpen(0x6d5740, 0xc00000e120, 0x6d5740, 0xc00000e140, 0x0, 0x6d5740, 0xc00000e1e0, 0x6d5740, 0xc00000e200, 0x6d5740, ...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:180 +0xf9
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.CreateOrOpen(...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directory.go:176
+FDBConnector/Class/title.(*Class).SetTitle.func1(0xc0000d8a80, 0x694510, 0xc000239778, 0x7f77774dc008, 0x0)
+/data/projects/golang/FDBConnector/Class/title/SetTitle.go:35 +0x211
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact.func1(0x0, 0x0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:136 +0x7d
+github.com/apple/foundationdb/bindings/go/src/fdb.retryable(0xc00000f140, 0xc0002397e0, 0x0, 0x0, 0x40f478, 0x20)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:87 +0x2b
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact(0xc0000d6018, 0xc00000f120, 0xc000080c00, 0x8, 0xc00003bc00, 0x7f77774dc008)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:145 +0xb2
+FDBConnector/Class/title.(*Class).SetTitle(0xc00000f0c0, 0x0, 0x0, 0x0, 0x0)
+/data/projects/golang/FDBConnector/Class/title/SetTitle.go:15 +0x86
+reflect.Value.call(0x65bea0, 0xc00000f0c0, 0x1213, 0x682ec5, 0x4, 0xc000239b90, 0x0, 0x0, 0xc0000d6300, 0x13, ...)
+/usr/lib/golang/src/reflect/value.go:447 +0x461
+reflect.Value.Call(0x65bea0, 0xc00000f0c0, 0x1213, 0xc000239b90, 0x0, 0x0, 0xc00000f0c0, 0x1213, 0xc000060300)
+/usr/lib/golang/src/reflect/value.go:308 +0xa4
+FDBConnector/A1Version.(*QueryV1).RunMethod(0xc000385770, 0x6d3ee0, 0xc00000f0c0, 0x5, 0x682d5c, 0x3, 0x669000)
+/data/projects/golang/FDBConnector/A1Version/QueryV1Run.go:37 +0x205
+FDBConnector/A1Version.(*QueryV1).Run(0xc000385770, 0xc00008b270, 0xc000385770, 0x0, 0x0, 0x0)
+/data/projects/golang/FDBConnector/A1Version/QueryV1Run.go:27 +0x151
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).execQ(0xc00022ccc0, 0xc0001f6d00, 0x194)
+/data/projects/golang/lib-streamservice/lib/execQ.go:45 +0x2ca
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).tRun.func2()
+/data/projects/golang/lib-streamservice/lib/tRun.go:45 +0x43
+gitlab.hub.local/golang-tools/components/exception%2egit.Block.Do(0xc000239ee8, 0xc000239ed0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/gitlab.hub.local/golang-tools/components/exception.git@v1.0.0/exception.go:36 +0x3f
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).tRun(0xc00022ccc0, 0xc0000e0000)
+/data/projects/golang/lib-streamservice/lib/tRun.go:66 +0x33f
+created by gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*Server).Run.func2
+/data/projects/golang/lib-streamservice/lib/Run.go:53 +0xe6
+
+goroutine 56 [semacquire]:
+sync.runtime_SemacquireMutex(0xc0001be7d4, 0x7f773c001000)
+/usr/lib/golang/src/runtime/sema.go:71 +0x3d
+sync.(*Mutex).Lock(0xc0001be7d0)
+/usr/lib/golang/src/sync/mutex.go:134 +0xff
+github.com/apple/foundationdb/bindings/go/src/fdb.fdb_future_block_until_ready(0x7f773c0010a0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:100 +0x89
+github.com/apple/foundationdb/bindings/go/src/fdb.future.BlockUntilReady(...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:104
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get.func1()
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:147 +0x8f
+sync.(*Once).Do(0xc00020a630, 0xc00056cd00)
+/usr/lib/golang/src/sync/once.go:44 +0xb3
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get(0xc00020a600, 0x6d4360, 0xc00020a600, 0xc0000e2920, 0x4dacc0, 0xc0000e2900)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:142 +0x58
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).MustGet(0xc00020a600, 0x6d5260, 0xc000349350, 0x6d4360)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:164 +0x2b
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.find(0x6d5740, 0xc00000e120, 0x6d5740, 0xc00000e140, 0x0, 0x6d5740, 0xc00000e1e0, 0x6d5740, 0xc00000e200, 0x6d5740, ...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:595 +0x38c
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.createOrOpen(0x6d5740, 0xc00000e120, 0x6d5740, 0xc00000e140, 0x0, 0x6d5740, 0xc00000e1e0, 0x6d5740, 0xc00000e200, 0x6d5740, ...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:90 +0x192
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.CreateOrOpen.func1(0xc000349350, 0x694510, 0xc00056d3c0, 0x1, 0xc00009a8f0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:181 +0x115
+github.com/apple/foundationdb/bindings/go/src/fdb.Transaction.Transact(0xc000349350, 0xc00009a8f0, 0x0, 0x0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/transaction.go:116 +0x67
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.CreateOrOpen(0x6d5740, 0xc00000e120, 0x6d5740, 0xc00000e140, 0x0, 0x6d5740, 0xc00000e1e0, 0x6d5740, 0xc00000e200, 0x6d5740, ...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:180 +0xf9
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.CreateOrOpen(...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directory.go:176
+FDBConnector/Class/title.(*Class).SetTitle.func1(0xc000349350, 0x694510, 0xc00056d778, 0x7f77774dd460, 0x0)
+/data/projects/golang/FDBConnector/Class/title/SetTitle.go:35 +0x211
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact.func1(0x0, 0x0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:136 +0x7d
+github.com/apple/foundationdb/bindings/go/src/fdb.retryable(0xc0001ae240, 0xc00056d7e0, 0x0, 0x0, 0x40f478, 0x20)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:87 +0x2b
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact(0xc0000d6018, 0xc0001ae220, 0xc000080c00, 0x8, 0xc00003aa80, 0x7f77774dd460)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:145 +0xb2
+FDBConnector/Class/title.(*Class).SetTitle(0xc0001ae1c0, 0x0, 0x0, 0x0, 0x0)
+/data/projects/golang/FDBConnector/Class/title/SetTitle.go:15 +0x86
+reflect.Value.call(0x65bea0, 0xc0001ae1c0, 0x1213, 0x682ec5, 0x4, 0xc00056db90, 0x0, 0x0, 0xc000010448, 0x13, ...)
+/usr/lib/golang/src/reflect/value.go:447 +0x461
+reflect.Value.Call(0x65bea0, 0xc0001ae1c0, 0x1213, 0xc00056db90, 0x0, 0x0, 0xc0001ae1c0, 0x1213, 0xc000060300)
+/usr/lib/golang/src/reflect/value.go:308 +0xa4
+FDBConnector/A1Version.(*QueryV1).RunMethod(0xc0004e5e90, 0x6d3ee0, 0xc0001ae1c0, 0x5, 0x682d5c, 0x3, 0x669000)
+/data/projects/golang/FDBConnector/A1Version/QueryV1Run.go:37 +0x205
+FDBConnector/A1Version.(*QueryV1).Run(0xc0004e5e90, 0xc00013f9f0, 0xc0004e5e90, 0x0, 0x0, 0x0)
+/data/projects/golang/FDBConnector/A1Version/QueryV1Run.go:27 +0x151
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).execQ(0xc00022d3e0, 0xc0005389c0, 0x198)
+/data/projects/golang/lib-streamservice/lib/execQ.go:45 +0x2ca
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).tRun.func2()
+/data/projects/golang/lib-streamservice/lib/tRun.go:45 +0x43
+gitlab.hub.local/golang-tools/components/exception%2egit.Block.Do(0xc00056dee8, 0xc00056ded0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/gitlab.hub.local/golang-tools/components/exception.git@v1.0.0/exception.go:36 +0x3f
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).tRun(0xc00022d3e0, 0xc0000e0000)
+/data/projects/golang/lib-streamservice/lib/tRun.go:66 +0x33f
+created by gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*Server).Run.func2
+/data/projects/golang/lib-streamservice/lib/Run.go:53 +0xe6
+
+goroutine 57 [semacquire]:
+sync.runtime_SemacquireMutex(0xc0000dc334, 0x7f7748001800)
+/usr/lib/golang/src/runtime/sema.go:71 +0x3d
+sync.(*Mutex).Lock(0xc0000dc330)
+/usr/lib/golang/src/sync/mutex.go:134 +0xff
+github.com/apple/foundationdb/bindings/go/src/fdb.fdb_future_block_until_ready(0x7f7748001890)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:100 +0x89
+github.com/apple/foundationdb/bindings/go/src/fdb.future.BlockUntilReady(...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:104
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get.func1()
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:147 +0x8f
+sync.(*Once).Do(0xc0000e00b0, 0xc000198c78)
+/usr/lib/golang/src/sync/once.go:44 +0xb3
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get(0xc0000e0080, 0x7f7774282158, 0xc000504160, 0x6d4360, 0xc0000e0080, 0xc000504160)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:142 +0x58
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.checkVersion(0x6d5740, 0xc00000e120, 0x6d5740, 0xc00000e140, 0x0, 0x6d5740, 0xc00000e1e0, 0x6d5740, 0xc00000e200, 0x6d5740, ...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:510 +0x15b
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.createOrOpen(0x6d5740, 0xc00000e120, 0x6d5740, 0xc00000e140, 0x0, 0x6d5740, 0xc00000e1e0, 0x6d5740, 0xc00000e200, 0x6d5740, ...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:75 +0x7b
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.CreateOrOpen.func1(0xc00031a080, 0x694510, 0xc0001993c0, 0x1, 0xc0002cc0b0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:181 +0x115
+github.com/apple/foundationdb/bindings/go/src/fdb.Transaction.Transact(0xc00031a080, 0xc0002cc0b0, 0x0, 0x0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/transaction.go:116 +0x67
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.CreateOrOpen(0x6d5740, 0xc00000e120, 0x6d5740, 0xc00000e140, 0x0, 0x6d5740, 0xc00000e1e0, 0x6d5740, 0xc00000e200, 0x6d5740, ...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:180 +0xf9
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.CreateOrOpen(...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directory.go:176
+FDBConnector/Class/title.(*Class).SetTitle.func1(0xc00031a080, 0x694510, 0xc00004a778, 0x7f77774dd460, 0x0)
+/data/projects/golang/FDBConnector/Class/title/SetTitle.go:35 +0x211
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact.func1(0x0, 0x0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:136 +0x7d
+github.com/apple/foundationdb/bindings/go/src/fdb.retryable(0xc000504080, 0xc0001997e0, 0x0, 0x0, 0x40f478, 0x20)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:87 +0x2b
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact(0xc0000d6018, 0xc000504060, 0xc000080c00, 0x8, 0xc00003b500, 0x7f77774dd460)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:145 +0xb2
+FDBConnector/Class/title.(*Class).SetTitle(0xc000504000, 0x0, 0x0, 0x0, 0x0)
+/data/projects/golang/FDBConnector/Class/title/SetTitle.go:15 +0x86
+reflect.Value.call(0x65bea0, 0xc000504000, 0x1213, 0x682ec5, 0x4, 0xc00004ab90, 0x0, 0x0, 0xc000208010, 0x13, ...)
+/usr/lib/golang/src/reflect/value.go:447 +0x461
+reflect.Value.Call(0x65bea0, 0xc000504000, 0x1213, 0xc00004ab90, 0x0, 0x0, 0xc000504000, 0x1213, 0xc000060300)
+/usr/lib/golang/src/reflect/value.go:308 +0xa4
+FDBConnector/A1Version.(*QueryV1).RunMethod(0xc0004e4090, 0x6d3ee0, 0xc000504000, 0x5, 0x682d5c, 0x3, 0x669000)
+/data/projects/golang/FDBConnector/A1Version/QueryV1Run.go:37 +0x205
+FDBConnector/A1Version.(*QueryV1).Run(0xc0004e4090, 0xc00013e190, 0xc0004e4090, 0x0, 0x0, 0x0)
+/data/projects/golang/FDBConnector/A1Version/QueryV1Run.go:27 +0x151
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).execQ(0xc00022d440, 0xc000160540, 0x1a0)
+/data/projects/golang/lib-streamservice/lib/execQ.go:45 +0x2ca
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).tRun.func2()
+/data/projects/golang/lib-streamservice/lib/tRun.go:45 +0x43
+gitlab.hub.local/golang-tools/components/exception%2egit.Block.Do(0xc00004aee8, 0xc00004aed0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/gitlab.hub.local/golang-tools/components/exception.git@v1.0.0/exception.go:36 +0x3f
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).tRun(0xc00022d440, 0xc0000e0000)
+/data/projects/golang/lib-streamservice/lib/tRun.go:66 +0x33f
+created by gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*Server).Run.func2
+/data/projects/golang/lib-streamservice/lib/Run.go:53 +0xe6
+
+goroutine 38 [semacquire]:
+sync.runtime_SemacquireMutex(0xc0000210ac, 0x7f7748002000)
+/usr/lib/golang/src/runtime/sema.go:71 +0x3d
+sync.(*Mutex).Lock(0xc0000210a8)
+/usr/lib/golang/src/sync/mutex.go:134 +0xff
+github.com/apple/foundationdb/bindings/go/src/fdb.fdb_future_block_until_ready(0x7f7748002050)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:100 +0x89
+github.com/apple/foundationdb/bindings/go/src/fdb.future.BlockUntilReady(...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:104
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get.func1()
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:147 +0x8f
+sync.(*Once).Do(0xc00005c1b0, 0xc0002e6c78)
+/usr/lib/golang/src/sync/once.go:44 +0xb3
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get(0xc00005c180, 0x7f7774282158, 0xc00000ebc0, 0x6d4360, 0xc00005c180, 0xc00000ebc0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:142 +0x58
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.checkVersion(0x6d5740, 0xc00000e120, 0x6d5740, 0xc00000e140, 0x0, 0x6d5740, 0xc00000e1e0, 0x6d5740, 0xc00000e200, 0x6d5740, ...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:510 +0x15b
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.createOrOpen(0x6d5740, 0xc00000e120, 0x6d5740, 0xc00000e140, 0x0, 0x6d5740, 0xc00000e1e0, 0x6d5740, 0xc00000e200, 0x6d5740, ...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:75 +0x7b
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.CreateOrOpen.func1(0xc0000d85b0, 0x694510, 0xc0002e73c0, 0x1, 0xc0002502c0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:181 +0x115
+github.com/apple/foundationdb/bindings/go/src/fdb.Transaction.Transact(0xc0000d85b0, 0xc0002502c0, 0x0, 0x0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/transaction.go:116 +0x67
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.CreateOrOpen(0x6d5740, 0xc00000e120, 0x6d5740, 0xc00000e140, 0x0, 0x6d5740, 0xc00000e1e0, 0x6d5740, 0xc00000e200, 0x6d5740, ...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:180 +0xf9
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.CreateOrOpen(...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directory.go:176
+FDBConnector/Class/title.(*Class).SetTitle.func1(0xc0000d85b0, 0x694510, 0xc0002e7778, 0x7f77774dc008, 0x0)
+/data/projects/golang/FDBConnector/Class/title/SetTitle.go:35 +0x211
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact.func1(0x0, 0x0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:136 +0x7d
+github.com/apple/foundationdb/bindings/go/src/fdb.retryable(0xc00000eae0, 0xc0002e77e0, 0x0, 0x0, 0x40f478, 0x20)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:87 +0x2b
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact(0xc0000d6018, 0xc00000eac0, 0xc000080c00, 0x8, 0xc00003b500, 0x7f77774dc008)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:145 +0xb2
+FDBConnector/Class/title.(*Class).SetTitle(0xc00000ea60, 0x0, 0x0, 0x0, 0x0)
+/data/projects/golang/FDBConnector/Class/title/SetTitle.go:15 +0x86
+reflect.Value.call(0x65bea0, 0xc00000ea60, 0x1213, 0x682ec5, 0x4, 0xc0002e7b90, 0x0, 0x0, 0xc0000d6148, 0x13, ...)
+/usr/lib/golang/src/reflect/value.go:447 +0x461
+reflect.Value.Call(0x65bea0, 0xc00000ea60, 0x1213, 0xc0002e7b90, 0x0, 0x0, 0xc00000ea60, 0x1213, 0xc000060300)
+/usr/lib/golang/src/reflect/value.go:308 +0xa4
+FDBConnector/A1Version.(*QueryV1).RunMethod(0xc000384a20, 0x6d3ee0, 0xc00000ea60, 0x5, 0x682d5c, 0x3, 0x669000)
+/data/projects/golang/FDBConnector/A1Version/QueryV1Run.go:37 +0x205
+FDBConnector/A1Version.(*QueryV1).Run(0xc000384a20, 0xc00008a820, 0xc000384a20, 0x0, 0x0, 0x0)
+/data/projects/golang/FDBConnector/A1Version/QueryV1Run.go:27 +0x151
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).execQ(0xc000060720, 0xc000310d00, 0x18c)
+/data/projects/golang/lib-streamservice/lib/execQ.go:45 +0x2ca
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).tRun.func2()
+/data/projects/golang/lib-streamservice/lib/tRun.go:45 +0x43
+gitlab.hub.local/golang-tools/components/exception%2egit.Block.Do(0xc0002e7ee8, 0xc0002e7ed0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/gitlab.hub.local/golang-tools/components/exception.git@v1.0.0/exception.go:36 +0x3f
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).tRun(0xc000060720, 0xc0000e0000)
+/data/projects/golang/lib-streamservice/lib/tRun.go:66 +0x33f
+created by gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*Server).Run.func2
+/data/projects/golang/lib-streamservice/lib/Run.go:53 +0xe6
+
+goroutine 29 [semacquire]:
+sync.runtime_SemacquireMutex(0xc0001be744, 0x7f7748002e00)
+/usr/lib/golang/src/runtime/sema.go:71 +0x3d
+sync.(*Mutex).Lock(0xc0001be740)
+/usr/lib/golang/src/sync/mutex.go:134 +0xff
+github.com/apple/foundationdb/bindings/go/src/fdb.fdb_future_block_until_ready(0x7f7748002e40)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:100 +0x89
+github.com/apple/foundationdb/bindings/go/src/fdb.future.BlockUntilReady(...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:104
+github.com/apple/foundationdb/bindings/go/src/fdb.futureNil.Get(0xc0001220f8, 0xc000122110, 0xc0001220f8)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:244 +0x2f
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact.func1(0x62a480, 0xc0000e27a0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:139 +0xdc
+github.com/apple/foundationdb/bindings/go/src/fdb.retryable(0xc0005042c0, 0xc0001957e0, 0x0, 0x0, 0x40f478, 0x20)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:87 +0x2b
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact(0xc0000d6018, 0xc0005042a0, 0xc000080c00, 0x8, 0xc00003b500, 0x7f77774dcd98)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:145 +0xb2
+FDBConnector/Class/title.(*Class).SetTitle(0xc000504240, 0x0, 0x0, 0x0, 0x0)
+/data/projects/golang/FDBConnector/Class/title/SetTitle.go:15 +0x86
+reflect.Value.call(0x65bea0, 0xc000504240, 0x1213, 0x682ec5, 0x4, 0xc000195b90, 0x0, 0x0, 0xc0000d6610, 0x13, ...)
+/usr/lib/golang/src/reflect/value.go:447 +0x461
+reflect.Value.Call(0x65bea0, 0xc000504240, 0x1213, 0xc000195b90, 0x0, 0x0, 0xc000504240, 0x1213, 0xc000060300)
+/usr/lib/golang/src/reflect/value.go:308 +0xa4
+FDBConnector/A1Version.(*QueryV1).RunMethod(0xc000384000, 0x6d3ee0, 0xc000504240, 0x5, 0x682d5c, 0x3, 0x669000)
+/data/projects/golang/FDBConnector/A1Version/QueryV1Run.go:37 +0x205
+FDBConnector/A1Version.(*QueryV1).Run(0xc000384000, 0xc0001f34f0, 0xc000384000, 0x0, 0x0, 0x0)
+/data/projects/golang/FDBConnector/A1Version/QueryV1Run.go:27 +0x151
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).execQ(0xc000288060, 0xc000148ea0, 0x198)
+/data/projects/golang/lib-streamservice/lib/execQ.go:45 +0x2ca
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).tRun.func2()
+/data/projects/golang/lib-streamservice/lib/tRun.go:45 +0x43
+gitlab.hub.local/golang-tools/components/exception%2egit.Block.Do(0xc000195ee8, 0xc000195ed0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/gitlab.hub.local/golang-tools/components/exception.git@v1.0.0/exception.go:36 +0x3f
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).tRun(0xc000288060, 0xc0000e0000)
+/data/projects/golang/lib-streamservice/lib/tRun.go:66 +0x33f
+created by gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*Server).Run.func2
+/data/projects/golang/lib-streamservice/lib/Run.go:53 +0xe6
+
+goroutine 10 [semacquire]:
+sync.runtime_SemacquireMutex(0xc0001be894, 0x7f7748003000)
+/usr/lib/golang/src/runtime/sema.go:71 +0x3d
+sync.(*Mutex).Lock(0xc0001be890)
+/usr/lib/golang/src/sync/mutex.go:134 +0xff
+github.com/apple/foundationdb/bindings/go/src/fdb.fdb_future_block_until_ready(0x7f7748003050)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:100 +0x89
+github.com/apple/foundationdb/bindings/go/src/fdb.future.BlockUntilReady(...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:104
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get.func1()
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:147 +0x8f
+sync.(*Once).Do(0xc00020a8f0, 0xc000234d00)
+/usr/lib/golang/src/sync/once.go:44 +0xb3
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get(0xc00020a8c0, 0xf, 0xf, 0x0, 0x6d4360, 0xc00020a8c0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:142 +0x58
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).MustGet(0xc00020a8c0, 0x7f7774282158, 0xc0000e29c0, 0x6d4360)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:164 +0x2b
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.find(0x6d5740, 0xc00000e120, 0x6d5740, 0xc00000e140, 0x0, 0x6d5740, 0xc00000e1e0, 0x6d5740, 0xc00000e200, 0x6d5740, ...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:594 +0x269
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.createOrOpen(0x6d5740, 0xc00000e120, 0x6d5740, 0xc00000e140, 0x0, 0x6d5740, 0xc00000e1e0, 0x6d5740, 0xc00000e200, 0x6d5740, ...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:90 +0x192
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.CreateOrOpen.func1(0xc0004bc0a0, 0x694510, 0xc0002353c0, 0x1, 0xc00010f080)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:181 +0x115
+github.com/apple/foundationdb/bindings/go/src/fdb.Transaction.Transact(0xc0004bc0a0, 0xc00010f080, 0x0, 0x0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/transaction.go:116 +0x67
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.CreateOrOpen(0x6d5740, 0xc00000e120, 0x6d5740, 0xc00000e140, 0x0, 0x6d5740, 0xc00000e1e0, 0x6d5740, 0xc00000e200, 0x6d5740, ...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:180 +0xf9
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.CreateOrOpen(...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directory.go:176
+FDBConnector/Class/title.(*Class).SetTitle.func1(0xc0004bc0a0, 0x694510, 0xc000235778, 0x7f77774dc008, 0x0)
+/data/projects/golang/FDBConnector/Class/title/SetTitle.go:35 +0x211
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact.func1(0x0, 0x0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:136 +0x7d
+github.com/apple/foundationdb/bindings/go/src/fdb.retryable(0xc0004c9200, 0xc0002357e0, 0x0, 0x0, 0x40f478, 0x20)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:87 +0x2b
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact(0xc0000d6018, 0xc0004c91e0, 0xc000080c00, 0x8, 0xc00003aa80, 0x7f77774dc008)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:145 +0xb2
+FDBConnector/Class/title.(*Class).SetTitle(0xc0004c9180, 0x0, 0x0, 0x0, 0x0)
+/data/projects/golang/FDBConnector/Class/title/SetTitle.go:15 +0x86
+reflect.Value.call(0x65bea0, 0xc0004c9180, 0x1213, 0x682ec5, 0x4, 0xc000235b90, 0x0, 0x0, 0xc000122758, 0x13, ...)
+/usr/lib/golang/src/reflect/value.go:447 +0x461
+reflect.Value.Call(0x65bea0, 0xc0004c9180, 0x1213, 0xc000235b90, 0x0, 0x0, 0xc0004c9180, 0x1213, 0xc000060300)
+/usr/lib/golang/src/reflect/value.go:308 +0xa4
+FDBConnector/A1Version.(*QueryV1).RunMethod(0xc00049aab0, 0x6d3ee0, 0xc0004c9180, 0x5, 0x682d5c, 0x3, 0x669000)
+/data/projects/golang/FDBConnector/A1Version/QueryV1Run.go:37 +0x205
+FDBConnector/A1Version.(*QueryV1).Run(0xc00049aab0, 0xc000368320, 0xc00049aab0, 0x0, 0x0, 0x0)
+/data/projects/golang/FDBConnector/A1Version/QueryV1Run.go:27 +0x151
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).execQ(0xc0000ea6c0, 0xc000319380, 0x188)
+/data/projects/golang/lib-streamservice/lib/execQ.go:45 +0x2ca
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).tRun.func2()
+/data/projects/golang/lib-streamservice/lib/tRun.go:45 +0x43
+gitlab.hub.local/golang-tools/components/exception%2egit.Block.Do(0xc000235ee8, 0xc000235ed0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/gitlab.hub.local/golang-tools/components/exception.git@v1.0.0/exception.go:36 +0x3f
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).tRun(0xc0000ea6c0, 0xc0000e0000)
+/data/projects/golang/lib-streamservice/lib/tRun.go:66 +0x33f
+created by gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*Server).Run.func2
+/data/projects/golang/lib-streamservice/lib/Run.go:53 +0xe6
+
+goroutine 30 [IO wait]:
+internal/poll.runtime_pollWait(0x7f777414a088, 0x72, 0xffffffffffffffff)
+/usr/lib/golang/src/runtime/netpoll.go:182 +0x56
+internal/poll.(*pollDesc).wait(0xc00012e498, 0x72, 0x1000, 0x1000, 0xffffffffffffffff)
+/usr/lib/golang/src/internal/poll/fd_poll_runtime.go:87 +0x9b
+internal/poll.(*pollDesc).waitRead(...)
+/usr/lib/golang/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc00012e480, 0xc00010c000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+/usr/lib/golang/src/internal/poll/fd_unix.go:169 +0x19b
+net.(*netFD).Read(0xc00012e480, 0xc00010c000, 0x1000, 0x1000, 0xc0002e9d28, 0x42e2c1, 0x694c38)
+/usr/lib/golang/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc0000d6568, 0xc00010c000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+/usr/lib/golang/src/net/net.go:177 +0x69
+bufio.(*Reader).Read(0xc0002e9f68, 0xc000515be8, 0x1, 0x1, 0xc00043fd40, 0x184, 0x188)
+/usr/lib/golang/src/bufio/bufio.go:223 +0x22f
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).tRun(0xc000289860, 0xc0000e0000)
+/data/projects/golang/lib-streamservice/lib/tRun.go:29 +0x156
+created by gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*Server).Run.func2
+/data/projects/golang/lib-streamservice/lib/Run.go:53 +0xe6
+
+goroutine 11 [semacquire]:
+sync.runtime_SemacquireMutex(0xc0001be834, 0x7f7748002900)
+/usr/lib/golang/src/runtime/sema.go:71 +0x3d
+sync.(*Mutex).Lock(0xc0001be830)
+/usr/lib/golang/src/sync/mutex.go:134 +0xff
+github.com/apple/foundationdb/bindings/go/src/fdb.fdb_future_block_until_ready(0x7f77480029b0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:100 +0x89
+github.com/apple/foundationdb/bindings/go/src/fdb.future.BlockUntilReady(...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:104
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get.func1()
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:147 +0x8f
+sync.(*Once).Do(0xc00020a830, 0xc000508d00)
+/usr/lib/golang/src/sync/once.go:44 +0xb3
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get(0xc00020a800, 0xf, 0xf, 0x0, 0x6d4360, 0xc00020a800)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:142 +0x58
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).MustGet(0xc00020a800, 0x7f7774282158, 0xc0000e2960, 0x6d4360)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:164 +0x2b
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.find(0x6d5740, 0xc00000e120, 0x6d5740, 0xc00000e140, 0x0, 0x6d5740, 0xc00000e1e0, 0x6d5740, 0xc00000e200, 0x6d5740, ...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:594 +0x269
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.createOrOpen(0x6d5740, 0xc00000e120, 0x6d5740, 0xc00000e140, 0x0, 0x6d5740, 0xc00000e1e0, 0x6d5740, 0xc00000e200, 0x6d5740, ...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:90 +0x192
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.CreateOrOpen.func1(0xc00031a2a0, 0x694510, 0xc0005093c0, 0x1, 0xc000251080)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:181 +0x115
+github.com/apple/foundationdb/bindings/go/src/fdb.Transaction.Transact(0xc00031a2a0, 0xc000251080, 0x0, 0x0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/transaction.go:116 +0x67
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.CreateOrOpen(0x6d5740, 0xc00000e120, 0x6d5740, 0xc00000e140, 0x0, 0x6d5740, 0xc00000e1e0, 0x6d5740, 0xc00000e200, 0x6d5740, ...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:180 +0xf9
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.CreateOrOpen(...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directory.go:176
+FDBConnector/Class/title.(*Class).SetTitle.func1(0xc00031a2a0, 0x694510, 0xc000509778, 0x7f77774dcd98, 0x0)
+/data/projects/golang/FDBConnector/Class/title/SetTitle.go:35 +0x211
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact.func1(0x0, 0x0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:136 +0x7d
+github.com/apple/foundationdb/bindings/go/src/fdb.retryable(0xc000505e20, 0xc0005097e0, 0x0, 0x0, 0x40f478, 0x20)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:87 +0x2b
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact(0xc0000d6018, 0xc000505e00, 0xc000080c00, 0x8, 0xc00003aa80, 0x7f77774dcd98)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:145 +0xb2
+FDBConnector/Class/title.(*Class).SetTitle(0xc000505da0, 0x0, 0x0, 0x0, 0x0)
+/data/projects/golang/FDBConnector/Class/title/SetTitle.go:15 +0x86
+reflect.Value.call(0x65bea0, 0xc000505da0, 0x1213, 0x682ec5, 0x4, 0xc000509b90, 0x0, 0x0, 0xc0000d68f0, 0x13, ...)
+/usr/lib/golang/src/reflect/value.go:447 +0x461
+reflect.Value.Call(0x65bea0, 0xc000505da0, 0x1213, 0xc000509b90, 0x0, 0x0, 0xc000505da0, 0x1213, 0xc000060300)
+/usr/lib/golang/src/reflect/value.go:308 +0xa4
+FDBConnector/A1Version.(*QueryV1).RunMethod(0xc000384a50, 0x6d3ee0, 0xc000505da0, 0x5, 0x682d5c, 0x3, 0x669000)
+/data/projects/golang/FDBConnector/A1Version/QueryV1Run.go:37 +0x205
+FDBConnector/A1Version.(*QueryV1).Run(0xc000384a50, 0xc0001f3db0, 0xc000384a50, 0x0, 0x0, 0x0)
+/data/projects/golang/FDBConnector/A1Version/QueryV1Run.go:27 +0x151
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).execQ(0xc0003b1440, 0xc0003401c0, 0x1ac)
+/data/projects/golang/lib-streamservice/lib/execQ.go:45 +0x2ca
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).tRun.func2()
+/data/projects/golang/lib-streamservice/lib/tRun.go:45 +0x43
+gitlab.hub.local/golang-tools/components/exception%2egit.Block.Do(0xc000509ee8, 0xc000509ed0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/gitlab.hub.local/golang-tools/components/exception.git@v1.0.0/exception.go:36 +0x3f
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).tRun(0xc0003b1440, 0xc0000e0000)
+/data/projects/golang/lib-streamservice/lib/tRun.go:66 +0x33f
+created by gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*Server).Run.func2
+/data/projects/golang/lib-streamservice/lib/Run.go:53 +0xe6
+
+goroutine 58 [semacquire]:
+sync.runtime_SemacquireMutex(0xc000020764, 0x7f7754001200)
+/usr/lib/golang/src/runtime/sema.go:71 +0x3d
+sync.(*Mutex).Lock(0xc000020760)
+/usr/lib/golang/src/sync/mutex.go:134 +0xff
+github.com/apple/foundationdb/bindings/go/src/fdb.fdb_future_block_until_ready(0x7f7754001250)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:100 +0x89
+github.com/apple/foundationdb/bindings/go/src/fdb.future.BlockUntilReady(...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:104
+github.com/apple/foundationdb/bindings/go/src/fdb.futureNil.Get(0xc0000d6090, 0xc0000d6098, 0xc0000d6090)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:244 +0x2f
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact.func1(0x62a480, 0xc00000e840, 0x0, 0x0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:139 +0xdc
+github.com/apple/foundationdb/bindings/go/src/fdb.retryable(0xc00014d840, 0xc0005a57e0, 0x0, 0x0, 0x40f478, 0x20)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:87 +0x2b
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact(0xc0000d6018, 0xc00014d820, 0xc000080c00, 0x8, 0xc00003b500, 0x7f77774dc008)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:145 +0xb2
+FDBConnector/Class/title.(*Class).SetTitle(0xc00014d7c0, 0x0, 0x0, 0x0, 0x0)
+/data/projects/golang/FDBConnector/Class/title/SetTitle.go:15 +0x86
+reflect.Value.call(0x65bea0, 0xc00014d7c0, 0x1213, 0x682ec5, 0x4, 0xc0005a5b90, 0x0, 0x0, 0xc0001224f0, 0x13, ...)
+/usr/lib/golang/src/reflect/value.go:447 +0x461
+reflect.Value.Call(0x65bea0, 0xc00014d7c0, 0x1213, 0xc0005a5b90, 0x0, 0x0, 0xc00014d7c0, 0x1213, 0xc000060300)
+/usr/lib/golang/src/reflect/value.go:308 +0xa4
+FDBConnector/A1Version.(*QueryV1).RunMethod(0xc0000e5a10, 0x6d3ee0, 0xc00014d7c0, 0x5, 0x682d5c, 0x3, 0x669000)
+/data/projects/golang/FDBConnector/A1Version/QueryV1Run.go:37 +0x205
+FDBConnector/A1Version.(*QueryV1).Run(0xc0000e5a10, 0xc000227860, 0xc0000e5a10, 0x0, 0x0, 0x0)
+/data/projects/golang/FDBConnector/A1Version/QueryV1Run.go:27 +0x151
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).execQ(0xc0003cc480, 0xc00026ad00, 0x18c)
+/data/projects/golang/lib-streamservice/lib/execQ.go:45 +0x2ca
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).tRun.func2()
+/data/projects/golang/lib-streamservice/lib/tRun.go:45 +0x43
+gitlab.hub.local/golang-tools/components/exception%2egit.Block.Do(0xc0005a5ee8, 0xc0005a5ed0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/gitlab.hub.local/golang-tools/components/exception.git@v1.0.0/exception.go:36 +0x3f
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).tRun(0xc0003cc480, 0xc0000e0000)
+/data/projects/golang/lib-streamservice/lib/tRun.go:66 +0x33f
+created by gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*Server).Run.func2
+/data/projects/golang/lib-streamservice/lib/Run.go:53 +0xe6
+
+goroutine 31 [semacquire]:
+sync.runtime_SemacquireMutex(0xc000020d5c, 0x7f7748002d00)
+/usr/lib/golang/src/runtime/sema.go:71 +0x3d
+sync.(*Mutex).Lock(0xc000020d58)
+/usr/lib/golang/src/sync/mutex.go:134 +0xff
+github.com/apple/foundationdb/bindings/go/src/fdb.fdb_future_block_until_ready(0x7f7748002d20)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:100 +0x89
+github.com/apple/foundationdb/bindings/go/src/fdb.future.BlockUntilReady(...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:104
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get.func1()
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:147 +0x8f
+sync.(*Once).Do(0xc00005c170, 0xc00050cc78)
+/usr/lib/golang/src/sync/once.go:44 +0xb3
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get(0xc00005c140, 0x7f7774282158, 0xc00000ea40, 0x6d4360, 0xc00005c140, 0xc00000ea40)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:142 +0x58
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.checkVersion(0x6d5740, 0xc00000e120, 0x6d5740, 0xc00000e140, 0x0, 0x6d5740, 0xc00000e1e0, 0x6d5740, 0xc00000e200, 0x6d5740, ...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:510 +0x15b
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.createOrOpen(0x6d5740, 0xc00000e120, 0x6d5740, 0xc00000e140, 0x0, 0x6d5740, 0xc00000e1e0, 0x6d5740, 0xc00000e200, 0x6d5740, ...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:75 +0x7b
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.CreateOrOpen.func1(0xc0000d8440, 0x694510, 0xc00050d3c0, 0x1, 0xc000250210)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:181 +0x115
+github.com/apple/foundationdb/bindings/go/src/fdb.Transaction.Transact(0xc0000d8440, 0xc000250210, 0x0, 0x0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/transaction.go:116 +0x67
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.CreateOrOpen(0x6d5740, 0xc00000e120, 0x6d5740, 0xc00000e140, 0x0, 0x6d5740, 0xc00000e1e0, 0x6d5740, 0xc00000e200, 0x6d5740, ...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:180 +0xf9
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.CreateOrOpen(...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directory.go:176
+FDBConnector/Class/title.(*Class).SetTitle.func1(0xc0000d8440, 0x694510, 0xc00050d778, 0x7f77774dc008, 0x0)
+/data/projects/golang/FDBConnector/Class/title/SetTitle.go:35 +0x211
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact.func1(0x0, 0x0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:136 +0x7d
+github.com/apple/foundationdb/bindings/go/src/fdb.retryable(0xc00000e960, 0xc00050d7e0, 0x0, 0x0, 0x40f478, 0x20)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:87 +0x2b
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact(0xc0000d6018, 0xc00000e940, 0xc000080c00, 0x8, 0xc00003b500, 0x7f77774dc008)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:145 +0xb2
+FDBConnector/Class/title.(*Class).SetTitle(0xc00000e8e0, 0x0, 0x0, 0x0, 0x0)
+/data/projects/golang/FDBConnector/Class/title/SetTitle.go:15 +0x86
+reflect.Value.call(0x65bea0, 0xc00000e8e0, 0x1213, 0x682ec5, 0x4, 0xc00050db90, 0x0, 0x0, 0xc0000d60c8, 0x13, ...)
+/usr/lib/golang/src/reflect/value.go:447 +0x461
+reflect.Value.Call(0x65bea0, 0xc00000e8e0, 0x1213, 0xc00050db90, 0x0, 0x0, 0xc00000e8e0, 0x1213, 0xc000060300)
+/usr/lib/golang/src/reflect/value.go:308 +0xa4
+FDBConnector/A1Version.(*QueryV1).RunMethod(0xc000384570, 0x6d3ee0, 0xc00000e8e0, 0x5, 0x682d5c, 0x3, 0x669000)
+/data/projects/golang/FDBConnector/A1Version/QueryV1Run.go:37 +0x205
+FDBConnector/A1Version.(*QueryV1).Run(0xc000384570, 0xc00008a4b0, 0xc000384570, 0x0, 0x0, 0x0)
+/data/projects/golang/FDBConnector/A1Version/QueryV1Run.go:27 +0x151
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).execQ(0xc00022c000, 0xc0001e5c00, 0x1a4)
+/data/projects/golang/lib-streamservice/lib/execQ.go:45 +0x2ca
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).tRun.func2()
+/data/projects/golang/lib-streamservice/lib/tRun.go:45 +0x43
+gitlab.hub.local/golang-tools/components/exception%2egit.Block.Do(0xc00050dee8, 0xc00050ded0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/gitlab.hub.local/golang-tools/components/exception.git@v1.0.0/exception.go:36 +0x3f
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).tRun(0xc00022c000, 0xc0000e0000)
+/data/projects/golang/lib-streamservice/lib/tRun.go:66 +0x33f
+created by gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*Server).Run.func2
+/data/projects/golang/lib-streamservice/lib/Run.go:53 +0xe6
+
+goroutine 39 [semacquire]:
+sync.runtime_SemacquireMutex(0xc0000207a4, 0x7f7754003000)
+/usr/lib/golang/src/runtime/sema.go:71 +0x3d
+sync.(*Mutex).Lock(0xc0000207a0)
+/usr/lib/golang/src/sync/mutex.go:134 +0xff
+github.com/apple/foundationdb/bindings/go/src/fdb.fdb_future_block_until_ready(0x7f77540030a0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:100 +0x89
+github.com/apple/foundationdb/bindings/go/src/fdb.future.BlockUntilReady(...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:104
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get.func1()
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:147 +0x8f
+sync.(*Once).Do(0xc00005c130, 0xc00059f4d8)
+/usr/lib/golang/src/sync/once.go:44 +0xb3
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get(0xc00005c100, 0x2e, 0x2e, 0x0, 0x6d4360, 0xc00005c100)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:142 +0x58
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).MustGet(0xc00005c100, 0x6d04c0, 0xc00000e8c0, 0x6d4360)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:164 +0x2b
+FDBConnector/Class/title.(*Class).SetTitle.func1(0xc0001bb3b0, 0x694510, 0xc00059f778, 0x7f77774dc008, 0x0)
+/data/projects/golang/FDBConnector/Class/title/SetTitle.go:42 +0x3c2
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact.func1(0x0, 0x0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:136 +0x7d
+github.com/apple/foundationdb/bindings/go/src/fdb.retryable(0xc00014dbc0, 0xc00059f7e0, 0x0, 0x0, 0x40f478, 0x20)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:87 +0x2b
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact(0xc0000d6018, 0xc00014dba0, 0xc000080c00, 0x8, 0xc00003b500, 0x7f77774dc008)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:145 +0xb2
+FDBConnector/Class/title.(*Class).SetTitle(0xc00014db40, 0x0, 0x0, 0x0, 0x0)
+/data/projects/golang/FDBConnector/Class/title/SetTitle.go:15 +0x86
+reflect.Value.call(0x65bea0, 0xc00014db40, 0x1213, 0x682ec5, 0x4, 0xc00059fb90, 0x0, 0x0, 0xc0001225c8, 0x13, ...)
+/usr/lib/golang/src/reflect/value.go:447 +0x461
+reflect.Value.Call(0x65bea0, 0xc00014db40, 0x1213, 0xc00059fb90, 0x0, 0x0, 0xc00014db40, 0x1213, 0xc000060300)
+/usr/lib/golang/src/reflect/value.go:308 +0xa4
+FDBConnector/A1Version.(*QueryV1).RunMethod(0xc0000e5e00, 0x6d3ee0, 0xc00014db40, 0x5, 0x682d5c, 0x3, 0x669000)
+/data/projects/golang/FDBConnector/A1Version/QueryV1Run.go:37 +0x205
+FDBConnector/A1Version.(*QueryV1).Run(0xc0000e5e00, 0xc000227ae0, 0xc0000e5e00, 0x0, 0x0, 0x0)
+/data/projects/golang/FDBConnector/A1Version/QueryV1Run.go:27 +0x151
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).execQ(0xc0000eb5c0, 0xc00034cf00, 0x178)
+/data/projects/golang/lib-streamservice/lib/execQ.go:45 +0x2ca
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).tRun.func2()
+/data/projects/golang/lib-streamservice/lib/tRun.go:45 +0x43
+gitlab.hub.local/golang-tools/components/exception%2egit.Block.Do(0xc00059fee8, 0xc00059fed0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/gitlab.hub.local/golang-tools/components/exception.git@v1.0.0/exception.go:36 +0x3f
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).tRun(0xc0000eb5c0, 0xc0000e0000)
+/data/projects/golang/lib-streamservice/lib/tRun.go:66 +0x33f
+created by gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*Server).Run.func2
+/data/projects/golang/lib-streamservice/lib/Run.go:53 +0xe6
+
+goroutine 40 [semacquire]:
+sync.runtime_SemacquireMutex(0xc0000219ec, 0x7f773c003500)
+/usr/lib/golang/src/runtime/sema.go:71 +0x3d
+sync.(*Mutex).Lock(0xc0000219e8)
+/usr/lib/golang/src/sync/mutex.go:134 +0xff
+github.com/apple/foundationdb/bindings/go/src/fdb.fdb_future_block_until_ready(0x7f773c003580)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:100 +0x89
+github.com/apple/foundationdb/bindings/go/src/fdb.future.BlockUntilReady(...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:104
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get.func1()
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:147 +0x8f
+sync.(*Once).Do(0xc00005c4f0, 0xc000230d00)
+/usr/lib/golang/src/sync/once.go:44 +0xb3
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get(0xc00005c4c0, 0xf, 0xf, 0x0, 0x6d4360, 0xc00005c4c0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:142 +0x58
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).MustGet(0xc00005c4c0, 0x7f7774282158, 0xc00000f260, 0x6d4360)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:164 +0x2b
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.find(0x6d5740, 0xc00000e120, 0x6d5740, 0xc00000e140, 0x0, 0x6d5740, 0xc00000e1e0, 0x6d5740, 0xc00000e200, 0x6d5740, ...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:594 +0x269
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.createOrOpen(0x6d5740, 0xc00000e120, 0x6d5740, 0xc00000e140, 0x0, 0x6d5740, 0xc00000e1e0, 0x6d5740, 0xc00000e200, 0x6d5740, ...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:90 +0x192
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.CreateOrOpen.func1(0xc0003481d0, 0x694510, 0xc0002313c0, 0x1, 0xc00009a2c0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:181 +0x115
+github.com/apple/foundationdb/bindings/go/src/fdb.Transaction.Transact(0xc0003481d0, 0xc00009a2c0, 0x0, 0x0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/transaction.go:116 +0x67
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.CreateOrOpen(0x6d5740, 0xc00000e120, 0x6d5740, 0xc00000e140, 0x0, 0x6d5740, 0xc00000e1e0, 0x6d5740, 0xc00000e200, 0x6d5740, ...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:180 +0xf9
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.CreateOrOpen(...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directory.go:176
+FDBConnector/Class/title.(*Class).SetTitle.func1(0xc0003481d0, 0x694510, 0xc000231778, 0x7f77774dc6d0, 0x0)
+/data/projects/golang/FDBConnector/Class/title/SetTitle.go:35 +0x211
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact.func1(0x0, 0x0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:136 +0x7d
+github.com/apple/foundationdb/bindings/go/src/fdb.retryable(0xc0001ae2c0, 0xc0002317e0, 0x0, 0x0, 0x40f478, 0x20)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:87 +0x2b
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact(0xc0000d6018, 0xc0001ae2a0, 0xc000080c00, 0x8, 0xc00003b500, 0x7f77774dc6d0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:145 +0xb2
+FDBConnector/Class/title.(*Class).SetTitle(0xc0001ae200, 0x0, 0x0, 0x0, 0x0)
+/data/projects/golang/FDBConnector/Class/title/SetTitle.go:15 +0x86
+reflect.Value.call(0x65bea0, 0xc0001ae200, 0x1213, 0x682ec5, 0x4, 0xc000231b90, 0x0, 0x0, 0xc0000100d0, 0x13, ...)
+/usr/lib/golang/src/reflect/value.go:447 +0x461
+reflect.Value.Call(0x65bea0, 0xc0001ae200, 0x1213, 0xc000231b90, 0x0, 0x0, 0xc0001ae200, 0x1213, 0xc000060300)
+/usr/lib/golang/src/reflect/value.go:308 +0xa4
+FDBConnector/A1Version.(*QueryV1).RunMethod(0xc000304540, 0x6d3ee0, 0xc0001ae200, 0x5, 0x682d5c, 0x3, 0x669000)
+/data/projects/golang/FDBConnector/A1Version/QueryV1Run.go:37 +0x205
+FDBConnector/A1Version.(*QueryV1).Run(0xc000304540, 0xc0003a6370, 0xc000304540, 0x0, 0x0, 0x0)
+/data/projects/golang/FDBConnector/A1Version/QueryV1Run.go:27 +0x151
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).execQ(0xc0000eb800, 0xc0003f61a0, 0x19c)
+/data/projects/golang/lib-streamservice/lib/execQ.go:45 +0x2ca
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).tRun.func2()
+/data/projects/golang/lib-streamservice/lib/tRun.go:45 +0x43
+gitlab.hub.local/golang-tools/components/exception%2egit.Block.Do(0xc000231ee8, 0xc000231ed0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/gitlab.hub.local/golang-tools/components/exception.git@v1.0.0/exception.go:36 +0x3f
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).tRun(0xc0000eb800, 0xc0000e0000)
+/data/projects/golang/lib-streamservice/lib/tRun.go:66 +0x33f
+created by gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*Server).Run.func2
+/data/projects/golang/lib-streamservice/lib/Run.go:53 +0xe6
+
+goroutine 32 [semacquire]:
+sync.runtime_SemacquireMutex(0xc0001be2f4, 0x7f7748001e00)
+/usr/lib/golang/src/runtime/sema.go:71 +0x3d
+sync.(*Mutex).Lock(0xc0001be2f0)
+/usr/lib/golang/src/sync/mutex.go:134 +0xff
+github.com/apple/foundationdb/bindings/go/src/fdb.fdb_future_block_until_ready(0x7f7748001e10)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:100 +0x89
+github.com/apple/foundationdb/bindings/go/src/fdb.future.BlockUntilReady(...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:104
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get.func1()
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:147 +0x8f
+sync.(*Once).Do(0xc00020a070, 0xc000570c78)
+/usr/lib/golang/src/sync/once.go:44 +0xb3
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get(0xc00020a040, 0x7f7774282158, 0xc0000e21a0, 0x6d4360, 0xc00020a040, 0xc0000e21a0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:142 +0x58
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.checkVersion(0x6d5740, 0xc00000e120, 0x6d5740, 0xc00000e140, 0x0, 0x6d5740, 0xc00000e1e0, 0x6d5740, 0xc00000e200, 0x6d5740, ...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:510 +0x15b
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.createOrOpen(0x6d5740, 0xc00000e120, 0x6d5740, 0xc00000e140, 0x0, 0x6d5740, 0xc00000e1e0, 0x6d5740, 0xc00000e200, 0x6d5740, ...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:75 +0x7b
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.CreateOrOpen.func1(0xc0001ba070, 0x694510, 0xc0005713c0, 0x1, 0xc00010e0b0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:181 +0x115
+github.com/apple/foundationdb/bindings/go/src/fdb.Transaction.Transact(0xc0001ba070, 0xc00010e0b0, 0x0, 0x0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/transaction.go:116 +0x67
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.CreateOrOpen(0x6d5740, 0xc00000e120, 0x6d5740, 0xc00000e140, 0x0, 0x6d5740, 0xc00000e1e0, 0x6d5740, 0xc00000e200, 0x6d5740, ...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:180 +0xf9
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.CreateOrOpen(...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directory.go:176
+FDBConnector/Class/title.(*Class).SetTitle.func1(0xc0001ba070, 0x694510, 0xc000322778, 0x7f77774dcd98, 0x0)
+/data/projects/golang/FDBConnector/Class/title/SetTitle.go:35 +0x211
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact.func1(0x0, 0x0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:136 +0x7d
+github.com/apple/foundationdb/bindings/go/src/fdb.retryable(0xc0000e20c0, 0xc0005717e0, 0x0, 0x0, 0x40f478, 0x20)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:87 +0x2b
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact(0xc0000d6018, 0xc0000e20a0, 0xc000080c00, 0x8, 0xc00003b500, 0x7f77774dcd98)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:145 +0xb2
+FDBConnector/Class/title.(*Class).SetTitle(0xc0000e2000, 0x0, 0x0, 0x0, 0x0)
+/data/projects/golang/FDBConnector/Class/title/SetTitle.go:15 +0x86
+reflect.Value.call(0x65bea0, 0xc0000e2000, 0x1213, 0x682ec5, 0x4, 0xc000322b90, 0x0, 0x0, 0xc000122010, 0x13, ...)
+/usr/lib/golang/src/reflect/value.go:447 +0x461
+reflect.Value.Call(0x65bea0, 0xc0000e2000, 0x1213, 0xc000322b90, 0x0, 0x0, 0xc0000e2000, 0x1213, 0xc000060300)
+/usr/lib/golang/src/reflect/value.go:308 +0xa4
+FDBConnector/A1Version.(*QueryV1).RunMethod(0xc000080ab0, 0x6d3ee0, 0xc0000e2000, 0x5, 0x682d5c, 0x3, 0x669000)
+/data/projects/golang/FDBConnector/A1Version/QueryV1Run.go:37 +0x205
+FDBConnector/A1Version.(*QueryV1).Run(0xc000080ab0, 0xc0001f2050, 0xc000080ab0, 0x0, 0x0, 0x0)
+/data/projects/golang/FDBConnector/A1Version/QueryV1Run.go:27 +0x151
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).execQ(0xc00022c060, 0xc000340700, 0x1a0)
+/data/projects/golang/lib-streamservice/lib/execQ.go:45 +0x2ca
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).tRun.func2()
+/data/projects/golang/lib-streamservice/lib/tRun.go:45 +0x43
+gitlab.hub.local/golang-tools/components/exception%2egit.Block.Do(0xc000322ee8, 0xc000322ed0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/gitlab.hub.local/golang-tools/components/exception.git@v1.0.0/exception.go:36 +0x3f
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).tRun(0xc00022c060, 0xc0000e0000)
+/data/projects/golang/lib-streamservice/lib/tRun.go:66 +0x33f
+created by gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*Server).Run.func2
+/data/projects/golang/lib-streamservice/lib/Run.go:53 +0xe6
+
+goroutine 33 [semacquire]:
+sync.runtime_SemacquireMutex(0xc0000216ec, 0x7f773c001b00)
+/usr/lib/golang/src/runtime/sema.go:71 +0x3d
+sync.(*Mutex).Lock(0xc0000216e8)
+/usr/lib/golang/src/sync/mutex.go:134 +0xff
+github.com/apple/foundationdb/bindings/go/src/fdb.fdb_future_block_until_ready(0x7f773c001b60)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:100 +0x89
+github.com/apple/foundationdb/bindings/go/src/fdb.future.BlockUntilReady(...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:104
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get.func1()
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:147 +0x8f
+sync.(*Once).Do(0xc00005c470, 0xc00050ec78)
+/usr/lib/golang/src/sync/once.go:44 +0xb3
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get(0xc00005c440, 0x7f7774282158, 0xc00000f0a0, 0x6d4360, 0xc00005c440, 0xc00000f0a0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:142 +0x58
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.checkVersion(0x6d5740, 0xc00000e120, 0x6d5740, 0xc00000e140, 0x0, 0x6d5740, 0xc00000e1e0, 0x6d5740, 0xc00000e200, 0x6d5740, ...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:510 +0x15b
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.createOrOpen(0x6d5740, 0xc00000e120, 0x6d5740, 0xc00000e140, 0x0, 0x6d5740, 0xc00000e1e0, 0x6d5740, 0xc00000e200, 0x6d5740, ...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:75 +0x7b
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.CreateOrOpen.func1(0xc0000d8910, 0x694510, 0xc00050f3c0, 0x1, 0xc000250420)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:181 +0x115
+github.com/apple/foundationdb/bindings/go/src/fdb.Transaction.Transact(0xc0000d8910, 0xc000250420, 0x0, 0x0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/transaction.go:116 +0x67
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.CreateOrOpen(0x6d5740, 0xc00000e120, 0x6d5740, 0xc00000e140, 0x0, 0x6d5740, 0xc00000e1e0, 0x6d5740, 0xc00000e200, 0x6d5740, ...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:180 +0xf9
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.CreateOrOpen(...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directory.go:176
+FDBConnector/Class/title.(*Class).SetTitle.func1(0xc0000d8910, 0x694510, 0xc000046778, 0x7f77774dc008, 0x0)
+/data/projects/golang/FDBConnector/Class/title/SetTitle.go:35 +0x211
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact.func1(0x0, 0x0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:136 +0x7d
+github.com/apple/foundationdb/bindings/go/src/fdb.retryable(0xc00000efc0, 0xc00050f7e0, 0x0, 0x0, 0x40f478, 0x20)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:87 +0x2b
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact(0xc0000d6018, 0xc00000efa0, 0xc000080c00, 0x8, 0xc00003bc00, 0x7f77774dc008)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:145 +0xb2
+FDBConnector/Class/title.(*Class).SetTitle(0xc00000ef40, 0x0, 0x0, 0x0, 0x0)
+/data/projects/golang/FDBConnector/Class/title/SetTitle.go:15 +0x86
+reflect.Value.call(0x65bea0, 0xc00000ef40, 0x1213, 0x682ec5, 0x4, 0xc000046b90, 0x0, 0x0, 0xc0000d6290, 0x13, ...)
+/usr/lib/golang/src/reflect/value.go:447 +0x461
+reflect.Value.Call(0x65bea0, 0xc00000ef40, 0x1213, 0xc000046b90, 0x0, 0x0, 0xc00000ef40, 0x1213, 0xc000060300)
+/usr/lib/golang/src/reflect/value.go:308 +0xa4
+FDBConnector/A1Version.(*QueryV1).RunMethod(0xc0003853e0, 0x6d3ee0, 0xc00000ef40, 0x5, 0x682d5c, 0x3, 0x669000)
+/data/projects/golang/FDBConnector/A1Version/QueryV1Run.go:37 +0x205
+FDBConnector/A1Version.(*QueryV1).Run(0xc0003853e0, 0xc00008afa0, 0xc0003853e0, 0x0, 0x0, 0x0)
+/data/projects/golang/FDBConnector/A1Version/QueryV1Run.go:27 +0x151
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).execQ(0xc0003b11a0, 0xc000500340, 0x194)
+/data/projects/golang/lib-streamservice/lib/execQ.go:45 +0x2ca
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).tRun.func2()
+/data/projects/golang/lib-streamservice/lib/tRun.go:45 +0x43
+gitlab.hub.local/golang-tools/components/exception%2egit.Block.Do(0xc000046ee8, 0xc000046ed0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/gitlab.hub.local/golang-tools/components/exception.git@v1.0.0/exception.go:36 +0x3f
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).tRun(0xc0003b11a0, 0xc0000e0000)
+/data/projects/golang/lib-streamservice/lib/tRun.go:66 +0x33f
+created by gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*Server).Run.func2
+/data/projects/golang/lib-streamservice/lib/Run.go:53 +0xe6
+
+goroutine 69 [semacquire]:
+sync.runtime_SemacquireMutex(0xc000021b1c, 0x7f773c001400)
+/usr/lib/golang/src/runtime/sema.go:71 +0x3d
+sync.(*Mutex).Lock(0xc000021b18)
+/usr/lib/golang/src/sync/mutex.go:134 +0xff
+github.com/apple/foundationdb/bindings/go/src/fdb.fdb_future_block_until_ready(0x7f773c001400)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:100 +0x89
+github.com/apple/foundationdb/bindings/go/src/fdb.future.BlockUntilReady(...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:104
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get.func1()
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:147 +0x8f
+sync.(*Once).Do(0xc00005c5f0, 0xc0001e2d00)
+/usr/lib/golang/src/sync/once.go:44 +0xb3
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get(0xc00005c5c0, 0xf, 0xf, 0x0, 0x6d4360, 0xc00005c5c0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:142 +0x58
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).MustGet(0xc00005c5c0, 0x7f7774282158, 0xc00000f320, 0x6d4360)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:164 +0x2b
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.find(0x6d5740, 0xc00000e120, 0x6d5740, 0xc00000e140, 0x0, 0x6d5740, 0xc00000e1e0, 0x6d5740, 0xc00000e200, 0x6d5740, ...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:594 +0x269
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.createOrOpen(0x6d5740, 0xc00000e120, 0x6d5740, 0xc00000e140, 0x0, 0x6d5740, 0xc00000e1e0, 0x6d5740, 0xc00000e200, 0x6d5740, ...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:90 +0x192
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.CreateOrOpen.func1(0xc000348050, 0x694510, 0xc0001e33c0, 0x1, 0xc00009a210)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:181 +0x115
+github.com/apple/foundationdb/bindings/go/src/fdb.Transaction.Transact(0xc000348050, 0xc00009a210, 0x0, 0x0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/transaction.go:116 +0x67
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.CreateOrOpen(0x6d5740, 0xc00000e120, 0x6d5740, 0xc00000e140, 0x0, 0x6d5740, 0xc00000e1e0, 0x6d5740, 0xc00000e200, 0x6d5740, ...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:180 +0xf9
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.CreateOrOpen(...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directory.go:176
+FDBConnector/Class/title.(*Class).SetTitle.func1(0xc000348050, 0x694510, 0xc000044778, 0x7f77774dc6d0, 0x0)
+/data/projects/golang/FDBConnector/Class/title/SetTitle.go:35 +0x211
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact.func1(0x0, 0x0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:136 +0x7d
+github.com/apple/foundationdb/bindings/go/src/fdb.retryable(0xc0001ae0e0, 0xc0001e37e0, 0x0, 0x0, 0x40f478, 0x20)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:87 +0x2b
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact(0xc0000d6018, 0xc0001ae080, 0xc000080c00, 0x8, 0xc00003b500, 0x7f77774dc6d0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:145 +0xb2
+FDBConnector/Class/title.(*Class).SetTitle(0xc0001ae000, 0x0, 0x0, 0x0, 0x0)
+/data/projects/golang/FDBConnector/Class/title/SetTitle.go:15 +0x86
+reflect.Value.call(0x65bea0, 0xc0001ae000, 0x1213, 0x682ec5, 0x4, 0xc000044b90, 0x0, 0x0, 0xc000010030, 0x13, ...)
+/usr/lib/golang/src/reflect/value.go:447 +0x461
+reflect.Value.Call(0x65bea0, 0xc0001ae000, 0x1213, 0xc000044b90, 0x0, 0x0, 0xc0001ae000, 0x1213, 0xc000060300)
+/usr/lib/golang/src/reflect/value.go:308 +0xa4
+FDBConnector/A1Version.(*QueryV1).RunMethod(0xc000304060, 0x6d3ee0, 0xc0001ae000, 0x5, 0x682d5c, 0x3, 0x669000)
+/data/projects/golang/FDBConnector/A1Version/QueryV1Run.go:37 +0x205
+FDBConnector/A1Version.(*QueryV1).Run(0xc000304060, 0xc0003a6050, 0xc000304060, 0x0, 0x0, 0x0)
+/data/projects/golang/FDBConnector/A1Version/QueryV1Run.go:27 +0x151
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).execQ(0xc0002c8540, 0xc000318820, 0x194)
+/data/projects/golang/lib-streamservice/lib/execQ.go:45 +0x2ca
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).tRun.func2()
+/data/projects/golang/lib-streamservice/lib/tRun.go:45 +0x43
+gitlab.hub.local/golang-tools/components/exception%2egit.Block.Do(0xc000044ee8, 0xc000044ed0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/gitlab.hub.local/golang-tools/components/exception.git@v1.0.0/exception.go:36 +0x3f
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).tRun(0xc0002c8540, 0xc0000e0000)
+/data/projects/golang/lib-streamservice/lib/tRun.go:66 +0x33f
+created by gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*Server).Run.func2
+/data/projects/golang/lib-streamservice/lib/Run.go:53 +0xe6
+
+goroutine 59 [semacquire]:
+sync.runtime_SemacquireMutex(0xc000021a5c, 0x7f773c000b00)
+/usr/lib/golang/src/runtime/sema.go:71 +0x3d
+sync.(*Mutex).Lock(0xc000021a58)
+/usr/lib/golang/src/sync/mutex.go:134 +0xff
+github.com/apple/foundationdb/bindings/go/src/fdb.fdb_future_block_until_ready(0x7f773c000bb0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:100 +0x89
+github.com/apple/foundationdb/bindings/go/src/fdb.future.BlockUntilReady(...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:104
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get.func1()
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:147 +0x8f
+sync.(*Once).Do(0xc00005c530, 0xc0001dcd00)
+/usr/lib/golang/src/sync/once.go:44 +0xb3
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get(0xc00005c500, 0xf, 0xf, 0x0, 0x6d4360, 0xc00005c500)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:142 +0x58
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).MustGet(0xc00005c500, 0x7f7774282158, 0xc00000f2a0, 0x6d4360)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:164 +0x2b
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.find(0x6d5740, 0xc00000e120, 0x6d5740, 0xc00000e140, 0x0, 0x6d5740, 0xc00000e1e0, 0x6d5740, 0xc00000e200, 0x6d5740, ...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:594 +0x269
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.createOrOpen(0x6d5740, 0xc00000e120, 0x6d5740, 0xc00000e140, 0x0, 0x6d5740, 0xc00000e1e0, 0x6d5740, 0xc00000e200, 0x6d5740, ...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:90 +0x192
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.CreateOrOpen.func1(0xc00031a6c0, 0x694510, 0xc0001dd3c0, 0x1, 0xc0002511e0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:181 +0x115
+github.com/apple/foundationdb/bindings/go/src/fdb.Transaction.Transact(0xc00031a6c0, 0xc0002511e0, 0x0, 0x0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/transaction.go:116 +0x67
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.CreateOrOpen(0x6d5740, 0xc00000e120, 0x6d5740, 0xc00000e140, 0x0, 0x6d5740, 0xc00000e1e0, 0x6d5740, 0xc00000e200, 0x6d5740, ...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:180 +0xf9
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.CreateOrOpen(...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directory.go:176
+FDBConnector/Class/title.(*Class).SetTitle.func1(0xc00031a6c0, 0x694510, 0xc0001dd778, 0x7f77774dcd98, 0x0)
+/data/projects/golang/FDBConnector/Class/title/SetTitle.go:35 +0x211
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact.func1(0x0, 0x0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:136 +0x7d
+github.com/apple/foundationdb/bindings/go/src/fdb.retryable(0xc0002da580, 0xc0001dd7e0, 0x0, 0x0, 0x40f478, 0x20)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:87 +0x2b
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact(0xc0000d6018, 0xc0002da560, 0xc000080c00, 0x8, 0xc00003bc00, 0x7f77774dcd98)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:145 +0xb2
+FDBConnector/Class/title.(*Class).SetTitle(0xc0002da500, 0x0, 0x0, 0x0, 0x0)
+/data/projects/golang/FDBConnector/Class/title/SetTitle.go:15 +0x86
+reflect.Value.call(0x65bea0, 0xc0002da500, 0x1213, 0x682ec5, 0x4, 0xc0001ddb90, 0x0, 0x0, 0xc0000d6990, 0x13, ...)
+/usr/lib/golang/src/reflect/value.go:447 +0x461
+reflect.Value.Call(0x65bea0, 0xc0002da500, 0x1213, 0xc0001ddb90, 0x0, 0x0, 0xc0002da500, 0x1213, 0xc000060300)
+/usr/lib/golang/src/reflect/value.go:308 +0xa4
+FDBConnector/A1Version.(*QueryV1).RunMethod(0xc000384f60, 0x6d3ee0, 0xc0002da500, 0x5, 0x682d5c, 0x3, 0x669000)
+/data/projects/golang/FDBConnector/A1Version/QueryV1Run.go:37 +0x205
+FDBConnector/A1Version.(*QueryV1).Run(0xc000384f60, 0xc00008a320, 0xc000384f60, 0x0, 0x0, 0x0)
+/data/projects/golang/FDBConnector/A1Version/QueryV1Run.go:27 +0x151
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).execQ(0xc0003b1a40, 0xc0001d3500, 0x1b8)
+/data/projects/golang/lib-streamservice/lib/execQ.go:45 +0x2ca
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).tRun.func2()
+/data/projects/golang/lib-streamservice/lib/tRun.go:45 +0x43
+gitlab.hub.local/golang-tools/components/exception%2egit.Block.Do(0xc0001ddee8, 0xc0001dded0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/gitlab.hub.local/golang-tools/components/exception.git@v1.0.0/exception.go:36 +0x3f
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).tRun(0xc0003b1a40, 0xc0000e0000)
+/data/projects/golang/lib-streamservice/lib/tRun.go:66 +0x33f
+created by gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*Server).Run.func2
+/data/projects/golang/lib-streamservice/lib/Run.go:53 +0xe6
+
+goroutine 60 [runnable]:
+sync.runtime_SemacquireMutex(0xc0000210dc, 0x7f7748000b00)
+/usr/lib/golang/src/runtime/sema.go:71 +0x3d
+sync.(*Mutex).Lock(0xc0000210d8)
+/usr/lib/golang/src/sync/mutex.go:134 +0xff
+github.com/apple/foundationdb/bindings/go/src/fdb.fdb_future_block_until_ready(0x7f7748000b20)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:100 +0x89
+github.com/apple/foundationdb/bindings/go/src/fdb.future.BlockUntilReady(...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:104
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get.func1()
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:147 +0x8f
+sync.(*Once).Do(0xc00005c1f0, 0xc00050ad00)
+/usr/lib/golang/src/sync/once.go:44 +0xb3
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get(0xc00005c1c0, 0x6d4360, 0xc00005c1c0, 0xc00000ec40, 0x4dacc0, 0xc00000ec20)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:142 +0x58
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).MustGet(0xc00005c1c0, 0x6d5260, 0xc0001bbc60, 0x6d4360)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:164 +0x2b
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.find(0x6d5740, 0xc00000e120, 0x6d5740, 0xc00000e140, 0x0, 0x6d5740, 0xc00000e1e0, 0x6d5740, 0xc00000e200, 0x6d5740, ...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:595 +0x38c
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.createOrOpen(0x6d5740, 0xc00000e120, 0x6d5740, 0xc00000e140, 0x0, 0x6d5740, 0xc00000e1e0, 0x6d5740, 0xc00000e200, 0x6d5740, ...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:90 +0x192
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.CreateOrOpen.func1(0xc0001bbc60, 0x694510, 0xc00050b3c0, 0x1, 0xc00010edc0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:181 +0x115
+github.com/apple/foundationdb/bindings/go/src/fdb.Transaction.Transact(0xc0001bbc60, 0xc00010edc0, 0x0, 0x0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/transaction.go:116 +0x67
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.CreateOrOpen(0x6d5740, 0xc00000e120, 0x6d5740, 0xc00000e140, 0x0, 0x6d5740, 0xc00000e1e0, 0x6d5740, 0xc00000e200, 0x6d5740, ...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:180 +0xf9
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.CreateOrOpen(...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directory.go:176
+FDBConnector/Class/title.(*Class).SetTitle.func1(0xc0001bbc60, 0x694510, 0xc00050b778, 0x7f77774dc008, 0x0)
+/data/projects/golang/FDBConnector/Class/title/SetTitle.go:35 +0x211
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact.func1(0x0, 0x0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:136 +0x7d
+github.com/apple/foundationdb/bindings/go/src/fdb.retryable(0xc0004c8cc0, 0xc00050b7e0, 0x0, 0x0, 0x40f478, 0x20)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:87 +0x2b
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact(0xc0000d6018, 0xc0004c8ca0, 0xc000080c00, 0x8, 0xc00003aa80, 0x7f77774dc008)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:145 +0xb2
+FDBConnector/Class/title.(*Class).SetTitle(0xc0004c8c40, 0x0, 0x0, 0x0, 0x0)
+/data/projects/golang/FDBConnector/Class/title/SetTitle.go:15 +0x86
+reflect.Value.call(0x65bea0, 0xc0004c8c40, 0x1213, 0x682ec5, 0x4, 0xc00050bb90, 0x0, 0x0, 0xc0001226b8, 0x13, ...)
+/usr/lib/golang/src/reflect/value.go:447 +0x461
+reflect.Value.Call(0x65bea0, 0xc0004c8c40, 0x1213, 0xc00050bb90, 0x0, 0x0, 0xc0004c8c40, 0x1213, 0xc000060300)
+/usr/lib/golang/src/reflect/value.go:308 +0xa4
+FDBConnector/A1Version.(*QueryV1).RunMethod(0xc00049a480, 0x6d3ee0, 0xc0004c8c40, 0x5, 0x682d5c, 0x3, 0x669000)
+/data/projects/golang/FDBConnector/A1Version/QueryV1Run.go:37 +0x205
+FDBConnector/A1Version.(*QueryV1).Run(0xc00049a480, 0xc000227f40, 0xc00049a480, 0x0, 0x0, 0x0)
+/data/projects/golang/FDBConnector/A1Version/QueryV1Run.go:27 +0x151
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).execQ(0xc0003b1e00, 0xc000311d40, 0x198)
+/data/projects/golang/lib-streamservice/lib/execQ.go:45 +0x2ca
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).tRun.func2()
+/data/projects/golang/lib-streamservice/lib/tRun.go:45 +0x43
+gitlab.hub.local/golang-tools/components/exception%2egit.Block.Do(0xc00050bee8, 0xc00050bed0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/gitlab.hub.local/golang-tools/components/exception.git@v1.0.0/exception.go:36 +0x3f
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).tRun(0xc0003b1e00, 0xc0000e0000)
+/data/projects/golang/lib-streamservice/lib/tRun.go:66 +0x33f
+created by gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*Server).Run.func2
+/data/projects/golang/lib-streamservice/lib/Run.go:53 +0xe6
+
+goroutine 61 [semacquire]:
+sync.runtime_SemacquireMutex(0xc000021abc, 0x7f773c001d00)
+/usr/lib/golang/src/runtime/sema.go:71 +0x3d
+sync.(*Mutex).Lock(0xc000021ab8)
+/usr/lib/golang/src/sync/mutex.go:134 +0xff
+github.com/apple/foundationdb/bindings/go/src/fdb.fdb_future_block_until_ready(0x7f773c001de0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:100 +0x89
+github.com/apple/foundationdb/bindings/go/src/fdb.future.BlockUntilReady(...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:104
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get.func1()
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:147 +0x8f
+sync.(*Once).Do(0xc00005c570, 0xc0001e0d00)
+/usr/lib/golang/src/sync/once.go:44 +0xb3
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get(0xc00005c540, 0xf, 0xf, 0x0, 0x6d4360, 0xc00005c540)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:142 +0x58
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).MustGet(0xc00005c540, 0x7f7774282158, 0xc00000f2e0, 0x6d4360)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:164 +0x2b
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.find(0x6d5740, 0xc00000e120, 0x6d5740, 0xc00000e140, 0x0, 0x6d5740, 0xc00000e1e0, 0x6d5740, 0xc00000e200, 0x6d5740, ...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:594 +0x269
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.createOrOpen(0x6d5740, 0xc00000e120, 0x6d5740, 0xc00000e140, 0x0, 0x6d5740, 0xc00000e1e0, 0x6d5740, 0xc00000e200, 0x6d5740, ...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:90 +0x192
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.CreateOrOpen.func1(0xc000349810, 0x694510, 0xc0001e13c0, 0x1, 0xc00009aa50)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:181 +0x115
+github.com/apple/foundationdb/bindings/go/src/fdb.Transaction.Transact(0xc000349810, 0xc00009aa50, 0x0, 0x0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/transaction.go:116 +0x67
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.CreateOrOpen(0x6d5740, 0xc00000e120, 0x6d5740, 0xc00000e140, 0x0, 0x6d5740, 0xc00000e1e0, 0x6d5740, 0xc00000e200, 0x6d5740, ...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:180 +0xf9
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.CreateOrOpen(...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directory.go:176
+FDBConnector/Class/title.(*Class).SetTitle.func1(0xc000349810, 0x694510, 0xc0001e1778, 0x7f77774dd460, 0x0)
+/data/projects/golang/FDBConnector/Class/title/SetTitle.go:35 +0x211
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact.func1(0x0, 0x0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:136 +0x7d
+github.com/apple/foundationdb/bindings/go/src/fdb.retryable(0xc0001ae980, 0xc0001e17e0, 0x0, 0x0, 0x40f478, 0x20)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:87 +0x2b
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact(0xc0000d6018, 0xc0001ae960, 0xc000080c00, 0x8, 0xc00003b500, 0x7f77774dd460)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:145 +0xb2
+FDBConnector/Class/title.(*Class).SetTitle(0xc0001ae900, 0x0, 0x0, 0x0, 0x0)
+/data/projects/golang/FDBConnector/Class/title/SetTitle.go:15 +0x86
+reflect.Value.call(0x65bea0, 0xc0001ae900, 0x1213, 0x682ec5, 0x4, 0xc0001e1b90, 0x0, 0x0, 0xc000010588, 0x13, ...)
+/usr/lib/golang/src/reflect/value.go:447 +0x461
+reflect.Value.Call(0x65bea0, 0xc0001ae900, 0x1213, 0xc0001e1b90, 0x0, 0x0, 0xc0001ae900, 0x1213, 0xc000060300)
+/usr/lib/golang/src/reflect/value.go:308 +0xa4
+FDBConnector/A1Version.(*QueryV1).RunMethod(0xc000304870, 0x6d3ee0, 0xc0001ae900, 0x5, 0x682d5c, 0x3, 0x669000)
+/data/projects/golang/FDBConnector/A1Version/QueryV1Run.go:37 +0x205
+FDBConnector/A1Version.(*QueryV1).Run(0xc000304870, 0xc0003a6320, 0xc000304870, 0x0, 0x0, 0x0)
+/data/projects/golang/FDBConnector/A1Version/QueryV1Run.go:27 +0x151
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).execQ(0xc0003ccae0, 0xc0002211e0, 0x198)
+/data/projects/golang/lib-streamservice/lib/execQ.go:45 +0x2ca
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).tRun.func2()
+/data/projects/golang/lib-streamservice/lib/tRun.go:45 +0x43
+gitlab.hub.local/golang-tools/components/exception%2egit.Block.Do(0xc0001e1ee8, 0xc0001e1ed0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/gitlab.hub.local/golang-tools/components/exception.git@v1.0.0/exception.go:36 +0x3f
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).tRun(0xc0003ccae0, 0xc0000e0000)
+/data/projects/golang/lib-streamservice/lib/tRun.go:66 +0x33f
+created by gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*Server).Run.func2
+/data/projects/golang/lib-streamservice/lib/Run.go:53 +0xe6
+
+goroutine 62 [semacquire]:
+sync.runtime_SemacquireMutex(0xc000021b44, 0x7f773c002c00)
+/usr/lib/golang/src/runtime/sema.go:71 +0x3d
+sync.(*Mutex).Lock(0xc000021b40)
+/usr/lib/golang/src/sync/mutex.go:134 +0xff
+github.com/apple/foundationdb/bindings/go/src/fdb.fdb_future_block_until_ready(0x7f773c002c30)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:100 +0x89
+github.com/apple/foundationdb/bindings/go/src/fdb.future.BlockUntilReady(...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:104
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get.func1()
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:147 +0x8f
+sync.(*Once).Do(0xc00005c670, 0xc0001df4d8)
+/usr/lib/golang/src/sync/once.go:44 +0xb3
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get(0xc00005c640, 0x2e, 0x2e, 0x0, 0x6d4360, 0xc00005c640)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:142 +0x58
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).MustGet(0xc00005c640, 0x6d04c0, 0xc00000f3a0, 0x6d4360)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:164 +0x2b
+FDBConnector/Class/title.(*Class).SetTitle.func1(0xc000349000, 0x694510, 0xc0001df778, 0x7f77774dd460, 0x0)
+/data/projects/golang/FDBConnector/Class/title/SetTitle.go:42 +0x3c2
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact.func1(0x0, 0x0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:136 +0x7d
+github.com/apple/foundationdb/bindings/go/src/fdb.retryable(0xc00000fe40, 0xc0001df7e0, 0x0, 0x0, 0x40f478, 0x20)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:87 +0x2b
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact(0xc0000d6018, 0xc00000fe20, 0xc000080c00, 0x8, 0xc00003bc00, 0x7f77774dd460)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:145 +0xb2
+FDBConnector/Class/title.(*Class).SetTitle(0xc00000fdc0, 0x0, 0x0, 0x0, 0x0)
+/data/projects/golang/FDBConnector/Class/title/SetTitle.go:15 +0x86
+reflect.Value.call(0x65bea0, 0xc00000fdc0, 0x1213, 0x682ec5, 0x4, 0xc0001dfb90, 0x0, 0x0, 0xc000010358, 0x13, ...)
+/usr/lib/golang/src/reflect/value.go:447 +0x461
+reflect.Value.Call(0x65bea0, 0xc00000fdc0, 0x1213, 0xc0001dfb90, 0x0, 0x0, 0xc00000fdc0, 0x1213, 0xc000060300)
+/usr/lib/golang/src/reflect/value.go:308 +0xa4
+FDBConnector/A1Version.(*QueryV1).RunMethod(0xc0004e55f0, 0x6d3ee0, 0xc00000fdc0, 0x5, 0x682d5c, 0x3, 0x669000)
+/data/projects/golang/FDBConnector/A1Version/QueryV1Run.go:37 +0x205
+FDBConnector/A1Version.(*QueryV1).Run(0xc0004e55f0, 0xc00013f2c0, 0xc0004e55f0, 0x0, 0x0, 0x0)
+/data/projects/golang/FDBConnector/A1Version/QueryV1Run.go:27 +0x151
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).execQ(0xc0003ccb40, 0xc000160e00, 0x1b8)
+/data/projects/golang/lib-streamservice/lib/execQ.go:45 +0x2ca
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).tRun.func2()
+/data/projects/golang/lib-streamservice/lib/tRun.go:45 +0x43
+gitlab.hub.local/golang-tools/components/exception%2egit.Block.Do(0xc0001dfee8, 0xc0001dfed0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/gitlab.hub.local/golang-tools/components/exception.git@v1.0.0/exception.go:36 +0x3f
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).tRun(0xc0003ccb40, 0xc0000e0000)
+/data/projects/golang/lib-streamservice/lib/tRun.go:66 +0x33f
+created by gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*Server).Run.func2
+/data/projects/golang/lib-streamservice/lib/Run.go:53 +0xe6
+
+goroutine 63 [semacquire]:
+sync.runtime_SemacquireMutex(0xc0001be664, 0x7f7748001b00)
+/usr/lib/golang/src/runtime/sema.go:71 +0x3d
+sync.(*Mutex).Lock(0xc0001be660)
+/usr/lib/golang/src/sync/mutex.go:134 +0xff
+github.com/apple/foundationdb/bindings/go/src/fdb.fdb_future_block_until_ready(0x7f7748001b10)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:100 +0x89
+github.com/apple/foundationdb/bindings/go/src/fdb.future.BlockUntilReady(...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:104
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get.func1()
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:147 +0x8f
+sync.(*Once).Do(0xc00020a170, 0xc000232c78)
+/usr/lib/golang/src/sync/once.go:44 +0xb3
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get(0xc00020a140, 0x7f7774282158, 0xc0000e2320, 0x6d4360, 0xc00020a140, 0xc0000e2320)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:142 +0x58
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.checkVersion(0x6d5740, 0xc00000e120, 0x6d5740, 0xc00000e140, 0x0, 0x6d5740, 0xc00000e1e0, 0x6d5740, 0xc00000e200, 0x6d5740, ...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:510 +0x15b
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.createOrOpen(0x6d5740, 0xc00000e120, 0x6d5740, 0xc00000e140, 0x0, 0x6d5740, 0xc00000e1e0, 0x6d5740, 0xc00000e200, 0x6d5740, ...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:75 +0x7b
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.CreateOrOpen.func1(0xc0001ba1f0, 0x694510, 0xc0002333c0, 0x1, 0xc00010e160)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:181 +0x115
+github.com/apple/foundationdb/bindings/go/src/fdb.Transaction.Transact(0xc0001ba1f0, 0xc00010e160, 0x0, 0x0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/transaction.go:116 +0x67
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.CreateOrOpen(0x6d5740, 0xc00000e120, 0x6d5740, 0xc00000e140, 0x0, 0x6d5740, 0xc00000e1e0, 0x6d5740, 0xc00000e200, 0x6d5740, ...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:180 +0xf9
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.CreateOrOpen(...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directory.go:176
+FDBConnector/Class/title.(*Class).SetTitle.func1(0xc0001ba1f0, 0x694510, 0xc000233778, 0x7f77774dcd98, 0x0)
+/data/projects/golang/FDBConnector/Class/title/SetTitle.go:35 +0x211
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact.func1(0x0, 0x0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:136 +0x7d
+github.com/apple/foundationdb/bindings/go/src/fdb.retryable(0xc0000e2240, 0xc0002337e0, 0x0, 0x0, 0x40f478, 0x20)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:87 +0x2b
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact(0xc0000d6018, 0xc0000e2220, 0xc000080c00, 0x8, 0xc00003b500, 0x7f77774dcd98)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:145 +0xb2
+FDBConnector/Class/title.(*Class).SetTitle(0xc0000e21c0, 0x0, 0x0, 0x0, 0x0)
+/data/projects/golang/FDBConnector/Class/title/SetTitle.go:15 +0x86
+reflect.Value.call(0x65bea0, 0xc0000e21c0, 0x1213, 0x682ec5, 0x4, 0xc000233b90, 0x0, 0x0, 0xc000122078, 0x13, ...)
+/usr/lib/golang/src/reflect/value.go:447 +0x461
+reflect.Value.Call(0x65bea0, 0xc0000e21c0, 0x1213, 0xc000233b90, 0x0, 0x0, 0xc0000e21c0, 0x1213, 0xc000060300)
+/usr/lib/golang/src/reflect/value.go:308 +0xa4
+FDBConnector/A1Version.(*QueryV1).RunMethod(0xc000080f90, 0x6d3ee0, 0xc0000e21c0, 0x5, 0x682d5c, 0x3, 0x669000)
+/data/projects/golang/FDBConnector/A1Version/QueryV1Run.go:37 +0x205
+FDBConnector/A1Version.(*QueryV1).Run(0xc000080f90, 0xc0001f2320, 0xc000080f90, 0x0, 0x0, 0x0)
+/data/projects/golang/FDBConnector/A1Version/QueryV1Run.go:27 +0x151
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).execQ(0xc0000614a0, 0xc0001cc680, 0x184)
+/data/projects/golang/lib-streamservice/lib/execQ.go:45 +0x2ca
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).tRun.func2()
+/data/projects/golang/lib-streamservice/lib/tRun.go:45 +0x43
+gitlab.hub.local/golang-tools/components/exception%2egit.Block.Do(0xc000233ee8, 0xc000233ed0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/gitlab.hub.local/golang-tools/components/exception.git@v1.0.0/exception.go:36 +0x3f
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).tRun(0xc0000614a0, 0xc0000e0000)
+/data/projects/golang/lib-streamservice/lib/tRun.go:66 +0x33f
+created by gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*Server).Run.func2
+/data/projects/golang/lib-streamservice/lib/Run.go:53 +0xe6
+
+goroutine 64 [runnable]:
+sync.runtime_SemacquireMutex(0xc00002110c, 0x7f7748004b00)
+/usr/lib/golang/src/runtime/sema.go:71 +0x3d
+sync.(*Mutex).Lock(0xc000021108)
+/usr/lib/golang/src/sync/mutex.go:134 +0xff
+github.com/apple/foundationdb/bindings/go/src/fdb.fdb_future_block_until_ready(0x7f7748004be0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:100 +0x89
+github.com/apple/foundationdb/bindings/go/src/fdb.future.BlockUntilReady(...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:104
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get.func1()
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:147 +0x8f
+sync.(*Once).Do(0xc00005c330, 0xc0002ead00)
+/usr/lib/golang/src/sync/once.go:44 +0xb3
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get(0xc00005c300, 0x6d4360, 0xc00005c300, 0xc00000ecc0, 0x4dacc0, 0xc00000eca0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:142 +0x58
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).MustGet(0xc00005c300, 0x6d5260, 0xc0003491e0, 0x6d4360)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/futures.go:164 +0x2b
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.find(0x6d5740, 0xc00000e120, 0x6d5740, 0xc00000e140, 0x0, 0x6d5740, 0xc00000e1e0, 0x6d5740, 0xc00000e200, 0x6d5740, ...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:595 +0x38c
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.createOrOpen(0x6d5740, 0xc00000e120, 0x6d5740, 0xc00000e140, 0x0, 0x6d5740, 0xc00000e1e0, 0x6d5740, 0xc00000e200, 0x6d5740, ...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:90 +0x192
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.CreateOrOpen.func1(0xc0003491e0, 0x694510, 0xc0002eb3c0, 0x1, 0xc00009a840)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:181 +0x115
+github.com/apple/foundationdb/bindings/go/src/fdb.Transaction.Transact(0xc0003491e0, 0xc00009a840, 0x0, 0x0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/transaction.go:116 +0x67
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.CreateOrOpen(0x6d5740, 0xc00000e120, 0x6d5740, 0xc00000e140, 0x0, 0x6d5740, 0xc00000e1e0, 0x6d5740, 0xc00000e200, 0x6d5740, ...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directoryLayer.go:180 +0xf9
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.CreateOrOpen(...)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/directory/directory.go:176
+FDBConnector/Class/title.(*Class).SetTitle.func1(0xc0003491e0, 0x694510, 0xc0002eb778, 0x7f77774dd460, 0x0)
+/data/projects/golang/FDBConnector/Class/title/SetTitle.go:35 +0x211
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact.func1(0x0, 0x0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:136 +0x7d
+github.com/apple/foundationdb/bindings/go/src/fdb.retryable(0xc0001ae0c0, 0xc0002eb7e0, 0x0, 0x0, 0x40f478, 0x20)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:87 +0x2b
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact(0xc0000d6018, 0xc0001ae0a0, 0xc000080c00, 0x8, 0xc00003bc00, 0x7f77774dd460)
+/home/xxx/go/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190306005152-5980276aea09/src/fdb/database.go:145 +0xb2
+FDBConnector/Class/title.(*Class).SetTitle(0xc0001ae040, 0x0, 0x0, 0x0, 0x0)
+/data/projects/golang/FDBConnector/Class/title/SetTitle.go:15 +0x86
+reflect.Value.call(0x65bea0, 0xc0001ae040, 0x1213, 0x682ec5, 0x4, 0xc0002ebb90, 0x0, 0x0, 0xc0000103e8, 0x13, ...)
+/usr/lib/golang/src/reflect/value.go:447 +0x461
+reflect.Value.Call(0x65bea0, 0xc0001ae040, 0x1213, 0xc0002ebb90, 0x0, 0x0, 0xc0001ae040, 0x1213, 0xc000060300)
+/usr/lib/golang/src/reflect/value.go:308 +0xa4
+FDBConnector/A1Version.(*QueryV1).RunMethod(0xc0004e5ad0, 0x6d3ee0, 0xc0001ae040, 0x5, 0x682d5c, 0x3, 0x669000)
+/data/projects/golang/FDBConnector/A1Version/QueryV1Run.go:37 +0x205
+FDBConnector/A1Version.(*QueryV1).Run(0xc0004e5ad0, 0xc00013f6d0, 0xc0004e5ad0, 0x0, 0x0, 0x0)
+/data/projects/golang/FDBConnector/A1Version/QueryV1Run.go:27 +0x151
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).execQ(0xc0003b0ea0, 0xc000117860, 0x184)
+/data/projects/golang/lib-streamservice/lib/execQ.go:45 +0x2ca
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).tRun.func2()
+/data/projects/golang/lib-streamservice/lib/tRun.go:45 +0x43
+gitlab.hub.local/golang-tools/components/exception%2egit.Block.Do(0xc0002ebee8, 0xc0002ebed0, 0x0, 0x0)
+/home/xxx/go/pkg/mod/gitlab.hub.local/golang-tools/components/exception.git@v1.0.0/exception.go:36 +0x3f
+gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*thread).tRun(0xc0003b0ea0, 0xc0000e0000)
+/data/projects/golang/lib-streamservice/lib/tRun.go:66 +0x33f
+created by gitlab.hub.local/golang-tools/components/lib-streamservice.git/lib.(*Server).Run.func2
+/data/projects/golang/lib-streamservice/lib/Run.go:53 +0xe6
+
+rax    0x0
+rbx    0x6
+rcx    0x7f777758953f
+rdx    0x0
+rdi    0x2
+rsi    0x7f776f7fd3d0
+rbp    0x7f7777712860
+rsp    0x7f776f7fd3d0
+r8     0x0
+r9     0x7f776f7fd3d0
+r10    0x8
+r11    0x246
+r12    0x7f7760002630
+r13    0x7f776f7fd760
+r14    0x0
+r15    0x7f7777f836fe
+rip    0x7f777758953f
+rflags 0x246
+cs     0x33
+fs     0x0
+gs     0x0
