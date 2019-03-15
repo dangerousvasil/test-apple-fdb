@@ -12,8 +12,8 @@ func TestDataLog(t *testing.T) {
 	log.SetFlags(log.LstdFlags | log.Lshortfile)
 
 	tester := FdbTest{
-		SkipLine:    10580000,
-		LogFilename: `/u03/iron_logs/iron_hdd_000_00.log`,
+		SkipLine:    0,
+		LogFilename: `/u03/iron_logs/iron_hdd_000_01.log`,
 		FDBCluster:  `/etc/foundationdb/fdb.cluster`,
 	}
 	tester.Init()

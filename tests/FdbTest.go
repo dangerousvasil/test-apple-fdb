@@ -4,6 +4,7 @@ import (
 	"bufio"
 	"bytes"
 	"encoding/json"
+	"errors"
 	"fmt"
 	"github.com/apple/foundationdb/bindings/go/src/fdb"
 	"github.com/apple/foundationdb/bindings/go/src/fdb/directory"
@@ -54,7 +55,7 @@ func (t *FdbTest) Init() {
 
 }
 
-func (t *FdbTest) TestLine(line string) {
+func (t *FdbTest) TestLine(line string) error {
 	t.counter++
 	ttlpart := program.Title{}
 
@@ -62,9 +63,8 @@ func (t *FdbTest) TestLine(line string) {
 	if err != nil {
 		//log.Println(line)
 		//log.Println(err)
-		return
+		return err
 	}
-
 	//fmt.Println(ttlpart)
 	aStr, err := t.fdb.Transact(func(tr fdb.Transaction) (result interface{}, err error) {
 
@@ -74,8 +74,6 @@ func (t *FdbTest) TestLine(line string) {
 		h1 := program.GetHkey1(ttlpart)
 		titles, err := directory.CreateOrOpen(tr, []string{`titleFiz`}, nil)
 		if err != nil {
-			log.Println(err)
-			t.TestLine(line)
 			return
 		}
 
@@ -118,9 +116,12 @@ func (t *FdbTest) TestLine(line string) {
 		return rezz, err
 	})
 
+	if err != nil {
+		return err
+	}
+
 	if len(aStr.([]string)) > 1 {
-		log.Println("Panic double ttitle", aStr)
-		return
+		return errors.New(fmt.Sprintf("Panic double ttitle %v \r\n %v", line, aStr))
 	} else if len(aStr.([]string)) == 0 {
 		log.Println(line)
 		log.Println("Not found")
@@ -131,10 +132,9 @@ func (t *FdbTest) TestLine(line string) {
 		t.correct++
 	} else {
 		log.Println(line)
-		log.Println("Not equail")
 		log.Fatalln("Test not passed")
 	}
-
+	return nil
 }
 
 func (t *FdbTest) readFile() {
