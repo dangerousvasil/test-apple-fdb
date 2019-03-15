@@ -25,7 +25,7 @@ func TestDataLog(t *testing.T) {
 		go tester.worker()
 	}
 
-	go tester.timer()
+	//go tester.timer()
 	go tester.timerMinute()
 
 	tester.wg.Wait()

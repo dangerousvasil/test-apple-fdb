@@ -121,7 +121,7 @@ func (t *FdbTest) TestLine(line string) {
 	}
 
 	if len(aStr.([]string)) > 1 {
-		log.Println("Panic double ttitle %v \r\n %v", line, aStr)
+		log.Println("Panic double ttitle ", line, aStr)
 		return
 	} else if len(aStr.([]string)) == 0 {
 		log.Println(line)
