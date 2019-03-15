@@ -7,7 +7,7 @@ import (
 )
 
 var (
-	clusterFile = flag.String("c", `/etc/foundationdb/fdb_replica.cluster`, "Using cluster file")
+	clusterFile = flag.String("c", `/etc/foundationdb/fdb.cluster`, "Using cluster file")
 )
 
 func main() {
