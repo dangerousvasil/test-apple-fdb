@@ -4,7 +4,6 @@ import (
 	"bufio"
 	"bytes"
 	"encoding/json"
-	"errors"
 	"fmt"
 	"github.com/apple/foundationdb/bindings/go/src/fdb"
 	"github.com/apple/foundationdb/bindings/go/src/fdb/directory"
@@ -55,15 +54,15 @@ func (t *FdbTest) Init() {
 
 }
 
-func (t *FdbTest) TestLine(line string) error {
+func (t *FdbTest) TestLine(line string) {
 	t.counter++
 	ttlpart := program.Title{}
 
 	err := json.Unmarshal([]byte(line), &ttlpart)
 	if err != nil {
 		//log.Println(line)
-		//log.Println(err)
-		return err
+		//skip line
+		return
 	}
 	//fmt.Println(ttlpart)
 	aStr, err := t.fdb.Transact(func(tr fdb.Transaction) (result interface{}, err error) {
@@ -117,11 +116,13 @@ func (t *FdbTest) TestLine(line string) error {
 	})
 
 	if err != nil {
-		return err
+		log.Println(err)
+		return
 	}
 
 	if len(aStr.([]string)) > 1 {
-		return errors.New(fmt.Sprintf("Panic double ttitle %v \r\n %v", line, aStr))
+		log.Println("Panic double ttitle %v \r\n %v", line, aStr)
+		return
 	} else if len(aStr.([]string)) == 0 {
 		log.Println(line)
 		log.Println("Not found")
@@ -134,7 +135,7 @@ func (t *FdbTest) TestLine(line string) error {
 		log.Println(line)
 		log.Fatalln("Test not passed")
 	}
-	return nil
+	return
 }
 
 func (t *FdbTest) readFile() {
