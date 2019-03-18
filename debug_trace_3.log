@@ -1,0 +1,867 @@
+GOROOT=/opt/go #gosetup
+GOPATH=/home/pvv/GOPKG #gosetup
+/opt/go/bin/go test -c -test.timeout=0 -o /tmp/___TestDataLog_in_test_apple_fdb_tests test-apple-fdb/tests #gosetup
+/opt/go/bin/go tool test2json -t /tmp/___TestDataLog_in_test_apple_fdb_tests -test.v -test.run ^TestDataLog$ -test.timeout=0 #gosetup
+=== RUN   TestDataLog
+2019/03/15 17:39:03 FdbTest.go:30: [MINUTE] All 0 correct 0 In minute  0
+2019/03/15 17:40:03 FdbTest.go:30: [MINUTE] All 103298 correct 103244 In minute  103298
+2019/03/15 17:41:03 FdbTest.go:30: [MINUTE] All 204847 correct 204768 In minute  101549
+2019/03/15 17:42:03 FdbTest.go:30: [MINUTE] All 321940 correct 321826 In minute  117093
+2019/03/15 17:43:03 FdbTest.go:30: [MINUTE] All 426772 correct 426601 In minute  104832
+2019/03/15 17:44:03 FdbTest.go:30: [MINUTE] All 521938 correct 521680 In minute  95166
+2019/03/15 17:45:03 FdbTest.go:30: [MINUTE] All 648129 correct 647794 In minute  126191
+2019/03/15 17:46:03 FdbTest.go:30: [MINUTE] All 759744 correct 759385 In minute  111615
+2019/03/15 17:47:03 FdbTest.go:30: [MINUTE] All 844339 correct 843951 In minute  84595
+2019/03/15 17:48:03 FdbTest.go:30: [MINUTE] All 904711 correct 904272 In minute  60372
+2019/03/15 17:49:03 FdbTest.go:30: [MINUTE] All 966588 correct 966118 In minute  61877
+2019/03/15 17:50:03 FdbTest.go:30: [MINUTE] All 1038979 correct 1038432 In minute  72391
+2019/03/15 17:51:03 FdbTest.go:30: [MINUTE] All 1116181 correct 1115623 In minute  77202
+2019/03/15 17:52:03 FdbTest.go:30: [MINUTE] All 1203279 correct 1202686 In minute  87098
+2019/03/15 17:53:03 FdbTest.go:30: [MINUTE] All 1291429 correct 1290786 In minute  88150
+2019/03/15 17:54:03 FdbTest.go:30: [MINUTE] All 1378158 correct 1377455 In minute  86729
+2019/03/15 17:55:03 FdbTest.go:30: [MINUTE] All 1464836 correct 1464080 In minute  86678
+2019/03/15 17:56:03 FdbTest.go:30: [MINUTE] All 1551993 correct 1551181 In minute  87157
+2019/03/15 17:57:03 FdbTest.go:30: [MINUTE] All 1636912 correct 1636032 In minute  84919
+2019/03/15 17:58:03 FdbTest.go:30: [MINUTE] All 1722338 correct 1721405 In minute  85425
+2019/03/15 17:59:03 FdbTest.go:30: [MINUTE] All 1809360 correct 1808352 In minute  87022
+2019/03/15 18:00:03 FdbTest.go:30: [MINUTE] All 1894995 correct 1893926 In minute  85635
+2019/03/15 18:01:03 FdbTest.go:30: [MINUTE] All 1971378 correct 1970228 In minute  76383
+2019/03/15 18:02:03 FdbTest.go:30: [MINUTE] All 2056327 correct 2055104 In minute  84949
+2019/03/15 18:03:03 FdbTest.go:30: [MINUTE] All 2141751 correct 2140473 In minute  85424
+2019/03/15 18:04:03 FdbTest.go:30: [MINUTE] All 2227097 correct 2225741 In minute  85346
+2019/03/15 18:05:03 FdbTest.go:30: [MINUTE] All 2311795 correct 2310361 In minute  84698
+2019/03/15 18:06:03 FdbTest.go:30: [MINUTE] All 2396582 correct 2395104 In minute  84787
+2019/03/15 18:07:03 FdbTest.go:30: [MINUTE] All 2480754 correct 2479214 In minute  84172
+2019/03/15 18:08:03 FdbTest.go:30: [MINUTE] All 2566282 correct 2564676 In minute  85528
+2019/03/15 18:09:03 FdbTest.go:30: [MINUTE] All 2647235 correct 2645555 In minute  80953
+2019/03/15 18:10:03 FdbTest.go:30: [MINUTE] All 2731924 correct 2730176 In minute  84689
+2019/03/15 18:11:03 FdbTest.go:30: [MINUTE] All 2817027 correct 2815192 In minute  85103
+2019/03/15 18:12:03 FdbTest.go:30: [MINUTE] All 2904799 correct 2902891 In minute  87772
+2019/03/15 18:13:03 FdbTest.go:30: [MINUTE] All 2991764 correct 2989809 In minute  86965
+2019/03/15 18:14:03 FdbTest.go:30: [MINUTE] All 3076112 correct 3074063 In minute  84348
+2019/03/15 18:15:03 FdbTest.go:30: [MINUTE] All 3160910 correct 3158803 In minute  84798
+2019/03/15 18:16:03 FdbTest.go:30: [MINUTE] All 3245623 correct 3243460 In minute  84713
+2019/03/15 18:17:03 FdbTest.go:30: [MINUTE] All 3331479 correct 3329284 In minute  85856
+2019/03/15 18:18:03 FdbTest.go:30: [MINUTE] All 3417169 correct 3414896 In minute  85690
+2019/03/15 18:19:03 FdbTest.go:30: [MINUTE] All 3500612 correct 3498303 In minute  83443
+2019/03/15 18:20:03 FdbTest.go:30: [MINUTE] All 3585512 correct 3583165 In minute  84900
+2019/03/15 18:21:03 FdbTest.go:30: [MINUTE] All 3670999 correct 3668584 In minute  85486
+2019/03/15 18:22:03 FdbTest.go:30: [MINUTE] All 3757123 correct 3754664 In minute  86124
+2019/03/15 18:23:03 FdbTest.go:30: [MINUTE] All 3839695 correct 3837195 In minute  82572
+2019/03/15 18:24:03 FdbTest.go:30: [MINUTE] All 3927940 correct 3925393 In minute  88245
+2019/03/15 18:25:03 FdbTest.go:30: [MINUTE] All 4014866 correct 4012282 In minute  86926
+2019/03/15 18:26:03 FdbTest.go:30: [MINUTE] All 4101725 correct 4099106 In minute  86859
+2019/03/15 18:27:03 FdbTest.go:30: [MINUTE] All 4188655 correct 4185998 In minute  86930
+2019/03/15 18:28:03 FdbTest.go:30: [MINUTE] All 4274290 correct 4271556 In minute  85635
+2019/03/15 18:29:03 FdbTest.go:30: [MINUTE] All 4359935 correct 4357127 In minute  85645
+2019/03/15 18:30:03 FdbTest.go:30: [MINUTE] All 4439224 correct 4436369 In minute  79288
+2019/03/15 18:31:03 FdbTest.go:30: [MINUTE] All 4525380 correct 4522474 In minute  86156
+2019/03/15 18:32:03 FdbTest.go:30: [MINUTE] All 4612394 correct 4609446 In minute  87014
+2019/03/15 18:33:03 FdbTest.go:30: [MINUTE] All 4698500 correct 4695490 In minute  86106
+2019/03/15 18:34:03 FdbTest.go:30: [MINUTE] All 4785775 correct 4782685 In minute  87275
+2019/03/15 18:35:03 FdbTest.go:30: [MINUTE] All 4869500 correct 4866375 In minute  83725
+2019/03/15 18:36:03 FdbTest.go:30: [MINUTE] All 4953583 correct 4950460 In minute  84083
+2019/03/15 18:37:03 FdbTest.go:30: [MINUTE] All 5038542 correct 5035414 In minute  84959
+2019/03/15 18:38:03 FdbTest.go:30: [MINUTE] All 5123534 correct 5120405 In minute  84992
+2019/03/15 18:39:03 FdbTest.go:30: [MINUTE] All 5210413 correct 5207252 In minute  86879
+2019/03/15 18:40:03 FdbTest.go:30: [MINUTE] All 5294429 correct 5291235 In minute  84016
+2019/03/15 18:40:10 FdbTest.go:124: Panic double ttitle  {"FileId":2101389578,"PartnerId":5031180387,"Unit":9048978186,"LastName":"Williams","FirstName":"Mason","MiddleName":"Emily","MaidenName":"","Birthday":"2016-12-31T00:00:00Z","BirthPlace":"","DocType":11,"DocNo":"4722297631","DocPlace":"","DocDate":"0001-01-01T00:00:00Z","DocEndDate":"0001-01-01T00:00:00Z","Sex":2,"Address":{"Reg":{"ZipCode":"578415","Country":"Bolivia","Region":"","City":"Buffalo City","District":"71:8d:d0:83:cc:7a","Statement":"","Street":"Adams Ter","House":"65","Block":"86","Build":"5","Flat":"69"},"Fact":{"ZipCode":"868658","Country":"Gabon","Region":"","City":"Bury","District":"27:94:1a:bc:65:f8","Statement":"","Street":"Jefferson Ter","House":"86","Block":"3","Build":"66","Flat":"52"}},"Id":"bhujaaq23aktj2318o30"} [{"FileId":3000126618,"PartnerId":5290936831,"Unit":7033759618,"LastName":"Williams","FirstName":"Mason","MiddleName":"Emily","MaidenName":"","Birthday":"1985-12-20T00:00:00Z","BirthPlace":"","DocType":11,"DocNo":"4722297631","DocPlace":"","DocDate":"0001-01-01T00:00:00Z","DocEndDate":"0001-01-01T00:00:00Z","Sex":2,"Address":{"Reg":{"ZipCode":"751258","Country":"Angola","Region":"","City":"New Deal","District":"17:57:5a:bc:b2:b7","Statement":"","Street":"Wilson Pl","House":"39","Block":"28","Build":"86","Flat":"49"},"Fact":{"ZipCode":"774398","Country":"Slovak Republic","Region":"","City":"Buffalo City","District":"77:c2:1f:3e:d8:db","Statement":"","Street":"Jackson Rd","House":"12","Block":"88","Build":"6","Flat":"66"}},"Id":"bhq8esq23akvt4q9isq0"} {"FileId":2101389578,"PartnerId":5031180387,"Unit":9048978186,"LastName":"Williams","FirstName":"Mason","MiddleName":"Emily","MaidenName":"","Birthday":"2016-12-31T00:00:00Z","BirthPlace":"","DocType":11,"DocNo":"4722297631","DocPlace":"","DocDate":"0001-01-01T00:00:00Z","DocEndDate":"0001-01-01T00:00:00Z","Sex":2,"Address":{"Reg":{"ZipCode":"578415","Country":"Bolivia","Region":"","City":"Buffalo City","District":"71:8d:d0:83:cc:7a","Statement":"","Street":"Adams Ter","House":"65","Block":"86","Build":"5","Flat":"69"},"Fact":{"ZipCode":"868658","Country":"Gabon","Region":"","City":"Bury","District":"27:94:1a:bc:65:f8","Statement":"","Street":"Jefferson Ter","House":"86","Block":"3","Build":"66","Flat":"52"}},"Id":"bhujaaq23aktj2318o30"}]
+2019/03/15 18:41:03 FdbTest.go:30: [MINUTE] All 5378413 correct 5375178 In minute  83984
+2019/03/15 18:42:03 FdbTest.go:30: [MINUTE] All 5464317 correct 5461033 In minute  85904
+2019/03/15 18:43:03 FdbTest.go:30: [MINUTE] All 5549954 correct 5546625 In minute  85637
+2019/03/15 18:44:03 FdbTest.go:30: [MINUTE] All 5635504 correct 5632148 In minute  85550
+2019/03/15 18:45:03 FdbTest.go:30: [MINUTE] All 5720754 correct 5717321 In minute  85250
+2019/03/15 18:46:03 FdbTest.go:30: [MINUTE] All 5805115 correct 5801638 In minute  84361
+2019/03/15 18:47:03 FdbTest.go:30: [MINUTE] All 5888121 correct 5884611 In minute  83006
+2019/03/15 18:48:03 FdbTest.go:30: [MINUTE] All 5971207 correct 5967619 In minute  83086
+2019/03/15 18:49:03 FdbTest.go:30: [MINUTE] All 6055813 correct 6052168 In minute  84606
+2019/03/15 18:50:03 FdbTest.go:30: [MINUTE] All 6138409 correct 6134684 In minute  82596
+2019/03/15 18:51:03 FdbTest.go:30: [MINUTE] All 6221132 correct 6217364 In minute  82723
+2019/03/15 18:52:03 FdbTest.go:30: [MINUTE] All 6306129 correct 6302327 In minute  84997
+2019/03/15 18:53:03 FdbTest.go:30: [MINUTE] All 6389146 correct 6385288 In minute  83017
+2019/03/15 18:54:03 FdbTest.go:30: [MINUTE] All 6471694 correct 6467785 In minute  82548
+2019/03/15 18:55:03 FdbTest.go:30: [MINUTE] All 6555573 correct 6551628 In minute  83879
+2019/03/15 18:56:03 FdbTest.go:30: [MINUTE] All 6638893 correct 6634896 In minute  83319
+2019/03/15 18:57:03 FdbTest.go:30: [MINUTE] All 6722700 correct 6718637 In minute  83807
+2019/03/15 18:58:03 FdbTest.go:30: [MINUTE] All 6806366 correct 6802285 In minute  83666
+2019/03/15 18:59:03 FdbTest.go:30: [MINUTE] All 6891239 correct 6887128 In minute  84873
+2019/03/15 19:00:03 FdbTest.go:30: [MINUTE] All 6976003 correct 6971872 In minute  84764
+2019/03/15 19:01:03 FdbTest.go:30: [MINUTE] All 7060583 correct 7056420 In minute  84579
+2019/03/15 19:02:03 FdbTest.go:30: [MINUTE] All 7144589 correct 7140412 In minute  84006
+2019/03/15 19:03:03 FdbTest.go:30: [MINUTE] All 7229054 correct 7224841 In minute  84465
+2019/03/15 19:04:03 FdbTest.go:30: [MINUTE] All 7307351 correct 7303108 In minute  78296
+2019/03/15 19:05:03 FdbTest.go:30: [MINUTE] All 7389801 correct 7385553 In minute  82450
+2019/03/15 19:06:03 FdbTest.go:30: [MINUTE] All 7474340 correct 7470050 In minute  84539
+2019/03/15 19:07:03 FdbTest.go:30: [MINUTE] All 7557991 correct 7553675 In minute  83651
+2019/03/15 19:08:03 FdbTest.go:30: [MINUTE] All 7641450 correct 7637084 In minute  83458
+2019/03/15 19:09:03 FdbTest.go:30: [MINUTE] All 7727330 correct 7722923 In minute  85880
+2019/03/15 19:10:03 FdbTest.go:30: [MINUTE] All 7813611 correct 7809165 In minute  86281
+2019/03/15 19:11:03 FdbTest.go:30: [MINUTE] All 7898619 correct 7894137 In minute  85008
+2019/03/15 19:12:03 FdbTest.go:30: [MINUTE] All 7983391 correct 7978881 In minute  84772
+2019/03/15 19:13:03 FdbTest.go:30: [MINUTE] All 8065769 correct 8061207 In minute  82378
+2019/03/15 19:14:03 FdbTest.go:30: [MINUTE] All 8151305 correct 8146702 In minute  85536
+2019/03/15 19:15:03 FdbTest.go:30: [MINUTE] All 8236939 correct 8232317 In minute  85634
+2019/03/15 19:16:03 FdbTest.go:30: [MINUTE] All 8321389 correct 8316728 In minute  84450
+2019/03/15 19:17:03 FdbTest.go:30: [MINUTE] All 8407653 correct 8402919 In minute  86264
+2019/03/15 19:18:03 FdbTest.go:30: [MINUTE] All 8492459 correct 8487693 In minute  84806
+2019/03/15 19:19:03 FdbTest.go:30: [MINUTE] All 8575698 correct 8570910 In minute  83239
+2019/03/15 19:20:03 FdbTest.go:30: [MINUTE] All 8659957 correct 8655133 In minute  84259
+2019/03/15 19:21:03 FdbTest.go:30: [MINUTE] All 8745668 correct 8740812 In minute  85711
+2019/03/15 19:22:03 FdbTest.go:30: [MINUTE] All 8830411 correct 8825497 In minute  84743
+2019/03/15 19:23:03 FdbTest.go:30: [MINUTE] All 8916392 correct 8911429 In minute  85981
+2019/03/15 19:24:03 FdbTest.go:30: [MINUTE] All 9000992 correct 8995984 In minute  84600
+2019/03/15 19:25:03 FdbTest.go:30: [MINUTE] All 9086630 correct 9081570 In minute  85638
+2019/03/15 19:26:03 FdbTest.go:30: [MINUTE] All 9173138 correct 9168007 In minute  86508
+2019/03/15 19:27:03 FdbTest.go:30: [MINUTE] All 9258916 correct 9253679 In minute  85778
+2019/03/15 19:28:03 FdbTest.go:30: [MINUTE] All 9345379 correct 9340083 In minute  86463
+2019/03/15 19:29:03 FdbTest.go:30: [MINUTE] All 9430342 correct 9424984 In minute  84963
+2019/03/15 19:30:03 FdbTest.go:30: [MINUTE] All 9516489 correct 9511090 In minute  86147
+2019/03/15 19:31:03 FdbTest.go:30: [MINUTE] All 9602320 correct 9596886 In minute  85831
+2019/03/15 19:32:03 FdbTest.go:30: [MINUTE] All 9681802 correct 9676330 In minute  79482
+2019/03/15 19:33:03 FdbTest.go:30: [MINUTE] All 9768067 correct 9762537 In minute  86265
+2019/03/15 19:34:03 FdbTest.go:30: [MINUTE] All 9852996 correct 9847410 In minute  84929
+2019/03/15 19:35:03 FdbTest.go:30: [MINUTE] All 9937668 correct 9932065 In minute  84672
+2019/03/15 19:36:03 FdbTest.go:30: [MINUTE] All 10020264 correct 10014608 In minute  82596
+2019/03/15 19:37:03 FdbTest.go:30: [MINUTE] All 10104862 correct 10099160 In minute  84598
+2019/03/15 19:38:03 FdbTest.go:30: [MINUTE] All 10189018 correct 10183239 In minute  84156
+2019/03/15 19:39:03 FdbTest.go:30: [MINUTE] All 10273430 correct 10267587 In minute  84412
+2019/03/15 19:40:03 FdbTest.go:30: [MINUTE] All 10358102 correct 10352228 In minute  84672
+2019/03/15 19:41:03 FdbTest.go:30: [MINUTE] All 10442560 correct 10436657 In minute  84458
+2019/03/15 19:42:03 FdbTest.go:30: [MINUTE] All 10526457 correct 10520514 In minute  83896
+2019/03/15 19:43:03 FdbTest.go:30: [MINUTE] All 10611050 correct 10605047 In minute  84593
+2019/03/15 19:44:03 FdbTest.go:30: [MINUTE] All 10696005 correct 10689965 In minute  84955
+2019/03/15 19:45:03 FdbTest.go:30: [MINUTE] All 10781245 correct 10775153 In minute  85240
+2019/03/15 19:46:03 FdbTest.go:30: [MINUTE] All 10863043 correct 10856888 In minute  81798
+2019/03/15 19:47:03 FdbTest.go:30: [MINUTE] All 10948814 correct 10942602 In minute  85771
+2019/03/15 19:48:03 FdbTest.go:30: [MINUTE] All 11034495 correct 11028225 In minute  85681
+2019/03/15 19:49:03 FdbTest.go:30: [MINUTE] All 11120492 correct 11114170 In minute  85997
+2019/03/15 19:50:03 FdbTest.go:30: [MINUTE] All 11206956 correct 11200594 In minute  86464
+2019/03/15 19:51:03 FdbTest.go:30: [MINUTE] All 11291264 correct 11284848 In minute  84308
+2019/03/15 19:52:03 FdbTest.go:30: [MINUTE] All 11375163 correct 11368701 In minute  83899
+2019/03/15 19:53:03 FdbTest.go:30: [MINUTE] All 11461201 correct 11454683 In minute  86038
+2019/03/15 19:54:03 FdbTest.go:30: [MINUTE] All 11544858 correct 11538290 In minute  83657
+Internal Error @ ./flow/ThreadPrimitives.h 78:
+  addr2line -e libfdb_c.so-debug -p -C -f -i 0x3ac2c9 0xd63c0 0xd6509 0xd5415 0xffff8077b6dd3fa0
+terminate called after throwing an instance of 'Error'
+SIGABRT: abort
+PC=0x7f88490d5428 m=5 sigcode=18446744073709551610
+
+goroutine 0 [idle]:
+runtime: unknown pc 0x7f88490d5428
+stack: frame={sp:0x7f8844f754c8, fp:0x0} stack=[0x7f8844776168,0x7f8844f75d68)
+00007f8844f753c8:  000000000094b4e0  0000000000000000
+00007f8844f753d8:  0000000000000000  0000000600000001
+00007f8844f753e8:  00007f8800000000  00007f8844f75270
+00007f8844f753f8:  0000000000000000  00007f8800000000
+00007f8844f75408:  000000726f727245  00007f8844f75588
+00007f8844f75418:  00007f884a046b1f  0000000000000003
+00007f8844f75428:  00007f8844f755e0  00007f8844f755e0
+00007f8844f75438:  00007f8844f75670  0000000000000002
+00007f8844f75448:  800000000000000e  0000000000000000
+00007f8844f75458:  0000000000000000  0000000000000000
+00007f8844f75468:  0000000000000000  0000000000000000
+00007f8844f75478:  0000000000000000  0000000000000000
+00007f8844f75488:  00007f8838000e80  00007f8838000e88
+00007f8844f75498:  00007f8849bfb481  00007f8849465700
+00007f8844f754a8:  00007f8838000930  00007f8844f75740
+00007f8844f754b8:  0000000000000000  00007f8849d55a76
+00007f8844f754c8: <00007f88490d702a  0000000000000020
+00007f8844f754d8:  0000000000000000  0000000000000000
+00007f8844f754e8:  0000000000000000  0000000000000000
+00007f8844f754f8:  0000000000000000  0000000000000000
+00007f8844f75508:  0000000000000000  0000000000000000
+00007f8844f75518:  0000000000000000  0000000000000000
+00007f8844f75528:  0000000000000000  0000000000000000
+00007f8844f75538:  0000000000000000  0000000000000000
+00007f8844f75548:  0000000000000000  0000000000000000
+00007f8844f75558:  00007f88491972e9  0000000000000000
+00007f8844f75568:  00007f8849118bff  00007f8849465540
+00007f8844f75578:  00007f8849bfb481  00007f8849465700
+00007f8844f75588:  00007f8838000930  00007f8844f75740
+00007f8844f75598:  0000000000000000  00007f8849d55a76
+00007f8844f755a8:  00007f8838010af0  0000000000000002
+00007f8844f755b8:  00007f8838010af0  00007f8838000930
+runtime: unknown pc 0x7f88490d5428
+stack: frame={sp:0x7f8844f754c8, fp:0x0} stack=[0x7f8844776168,0x7f8844f75d68)
+00007f8844f753c8:  000000000094b4e0  0000000000000000
+00007f8844f753d8:  0000000000000000  0000000600000001
+00007f8844f753e8:  00007f8800000000  00007f8844f75270
+00007f8844f753f8:  0000000000000000  00007f8800000000
+00007f8844f75408:  000000726f727245  00007f8844f75588
+00007f8844f75418:  00007f884a046b1f  0000000000000003
+00007f8844f75428:  00007f8844f755e0  00007f8844f755e0
+00007f8844f75438:  00007f8844f75670  0000000000000002
+00007f8844f75448:  800000000000000e  0000000000000000
+00007f8844f75458:  0000000000000000  0000000000000000
+00007f8844f75468:  0000000000000000  0000000000000000
+00007f8844f75478:  0000000000000000  0000000000000000
+00007f8844f75488:  00007f8838000e80  00007f8838000e88
+00007f8844f75498:  00007f8849bfb481  00007f8849465700
+00007f8844f754a8:  00007f8838000930  00007f8844f75740
+00007f8844f754b8:  0000000000000000  00007f8849d55a76
+00007f8844f754c8: <00007f88490d702a  0000000000000020
+00007f8844f754d8:  0000000000000000  0000000000000000
+00007f8844f754e8:  0000000000000000  0000000000000000
+00007f8844f754f8:  0000000000000000  0000000000000000
+00007f8844f75508:  0000000000000000  0000000000000000
+00007f8844f75518:  0000000000000000  0000000000000000
+00007f8844f75528:  0000000000000000  0000000000000000
+00007f8844f75538:  0000000000000000  0000000000000000
+00007f8844f75548:  0000000000000000  0000000000000000
+00007f8844f75558:  00007f88491972e9  0000000000000000
+00007f8844f75568:  00007f8849118bff  00007f8849465540
+00007f8844f75578:  00007f8849bfb481  00007f8849465700
+00007f8844f75588:  00007f8838000930  00007f8844f75740
+00007f8844f75598:  0000000000000000  00007f8849d55a76
+00007f8844f755a8:  00007f8838010af0  0000000000000002
+00007f8844f755b8:  00007f8838010af0  00007f8838000930
+
+goroutine 18 [syscall]:
+runtime.cgocall(0x566e90, 0xc0000386d0, 0x2400f900)
+	/opt/go/src/runtime/cgocall.go:128 +0x5b fp=0xc0000386a0 sp=0xc000038668 pc=0x4065ab
+github.com/apple/foundationdb/bindings/go/src/fdb._Cfunc_fdb_future_destroy(0x7f882800eeb0)
+	_cgo_gotypes.go:219 +0x41 fp=0xc0000386d0 sp=0xc0000386a0 pc=0x51fa01
+github.com/apple/foundationdb/bindings/go/src/fdb.newFuture.func1.1(0xc00016caa0)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/futures.go:81 +0x5e fp=0xc000038710 sp=0xc0000386d0 pc=0x525a3e
+github.com/apple/foundationdb/bindings/go/src/fdb.newFuture.func1(0xc00016caa0)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/futures.go:81 +0x2b fp=0xc000038728 sp=0xc000038710 pc=0x525a7b
+runtime.call32(0x0, 0x5d04f8, 0xc0005b8000, 0x1000000010)
+	/opt/go/src/runtime/asm_amd64.s:519 +0x3b fp=0xc000038758 sp=0xc000038728 pc=0x459b0b
+runtime.runfinq()
+	/opt/go/src/runtime/mfinal.go:222 +0x1e2 fp=0xc0000387e0 sp=0xc000038758 pc=0x41a822
+runtime.goexit()
+	/opt/go/src/runtime/asm_amd64.s:1337 +0x1 fp=0xc0000387e8 sp=0xc0000387e0 pc=0x45b821
+created by runtime.createfing
+	/opt/go/src/runtime/mfinal.go:156 +0x61
+
+goroutine 1 [chan receive, 135 minutes]:
+testing.(*T).Run(0xc00012e100, 0x5c636d, 0xb, 0x5d0a50, 0x471b86)
+	/opt/go/src/testing/testing.go:917 +0x37e
+testing.runTests.func1(0xc00012e000)
+	/opt/go/src/testing/testing.go:1157 +0x78
+testing.tRunner(0xc00012e000, 0xc0000b3e30)
+	/opt/go/src/testing/testing.go:865 +0xc0
+testing.runTests(0xc0000a3b00, 0x906ef0, 0x1, 0x1, 0x0)
+	/opt/go/src/testing/testing.go:1155 +0x2a9
+testing.(*M).Run(0xc000128000, 0x0)
+	/opt/go/src/testing/testing.go:1072 +0x162
+main.main()
+	_testmain.go:42 +0x13e
+
+goroutine 20 [semacquire, 135 minutes]:
+sync.runtime_Semacquire(0xc0000c6250)
+	/opt/go/src/runtime/sema.go:56 +0x39
+sync.(*WaitGroup).Wait(0xc0000c6248)
+	/opt/go/src/sync/waitgroup.go:130 +0x65
+test-apple-fdb/tests.TestDataLog(0xc00012e100)
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/DataLog_test.go:31 +0x13b
+testing.tRunner(0xc00012e100, 0x5d0a50)
+	/opt/go/src/testing/testing.go:865 +0xc0
+created by testing.(*T).Run
+	/opt/go/src/testing/testing.go:916 +0x357
+
+goroutine 21 [runnable, locked to thread]:
+github.com/apple/foundationdb/bindings/go/src/fdb._Cfunc_fdb_run_network(0x0)
+	_cgo_gotypes.go:415 +0x49
+github.com/apple/foundationdb/bindings/go/src/fdb.startNetwork.func1()
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/fdb.go:214 +0x26
+created by github.com/apple/foundationdb/bindings/go/src/fdb.startNetwork
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/fdb.go:213 +0x6d
+
+goroutine 34 [runnable]:
+test-apple-fdb/tests.(*FdbTest).readFile(0xc0000c6230)
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/FdbTest.go:181 +0x373
+created by test-apple-fdb/tests.TestDataLog
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/DataLog_test.go:21 +0xa8
+
+goroutine 35 [semacquire]:
+sync.runtime_SemacquireMutex(0xc00049077c, 0x7f8824007600)
+	/opt/go/src/runtime/sema.go:71 +0x3d
+sync.(*Mutex).Lock(0xc000490778)
+	/opt/go/src/sync/mutex.go:134 +0xff
+github.com/apple/foundationdb/bindings/go/src/fdb.fdb_future_block_until_ready(0x7f8824007610)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/futures.go:100 +0x89
+github.com/apple/foundationdb/bindings/go/src/fdb.future.BlockUntilReady(...)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/futures.go:104
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get.func1()
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/futures.go:147 +0x8f
+sync.(*Once).Do(0xc0005180b0, 0xc000341118)
+	/opt/go/src/sync/once.go:44 +0xb3
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get(0xc000518080, 0x7f884a18d3f8, 0xc0000a23e0, 0x5fbd20, 0xc000518080, 0xc0000a23e0)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/futures.go:142 +0x58
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.checkVersion(0x5fcae0, 0xc0000a20a0, 0x5fcae0, 0xc0000a20c0, 0x0, 0x5fcae0, 0xc0000a2160, 0x5fcae0, 0xc0000a2180, 0x5fcae0, ...)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/directory/directoryLayer.go:510 +0x15b
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.createOrOpen(0x5fcae0, 0xc0000a20a0, 0x5fcae0, 0xc0000a20c0, 0x0, 0x5fcae0, 0xc0000a2160, 0x5fcae0, 0xc0000a2180, 0x5fcae0, ...)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/directory/directoryLayer.go:75 +0x7b
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.CreateOrOpen.func1(0xc000350170, 0x5d0500, 0xc000341860, 0xc0000c4401, 0xc000352210)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/directory/directoryLayer.go:181 +0x115
+github.com/apple/foundationdb/bindings/go/src/fdb.Transaction.Transact(0xc000350170, 0xc000352210, 0x0, 0x0, 0x0, 0x0)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/transaction.go:116 +0x67
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.CreateOrOpen(0x5fcae0, 0xc0000a20a0, 0x5fcae0, 0xc0000a20c0, 0x0, 0x5fcae0, 0xc0000a2160, 0x5fcae0, 0xc0000a2180, 0x5fcae0, ...)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/directory/directoryLayer.go:180 +0xf9
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.CreateOrOpen(...)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/directory/directory.go:176
+test-apple-fdb/tests.(*FdbTest).TestLine.func1(0xc000350170, 0x5d0500, 0xc000341e68, 0x7f884a1d8d98, 0x0)
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/FdbTest.go:74 +0x152
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact.func1(0x0, 0x0, 0x0, 0x0)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/database.go:136 +0x7d
+github.com/apple/foundationdb/bindings/go/src/fdb.retryable(0xc0000a23a0, 0xc000341ed0, 0x0, 0x0, 0x40f5f8, 0x10)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/database.go:87 +0x2b
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact(0xc000134018, 0xc000350150, 0x300, 0x580580, 0xc000280000, 0x0)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/database.go:145 +0xb2
+test-apple-fdb/tests.(*FdbTest).TestLine(0xc0000c6230, 0xc00052c600, 0x2f7)
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/FdbTest.go:68 +0x10e
+test-apple-fdb/tests.(*FdbTest).worker(0xc0000c6230)
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/FdbTest.go:199 +0xab
+created by test-apple-fdb/tests.TestDataLog
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/DataLog_test.go:25 +0xee
+
+goroutine 36 [semacquire]:
+sync.runtime_SemacquireMutex(0xc00013a3c4, 0x7f882c005400)
+	/opt/go/src/runtime/sema.go:71 +0x3d
+sync.(*Mutex).Lock(0xc00013a3c0)
+	/opt/go/src/sync/mutex.go:134 +0xff
+github.com/apple/foundationdb/bindings/go/src/fdb.fdb_future_block_until_ready(0x7f882c0054a0)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/futures.go:100 +0x89
+github.com/apple/foundationdb/bindings/go/src/fdb.future.BlockUntilReady(...)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/futures.go:104
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get.func1()
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/futures.go:147 +0x8f
+sync.(*Once).Do(0xc000098770, 0xc0001eb9b8)
+	/opt/go/src/sync/once.go:44 +0xb3
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get(0xc000098740, 0x5f96c0, 0xc000190540, 0x5fbd20, 0xc000098740, 0x1e)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/futures.go:142 +0x58
+test-apple-fdb/tests.(*FdbTest).TestLine.func1(0xc000085640, 0x5d0500, 0xc0001ebe68, 0x7f884a1d86d0, 0x0)
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/FdbTest.go:108 +0x76a
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact.func1(0x0, 0x0, 0x0, 0x0)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/database.go:136 +0x7d
+github.com/apple/foundationdb/bindings/go/src/fdb.retryable(0xc0003d60e0, 0xc0001ebed0, 0x0, 0x0, 0x40f5f8, 0x10)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/database.go:87 +0x2b
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact(0xc000134018, 0xc000085620, 0x300, 0x580580, 0xc0003a0700, 0x0)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/database.go:145 +0xb2
+test-apple-fdb/tests.(*FdbTest).TestLine(0xc0000c6230, 0xc000264300, 0x2f2)
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/FdbTest.go:68 +0x10e
+test-apple-fdb/tests.(*FdbTest).worker(0xc0000c6230)
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/FdbTest.go:199 +0xab
+created by test-apple-fdb/tests.TestDataLog
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/DataLog_test.go:25 +0xee
+
+goroutine 37 [semacquire]:
+sync.runtime_SemacquireMutex(0xc00056a3b4, 0x7f8828005900)
+	/opt/go/src/runtime/sema.go:71 +0x3d
+sync.(*Mutex).Lock(0xc00056a3b0)
+	/opt/go/src/sync/mutex.go:134 +0xff
+github.com/apple/foundationdb/bindings/go/src/fdb.fdb_future_block_until_ready(0x7f8828005930)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/futures.go:100 +0x89
+github.com/apple/foundationdb/bindings/go/src/fdb.future.BlockUntilReady(...)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/futures.go:104
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get.func1()
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/futures.go:147 +0x8f
+sync.(*Once).Do(0xc0002cf970, 0xc0003db118)
+	/opt/go/src/sync/once.go:44 +0xb3
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get(0xc0002cf940, 0x7f884a18d3f8, 0xc0003d71a0, 0x5fbd20, 0xc0002cf940, 0xc0003d71a0)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/futures.go:142 +0x58
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.checkVersion(0x5fcae0, 0xc0000a20a0, 0x5fcae0, 0xc0000a20c0, 0x0, 0x5fcae0, 0xc0000a2160, 0x5fcae0, 0xc0000a2180, 0x5fcae0, ...)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/directory/directoryLayer.go:510 +0x15b
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.createOrOpen(0x5fcae0, 0xc0000a20a0, 0x5fcae0, 0xc0000a20c0, 0x0, 0x5fcae0, 0xc0000a2160, 0x5fcae0, 0xc0000a2180, 0x5fcae0, ...)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/directory/directoryLayer.go:75 +0x7b
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.CreateOrOpen.func1(0xc000085e00, 0x5d0500, 0xc0003db860, 0xc0003cbc01, 0xc0003a5c30)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/directory/directoryLayer.go:181 +0x115
+github.com/apple/foundationdb/bindings/go/src/fdb.Transaction.Transact(0xc000085e00, 0xc0003a5c30, 0x0, 0x0, 0x0, 0x0)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/transaction.go:116 +0x67
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.CreateOrOpen(0x5fcae0, 0xc0000a20a0, 0x5fcae0, 0xc0000a20c0, 0x0, 0x5fcae0, 0xc0000a2160, 0x5fcae0, 0xc0000a2180, 0x5fcae0, ...)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/directory/directoryLayer.go:180 +0xf9
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.CreateOrOpen(...)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/directory/directory.go:176
+test-apple-fdb/tests.(*FdbTest).TestLine.func1(0xc000085e00, 0x5d0500, 0xc0003dbe68, 0x7f884a1d86d0, 0x0)
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/FdbTest.go:74 +0x152
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact.func1(0x0, 0x0, 0x0, 0x0)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/database.go:136 +0x7d
+github.com/apple/foundationdb/bindings/go/src/fdb.retryable(0xc0003d7160, 0xc0003dbed0, 0x0, 0x0, 0x40f5f8, 0x10)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/database.go:87 +0x2b
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact(0xc000134018, 0xc000085de0, 0x300, 0x580580, 0xc0003a0b00, 0x0)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/database.go:145 +0xb2
+test-apple-fdb/tests.(*FdbTest).TestLine(0xc0000c6230, 0xc0005bc900, 0x2fa)
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/FdbTest.go:68 +0x10e
+test-apple-fdb/tests.(*FdbTest).worker(0xc0000c6230)
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/FdbTest.go:199 +0xab
+created by test-apple-fdb/tests.TestDataLog
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/DataLog_test.go:25 +0xee
+
+goroutine 38 [semacquire]:
+sync.runtime_SemacquireMutex(0xc00013a434, 0x7f882c007300)
+	/opt/go/src/runtime/sema.go:71 +0x3d
+sync.(*Mutex).Lock(0xc00013a430)
+	/opt/go/src/sync/mutex.go:134 +0xff
+github.com/apple/foundationdb/bindings/go/src/fdb.fdb_future_block_until_ready(0x7f882c007340)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/futures.go:100 +0x89
+github.com/apple/foundationdb/bindings/go/src/fdb.future.BlockUntilReady(...)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/futures.go:104
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get.func1()
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/futures.go:147 +0x8f
+sync.(*Once).Do(0xc0000987b0, 0xc0003dd9b8)
+	/opt/go/src/sync/once.go:44 +0xb3
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get(0xc000098780, 0x5f96c0, 0xc0001908e0, 0x5fbd20, 0xc000098780, 0x1e)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/futures.go:142 +0x58
+test-apple-fdb/tests.(*FdbTest).TestLine.func1(0xc000085700, 0x5d0500, 0xc0003dde68, 0x7f884a1d86d0, 0x0)
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/FdbTest.go:108 +0x76a
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact.func1(0x0, 0x0, 0x0, 0x0)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/database.go:136 +0x7d
+github.com/apple/foundationdb/bindings/go/src/fdb.retryable(0xc0003d61a0, 0xc0003dded0, 0x0, 0x0, 0x40f5f8, 0x10)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/database.go:87 +0x2b
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact(0xc000134018, 0xc0000856e0, 0x300, 0x580580, 0xc0003a0800, 0x0)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/database.go:145 +0xb2
+test-apple-fdb/tests.(*FdbTest).TestLine(0xc0000c6230, 0xc000274300, 0x2f2)
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/FdbTest.go:68 +0x10e
+test-apple-fdb/tests.(*FdbTest).worker(0xc0000c6230)
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/FdbTest.go:199 +0xab
+created by test-apple-fdb/tests.TestDataLog
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/DataLog_test.go:25 +0xee
+
+goroutine 39 [semacquire]:
+sync.runtime_SemacquireMutex(0xc00013a45c, 0x7f882c00d800)
+	/opt/go/src/runtime/sema.go:71 +0x3d
+sync.(*Mutex).Lock(0xc00013a458)
+	/opt/go/src/sync/mutex.go:134 +0xff
+github.com/apple/foundationdb/bindings/go/src/fdb.fdb_future_block_until_ready(0x7f882c00d8d0)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/futures.go:100 +0x89
+github.com/apple/foundationdb/bindings/go/src/fdb.future.BlockUntilReady(...)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/futures.go:104
+github.com/apple/foundationdb/bindings/go/src/fdb.futureNil.Get(0xc000410158, 0xc000410168, 0xc000410158)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/futures.go:244 +0x2f
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact.func1(0x582c00, 0xc000190980, 0x0, 0x0)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/database.go:139 +0xdc
+github.com/apple/foundationdb/bindings/go/src/fdb.retryable(0xc000337fe0, 0xc0001e7ed0, 0x0, 0x0, 0x40f5f8, 0x10)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/database.go:87 +0x2b
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact(0xc000134018, 0xc000351ea0, 0x380, 0x580580, 0xc000281500, 0x0)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/database.go:145 +0xb2
+test-apple-fdb/tests.(*FdbTest).TestLine(0xc0000c6230, 0xc00045f180, 0x304)
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/FdbTest.go:68 +0x10e
+test-apple-fdb/tests.(*FdbTest).worker(0xc0000c6230)
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/FdbTest.go:199 +0xab
+created by test-apple-fdb/tests.TestDataLog
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/DataLog_test.go:25 +0xee
+
+goroutine 40 [semacquire]:
+sync.runtime_SemacquireMutex(0xc00013a454, 0x7f882c004c00)
+	/opt/go/src/runtime/sema.go:71 +0x3d
+sync.(*Mutex).Lock(0xc00013a450)
+	/opt/go/src/sync/mutex.go:134 +0xff
+github.com/apple/foundationdb/bindings/go/src/fdb.fdb_future_block_until_ready(0x7f882c004c00)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/futures.go:100 +0x89
+github.com/apple/foundationdb/bindings/go/src/fdb.future.BlockUntilReady(...)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/futures.go:104
+github.com/apple/foundationdb/bindings/go/src/fdb.futureNil.Get(0xc000410140, 0xc000410148, 0xc000410140)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/futures.go:244 +0x2f
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact.func1(0x582c00, 0xc000190960, 0x0, 0x0)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/database.go:139 +0xdc
+github.com/apple/foundationdb/bindings/go/src/fdb.retryable(0xc000337f80, 0xc0001e5ed0, 0x0, 0x0, 0x40f5f8, 0x10)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/database.go:87 +0x2b
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact(0xc000134018, 0xc000351e40, 0x300, 0x580580, 0xc000281400, 0x0)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/database.go:145 +0xb2
+test-apple-fdb/tests.(*FdbTest).TestLine(0xc0000c6230, 0xc0003b8900, 0x2eb)
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/FdbTest.go:68 +0x10e
+test-apple-fdb/tests.(*FdbTest).worker(0xc0000c6230)
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/FdbTest.go:199 +0xab
+created by test-apple-fdb/tests.TestDataLog
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/DataLog_test.go:25 +0xee
+
+goroutine 41 [semacquire]:
+sync.runtime_SemacquireMutex(0xc00013a294, 0x7f882c003100)
+	/opt/go/src/runtime/sema.go:71 +0x3d
+sync.(*Mutex).Lock(0xc00013a290)
+	/opt/go/src/sync/mutex.go:134 +0xff
+github.com/apple/foundationdb/bindings/go/src/fdb.fdb_future_block_until_ready(0x7f882c003150)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/futures.go:100 +0x89
+github.com/apple/foundationdb/bindings/go/src/fdb.future.BlockUntilReady(...)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/futures.go:104
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get.func1()
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/futures.go:147 +0x8f
+sync.(*Once).Do(0xc0000986f0, 0xc0003df118)
+	/opt/go/src/sync/once.go:44 +0xb3
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get(0xc0000986c0, 0x7f884a18d3f8, 0xc0001902e0, 0x5fbd20, 0xc0000986c0, 0xc0001902e0)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/futures.go:142 +0x58
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.checkVersion(0x5fcae0, 0xc0000a20a0, 0x5fcae0, 0xc0000a20c0, 0x0, 0x5fcae0, 0xc0000a2160, 0x5fcae0, 0xc0000a2180, 0x5fcae0, ...)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/directory/directoryLayer.go:510 +0x15b
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.createOrOpen(0x5fcae0, 0xc0000a20a0, 0x5fcae0, 0xc0000a20c0, 0x0, 0x5fcae0, 0xc0000a2160, 0x5fcae0, 0xc0000a2180, 0x5fcae0, ...)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/directory/directoryLayer.go:75 +0x7b
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.CreateOrOpen.func1(0xc0002b2140, 0x5d0500, 0xc0003df860, 0xc0003ca301, 0xc0003a4580)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/directory/directoryLayer.go:181 +0x115
+github.com/apple/foundationdb/bindings/go/src/fdb.Transaction.Transact(0xc0002b2140, 0xc0003a4580, 0x0, 0x0, 0x0, 0x0)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/transaction.go:116 +0x67
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.CreateOrOpen(0x5fcae0, 0xc0000a20a0, 0x5fcae0, 0xc0000a20c0, 0x0, 0x5fcae0, 0xc0000a2160, 0x5fcae0, 0xc0000a2180, 0x5fcae0, ...)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/directory/directoryLayer.go:180 +0xf9
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.CreateOrOpen(...)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/directory/directory.go:176
+test-apple-fdb/tests.(*FdbTest).TestLine.func1(0xc0002b2140, 0x5d0500, 0xc0003dfe68, 0x7f884a1d9460, 0x0)
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/FdbTest.go:74 +0x152
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact.func1(0x0, 0x0, 0x0, 0x0)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/database.go:136 +0x7d
+github.com/apple/foundationdb/bindings/go/src/fdb.retryable(0xc0001902a0, 0xc0003dfed0, 0x0, 0x0, 0x40f5f8, 0x10)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/database.go:87 +0x2b
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact(0xc000134018, 0xc0002b2120, 0x300, 0x580580, 0xc0003a0100, 0x0)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/database.go:145 +0xb2
+test-apple-fdb/tests.(*FdbTest).TestLine(0xc0000c6230, 0xc0002ed500, 0x2f0)
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/FdbTest.go:68 +0x10e
+test-apple-fdb/tests.(*FdbTest).worker(0xc0000c6230)
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/FdbTest.go:199 +0xab
+created by test-apple-fdb/tests.TestDataLog
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/DataLog_test.go:25 +0xee
+
+goroutine 42 [runnable]:
+sync.runtime_SemacquireMutex(0xc00056a2c4, 0x7f8828006500)
+	/opt/go/src/runtime/sema.go:71 +0x3d
+sync.(*Mutex).Lock(0xc00056a2c0)
+	/opt/go/src/sync/mutex.go:134 +0xff
+github.com/apple/foundationdb/bindings/go/src/fdb.fdb_future_block_until_ready(0x7f8828006570)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/futures.go:100 +0x89
+github.com/apple/foundationdb/bindings/go/src/fdb.future.BlockUntilReady(...)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/futures.go:104
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get.func1()
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/futures.go:147 +0x8f
+sync.(*Once).Do(0xc0002cf930, 0xc000347118)
+	/opt/go/src/sync/once.go:44 +0xb3
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get(0xc0002cf900, 0x7f884a18d3f8, 0xc0003d7120, 0x5fbd20, 0xc0002cf900, 0xc0003d7120)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/futures.go:142 +0x58
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.checkVersion(0x5fcae0, 0xc0000a20a0, 0x5fcae0, 0xc0000a20c0, 0x0, 0x5fcae0, 0xc0000a2160, 0x5fcae0, 0xc0000a2180, 0x5fcae0, ...)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/directory/directoryLayer.go:510 +0x15b
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.createOrOpen(0x5fcae0, 0xc0000a20a0, 0x5fcae0, 0xc0000a20c0, 0x0, 0x5fcae0, 0xc0000a2160, 0x5fcae0, 0xc0000a2180, 0x5fcae0, ...)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/directory/directoryLayer.go:75 +0x7b
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.CreateOrOpen.func1(0xc000085d80, 0x5d0500, 0xc000347860, 0xc0003cbb01, 0xc0003a5a20)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/directory/directoryLayer.go:181 +0x115
+github.com/apple/foundationdb/bindings/go/src/fdb.Transaction.Transact(0xc000085d80, 0xc0003a5a20, 0x0, 0x0, 0x0, 0x0)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/transaction.go:116 +0x67
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.CreateOrOpen(0x5fcae0, 0xc0000a20a0, 0x5fcae0, 0xc0000a20c0, 0x0, 0x5fcae0, 0xc0000a2160, 0x5fcae0, 0xc0000a2180, 0x5fcae0, ...)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/directory/directoryLayer.go:180 +0xf9
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.CreateOrOpen(...)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/directory/directory.go:176
+test-apple-fdb/tests.(*FdbTest).TestLine.func1(0xc000085d80, 0x5d0500, 0xc000347e68, 0x7f884a1d86d0, 0x0)
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/FdbTest.go:74 +0x152
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact.func1(0x0, 0x0, 0x0, 0x0)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/database.go:136 +0x7d
+github.com/apple/foundationdb/bindings/go/src/fdb.retryable(0xc0003d70e0, 0xc000347ed0, 0x0, 0x0, 0x40f5f8, 0x10)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/database.go:87 +0x2b
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact(0xc000134018, 0xc000085d60, 0x300, 0x580580, 0xc0003a0a00, 0x0)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/database.go:145 +0xb2
+test-apple-fdb/tests.(*FdbTest).TestLine(0xc0000c6230, 0xc00042c600, 0x2fb)
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/FdbTest.go:68 +0x10e
+test-apple-fdb/tests.(*FdbTest).worker(0xc0000c6230)
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/FdbTest.go:199 +0xab
+created by test-apple-fdb/tests.TestDataLog
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/DataLog_test.go:25 +0xee
+
+goroutine 43 [semacquire]:
+sync.runtime_SemacquireMutex(0xc00013a44c, 0x7f882c007900)
+	/opt/go/src/runtime/sema.go:71 +0x3d
+sync.(*Mutex).Lock(0xc00013a448)
+	/opt/go/src/sync/mutex.go:134 +0xff
+github.com/apple/foundationdb/bindings/go/src/fdb.fdb_future_block_until_ready(0x7f882c007920)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/futures.go:100 +0x89
+github.com/apple/foundationdb/bindings/go/src/fdb.future.BlockUntilReady(...)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/futures.go:104
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get.func1()
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/futures.go:147 +0x8f
+sync.(*Once).Do(0xc0000987f0, 0xc0001e99b8)
+	/opt/go/src/sync/once.go:44 +0xb3
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get(0xc0000987c0, 0x5f96c0, 0xc000190940, 0x5fbd20, 0xc0000987c0, 0x1e)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/futures.go:142 +0x58
+test-apple-fdb/tests.(*FdbTest).TestLine.func1(0xc0004da0e0, 0x5d0500, 0xc0001e9e68, 0x7f884a1d8008, 0x0)
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/FdbTest.go:108 +0x76a
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact.func1(0x0, 0x0, 0x0, 0x0)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/database.go:136 +0x7d
+github.com/apple/foundationdb/bindings/go/src/fdb.retryable(0xc0004f02e0, 0xc0001e9ed0, 0x0, 0x0, 0x40f5f8, 0x10)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/database.go:87 +0x2b
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact(0xc000134018, 0xc0004da0c0, 0x300, 0x580580, 0xc000281600, 0x0)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/database.go:145 +0xb2
+test-apple-fdb/tests.(*FdbTest).TestLine(0xc0000c6230, 0xc000265800, 0x2f3)
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/FdbTest.go:68 +0x10e
+test-apple-fdb/tests.(*FdbTest).worker(0xc0000c6230)
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/FdbTest.go:199 +0xab
+created by test-apple-fdb/tests.TestDataLog
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/DataLog_test.go:25 +0xee
+
+goroutine 44 [semacquire]:
+sync.runtime_SemacquireMutex(0xc00013a3ac, 0x7f882c00a000)
+	/opt/go/src/runtime/sema.go:71 +0x3d
+sync.(*Mutex).Lock(0xc00013a3a8)
+	/opt/go/src/sync/mutex.go:134 +0xff
+github.com/apple/foundationdb/bindings/go/src/fdb.fdb_future_block_until_ready(0x7f882c00a030)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/futures.go:100 +0x89
+github.com/apple/foundationdb/bindings/go/src/fdb.future.BlockUntilReady(...)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/futures.go:104
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get.func1()
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/futures.go:147 +0x8f
+sync.(*Once).Do(0xc000098730, 0xc000237118)
+	/opt/go/src/sync/once.go:44 +0xb3
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get(0xc000098700, 0x7f884a18d3f8, 0xc0001904e0, 0x5fbd20, 0xc000098700, 0xc0001904e0)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/futures.go:142 +0x58
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.checkVersion(0x5fcae0, 0xc0000a20a0, 0x5fcae0, 0xc0000a20c0, 0x0, 0x5fcae0, 0xc0000a2160, 0x5fcae0, 0xc0000a2180, 0x5fcae0, ...)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/directory/directoryLayer.go:510 +0x15b
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.createOrOpen(0x5fcae0, 0xc0000a20a0, 0x5fcae0, 0xc0000a20c0, 0x0, 0x5fcae0, 0xc0000a2160, 0x5fcae0, 0xc0000a2180, 0x5fcae0, ...)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/directory/directoryLayer.go:75 +0x7b
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.CreateOrOpen.func1(0xc0002b2210, 0x5d0500, 0xc000237860, 0xc0003ca501, 0xc0003a4840)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/directory/directoryLayer.go:181 +0x115
+github.com/apple/foundationdb/bindings/go/src/fdb.Transaction.Transact(0xc0002b2210, 0xc0003a4840, 0x0, 0x0, 0x0, 0x0)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/transaction.go:116 +0x67
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.CreateOrOpen(0x5fcae0, 0xc0000a20a0, 0x5fcae0, 0xc0000a20c0, 0x0, 0x5fcae0, 0xc0000a2160, 0x5fcae0, 0xc0000a2180, 0x5fcae0, ...)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/directory/directoryLayer.go:180 +0xf9
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.CreateOrOpen(...)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/directory/directory.go:176
+test-apple-fdb/tests.(*FdbTest).TestLine.func1(0xc0002b2210, 0x5d0500, 0xc000237e68, 0x7f884a1d9460, 0x0)
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/FdbTest.go:74 +0x152
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact.func1(0x0, 0x0, 0x0, 0x0)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/database.go:136 +0x7d
+github.com/apple/foundationdb/bindings/go/src/fdb.retryable(0xc0001904a0, 0xc000237ed0, 0x0, 0x0, 0x40f5f8, 0x10)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/database.go:87 +0x2b
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact(0xc000134018, 0xc0002b21f0, 0x300, 0x580580, 0xc0003a0300, 0x0)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/database.go:145 +0xb2
+test-apple-fdb/tests.(*FdbTest).TestLine(0xc0000c6230, 0xc0004c2f00, 0x2eb)
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/FdbTest.go:68 +0x10e
+test-apple-fdb/tests.(*FdbTest).worker(0xc0000c6230)
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/FdbTest.go:199 +0xab
+created by test-apple-fdb/tests.TestDataLog
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/DataLog_test.go:25 +0xee
+
+goroutine 45 [semacquire]:
+sync.runtime_SemacquireMutex(0xc00013a3ec, 0x7f882c00a500)
+	/opt/go/src/runtime/sema.go:71 +0x3d
+sync.(*Mutex).Lock(0xc00013a3e8)
+	/opt/go/src/sync/mutex.go:134 +0xff
+github.com/apple/foundationdb/bindings/go/src/fdb.fdb_future_block_until_ready(0x7f882c00a500)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/futures.go:100 +0x89
+github.com/apple/foundationdb/bindings/go/src/fdb.future.BlockUntilReady(...)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/futures.go:104
+github.com/apple/foundationdb/bindings/go/src/fdb.futureKeyValueArray.Get(0xc0004100d8, 0xc0002459c8, 0x40f5f8, 0x0, 0x585ac0, 0x1, 0x94b4e0)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/futures.go:275 +0x36
+github.com/apple/foundationdb/bindings/go/src/fdb.(*RangeIterator).Advance(0xc000245c70, 0x94b4e0)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/range.go:222 +0x49
+test-apple-fdb/tests.(*FdbTest).TestLine.func1(0xc0004da310, 0x5d0500, 0xc000245e68, 0x7f884a1d8008, 0x0)
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/FdbTest.go:86 +0x553
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact.func1(0x0, 0x0, 0x0, 0x0)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/database.go:136 +0x7d
+github.com/apple/foundationdb/bindings/go/src/fdb.retryable(0xc0004f0780, 0xc000245ed0, 0x0, 0x0, 0x40f5f8, 0x10)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/database.go:87 +0x2b
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact(0xc000134018, 0xc0004da2f0, 0x300, 0x580580, 0xc000281700, 0x0)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/database.go:145 +0xb2
+test-apple-fdb/tests.(*FdbTest).TestLine(0xc0000c6230, 0xc0002ae900, 0x2ed)
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/FdbTest.go:68 +0x10e
+test-apple-fdb/tests.(*FdbTest).worker(0xc0000c6230)
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/FdbTest.go:199 +0xab
+created by test-apple-fdb/tests.TestDataLog
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/DataLog_test.go:25 +0xee
+
+goroutine 46 [semacquire]:
+sync.runtime_SemacquireMutex(0xc00013a13c, 0x7f882c006c00)
+	/opt/go/src/runtime/sema.go:71 +0x3d
+sync.(*Mutex).Lock(0xc00013a138)
+	/opt/go/src/sync/mutex.go:134 +0xff
+github.com/apple/foundationdb/bindings/go/src/fdb.fdb_future_block_until_ready(0x7f882c006ce0)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/futures.go:100 +0x89
+github.com/apple/foundationdb/bindings/go/src/fdb.future.BlockUntilReady(...)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/futures.go:104
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get.func1()
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/futures.go:147 +0x8f
+sync.(*Once).Do(0xc000098030, 0xc000249118)
+	/opt/go/src/sync/once.go:44 +0xb3
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get(0xc000098000, 0x7f884a18d3f8, 0xc000190060, 0x5fbd20, 0xc000098000, 0xc000190060)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/futures.go:142 +0x58
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.checkVersion(0x5fcae0, 0xc0000a20a0, 0x5fcae0, 0xc0000a20c0, 0x0, 0x5fcae0, 0xc0000a2160, 0x5fcae0, 0xc0000a2180, 0x5fcae0, ...)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/directory/directoryLayer.go:510 +0x15b
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.createOrOpen(0x5fcae0, 0xc0000a20a0, 0x5fcae0, 0xc0000a20c0, 0x0, 0x5fcae0, 0xc0000a2160, 0x5fcae0, 0xc0000a2180, 0x5fcae0, ...)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/directory/directoryLayer.go:75 +0x7b
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.CreateOrOpen.func1(0xc0002b2020, 0x5d0500, 0xc000249860, 0xc0003ca001, 0xc0003a42c0)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/directory/directoryLayer.go:181 +0x115
+github.com/apple/foundationdb/bindings/go/src/fdb.Transaction.Transact(0xc0002b2020, 0xc0003a42c0, 0x0, 0x0, 0x0, 0x0)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/transaction.go:116 +0x67
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.CreateOrOpen(0x5fcae0, 0xc0000a20a0, 0x5fcae0, 0xc0000a20c0, 0x0, 0x5fcae0, 0xc0000a2160, 0x5fcae0, 0xc0000a2180, 0x5fcae0, ...)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/directory/directoryLayer.go:180 +0xf9
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.CreateOrOpen(...)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/directory/directory.go:176
+test-apple-fdb/tests.(*FdbTest).TestLine.func1(0xc0002b2020, 0x5d0500, 0xc000249e68, 0x7f884a1d9460, 0x0)
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/FdbTest.go:74 +0x152
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact.func1(0x0, 0x0, 0x0, 0x0)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/database.go:136 +0x7d
+github.com/apple/foundationdb/bindings/go/src/fdb.retryable(0xc000190020, 0xc000249ed0, 0x0, 0x0, 0x40f5f8, 0x10)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/database.go:87 +0x2b
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact(0xc000134018, 0xc0002b2000, 0x300, 0x580580, 0xc0003a0000, 0x0)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/database.go:145 +0xb2
+test-apple-fdb/tests.(*FdbTest).TestLine(0xc0000c6230, 0xc000405b00, 0x2ee)
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/FdbTest.go:68 +0x10e
+test-apple-fdb/tests.(*FdbTest).worker(0xc0000c6230)
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/FdbTest.go:199 +0xab
+created by test-apple-fdb/tests.TestDataLog
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/DataLog_test.go:25 +0xee
+
+goroutine 47 [runnable]:
+github.com/apple/foundationdb/bindings/go/src/fdb._Cfunc_fdb_transaction_set_option(0x7f882800c010, 0x7f88000002be, 0x0, 0x0, 0x0)
+	_cgo_gotypes.go:720 +0x4d
+github.com/apple/foundationdb/bindings/go/src/fdb.TransactionOptions.setOpt.func1.1(0xc0003501b0, 0x2be, 0x0, 0x0, 0x18)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/transaction.go:85 +0x79
+github.com/apple/foundationdb/bindings/go/src/fdb.TransactionOptions.setOpt.func1(0x0, 0x0, 0xc0001241e8)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/transaction.go:85 +0x45
+github.com/apple/foundationdb/bindings/go/src/fdb.setOpt(0xc0002399b0, 0x0, 0x0, 0x0, 0x0, 0xc0005b3116)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/fdb.go:75 +0x3f
+github.com/apple/foundationdb/bindings/go/src/fdb.TransactionOptions.setOpt(0xc0003501b0, 0x2be, 0x0, 0x0, 0x0, 0xc0001241e0, 0xc0000cc360)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/transaction.go:84 +0x7e
+github.com/apple/foundationdb/bindings/go/src/fdb.TransactionOptions.SetReadLockAware(...)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/generated.go:409
+test-apple-fdb/tests.(*FdbTest).TestLine.func1(0xc0003501b0, 0x5d0500, 0xc000239e68, 0x7f884a1d8d98, 0x0)
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/FdbTest.go:71 +0x6b
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact.func1(0x0, 0x0, 0x0, 0x0)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/database.go:136 +0x7d
+github.com/apple/foundationdb/bindings/go/src/fdb.retryable(0xc0000a2400, 0xc000239ed0, 0x0, 0x0, 0x40f5f8, 0x10)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/database.go:87 +0x2b
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact(0xc000134018, 0xc0002cc0b0, 0x300, 0x580580, 0xc000124100, 0x0)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/database.go:145 +0xb2
+test-apple-fdb/tests.(*FdbTest).TestLine(0xc0000c6230, 0xc0003cc600, 0x2fb)
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/FdbTest.go:68 +0x10e
+test-apple-fdb/tests.(*FdbTest).worker(0xc0000c6230)
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/FdbTest.go:199 +0xab
+created by test-apple-fdb/tests.TestDataLog
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/DataLog_test.go:25 +0xee
+
+goroutine 48 [semacquire]:
+sync.runtime_SemacquireMutex(0xc0004fc0fc, 0x7f8820003800)
+	/opt/go/src/runtime/sema.go:71 +0x3d
+sync.(*Mutex).Lock(0xc0004fc0f8)
+	/opt/go/src/sync/mutex.go:134 +0xff
+github.com/apple/foundationdb/bindings/go/src/fdb.fdb_future_block_until_ready(0x7f88200038e0)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/futures.go:100 +0x89
+github.com/apple/foundationdb/bindings/go/src/fdb.future.BlockUntilReady(...)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/futures.go:104
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get.func1()
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/futures.go:147 +0x8f
+sync.(*Once).Do(0xc00016a0b0, 0xc0003e1118)
+	/opt/go/src/sync/once.go:44 +0xb3
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get(0xc00016a080, 0x7f884a18d3f8, 0xc000526040, 0x5fbd20, 0xc00016a080, 0xc000526040)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/futures.go:142 +0x58
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.checkVersion(0x5fcae0, 0xc0000a20a0, 0x5fcae0, 0xc0000a20c0, 0x0, 0x5fcae0, 0xc0000a2160, 0x5fcae0, 0xc0000a2180, 0x5fcae0, ...)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/directory/directoryLayer.go:510 +0x15b
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.createOrOpen(0x5fcae0, 0xc0000a20a0, 0x5fcae0, 0xc0000a20c0, 0x0, 0x5fcae0, 0xc0000a2160, 0x5fcae0, 0xc0000a2180, 0x5fcae0, ...)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/directory/directoryLayer.go:75 +0x7b
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.CreateOrOpen.func1(0xc00053a020, 0x5d0500, 0xc0003e1860, 0xc00001e101, 0xc0000ac370)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/directory/directoryLayer.go:181 +0x115
+github.com/apple/foundationdb/bindings/go/src/fdb.Transaction.Transact(0xc00053a020, 0xc0000ac370, 0x0, 0x0, 0x0, 0x0)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/transaction.go:116 +0x67
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.CreateOrOpen(0x5fcae0, 0xc0000a20a0, 0x5fcae0, 0xc0000a20c0, 0x0, 0x5fcae0, 0xc0000a2160, 0x5fcae0, 0xc0000a2180, 0x5fcae0, ...)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/directory/directoryLayer.go:180 +0xf9
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.CreateOrOpen(...)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/directory/directory.go:176
+test-apple-fdb/tests.(*FdbTest).TestLine.func1(0xc00053a020, 0x5d0500, 0xc0003e1e68, 0x7f884a1d86d0, 0x0)
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/FdbTest.go:74 +0x152
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact.func1(0x0, 0x0, 0x0, 0x0)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/database.go:136 +0x7d
+github.com/apple/foundationdb/bindings/go/src/fdb.retryable(0xc000526000, 0xc0003e1ed0, 0x0, 0x0, 0x40f5f8, 0x10)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/database.go:87 +0x2b
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact(0xc000134018, 0xc00053a000, 0x300, 0x580580, 0xc00012e200, 0x0)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/database.go:145 +0xb2
+test-apple-fdb/tests.(*FdbTest).TestLine(0xc0000c6230, 0xc000506000, 0x2f8)
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/FdbTest.go:68 +0x10e
+test-apple-fdb/tests.(*FdbTest).worker(0xc0000c6230)
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/FdbTest.go:199 +0xab
+created by test-apple-fdb/tests.TestDataLog
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/DataLog_test.go:25 +0xee
+
+goroutine 49 [semacquire]:
+sync.runtime_SemacquireMutex(0xc00013a41c, 0x7f882c00e400)
+	/opt/go/src/runtime/sema.go:71 +0x3d
+sync.(*Mutex).Lock(0xc00013a418)
+	/opt/go/src/sync/mutex.go:134 +0xff
+github.com/apple/foundationdb/bindings/go/src/fdb.fdb_future_block_until_ready(0x7f882c00e440)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/futures.go:100 +0x89
+github.com/apple/foundationdb/bindings/go/src/fdb.future.BlockUntilReady(...)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/futures.go:104
+github.com/apple/foundationdb/bindings/go/src/fdb.futureKeyValueArray.Get(0xc0004100f0, 0xc0002479c8, 0x40f5f8, 0x0, 0x585ac0, 0x1, 0x94b4e0)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/futures.go:275 +0x36
+github.com/apple/foundationdb/bindings/go/src/fdb.(*RangeIterator).Advance(0xc000247c70, 0x94b4e0)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/range.go:222 +0x49
+test-apple-fdb/tests.(*FdbTest).TestLine.func1(0xc000085760, 0x5d0500, 0xc000247e68, 0x7f884a1d86d0, 0x0)
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/FdbTest.go:86 +0x553
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact.func1(0x0, 0x0, 0x0, 0x0)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/database.go:136 +0x7d
+github.com/apple/foundationdb/bindings/go/src/fdb.retryable(0xc0003d6200, 0xc000247ed0, 0x0, 0x0, 0x40f5f8, 0x10)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/database.go:87 +0x2b
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact(0xc000134018, 0xc000085740, 0x300, 0x580580, 0xc0003a0900, 0x0)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/database.go:145 +0xb2
+test-apple-fdb/tests.(*FdbTest).TestLine(0xc0000c6230, 0xc0004bb200, 0x300)
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/FdbTest.go:68 +0x10e
+test-apple-fdb/tests.(*FdbTest).worker(0xc0000c6230)
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/FdbTest.go:199 +0xab
+created by test-apple-fdb/tests.TestDataLog
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/DataLog_test.go:25 +0xee
+
+goroutine 50 [semacquire]:
+sync.runtime_SemacquireMutex(0xc0005b813c, 0x7f882000f900)
+	/opt/go/src/runtime/sema.go:71 +0x3d
+sync.(*Mutex).Lock(0xc0005b8138)
+	/opt/go/src/sync/mutex.go:134 +0xff
+github.com/apple/foundationdb/bindings/go/src/fdb.fdb_future_block_until_ready(0x7f882000f990)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/futures.go:100 +0x89
+github.com/apple/foundationdb/bindings/go/src/fdb.future.BlockUntilReady(...)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/futures.go:104
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get.func1()
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/futures.go:147 +0x8f
+sync.(*Once).Do(0xc0000600b0, 0xc000345118)
+	/opt/go/src/sync/once.go:44 +0xb3
+github.com/apple/foundationdb/bindings/go/src/fdb.(*futureByteSlice).Get(0xc000060080, 0x7f884a18d3f8, 0xc00000e120, 0x5fbd20, 0xc000060080, 0xc00000e120)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/futures.go:142 +0x58
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.checkVersion(0x5fcae0, 0xc0000a20a0, 0x5fcae0, 0xc0000a20c0, 0x0, 0x5fcae0, 0xc0000a2160, 0x5fcae0, 0xc0000a2180, 0x5fcae0, ...)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/directory/directoryLayer.go:510 +0x15b
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.createOrOpen(0x5fcae0, 0xc0000a20a0, 0x5fcae0, 0xc0000a20c0, 0x0, 0x5fcae0, 0xc0000a2160, 0x5fcae0, 0xc0000a2180, 0x5fcae0, ...)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/directory/directoryLayer.go:75 +0x7b
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.CreateOrOpen.func1(0xc0002cc070, 0x5d0500, 0xc000345860, 0xc000406101, 0xc000132160)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/directory/directoryLayer.go:181 +0x115
+github.com/apple/foundationdb/bindings/go/src/fdb.Transaction.Transact(0xc0002cc070, 0xc000132160, 0x0, 0x0, 0x0, 0x0)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/transaction.go:116 +0x67
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.directoryLayer.CreateOrOpen(0x5fcae0, 0xc0000a20a0, 0x5fcae0, 0xc0000a20c0, 0x0, 0x5fcae0, 0xc0000a2160, 0x5fcae0, 0xc0000a2180, 0x5fcae0, ...)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/directory/directoryLayer.go:180 +0xf9
+github.com/apple/foundationdb/bindings/go/src/fdb/directory.CreateOrOpen(...)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/directory/directory.go:176
+test-apple-fdb/tests.(*FdbTest).TestLine.func1(0xc0002cc070, 0x5d0500, 0xc000345e68, 0x7f884a1d8008, 0x0)
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/FdbTest.go:74 +0x152
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact.func1(0x0, 0x0, 0x0, 0x0)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/database.go:136 +0x7d
+github.com/apple/foundationdb/bindings/go/src/fdb.retryable(0xc00000e0e0, 0xc000345ed0, 0x0, 0x0, 0x40f5f8, 0x10)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/database.go:87 +0x2b
+github.com/apple/foundationdb/bindings/go/src/fdb.Database.Transact(0xc000134018, 0xc0002cc050, 0x300, 0x580580, 0xc000124000, 0x0)
+	/home/pvv/GOPKG/pkg/mod/github.com/apple/foundationdb/bindings/go@v0.0.0-20190311170436-f2d582ffa197/src/fdb/database.go:145 +0xb2
+test-apple-fdb/tests.(*FdbTest).TestLine(0xc0000c6230, 0xc00052d200, 0x2f3)
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/FdbTest.go:68 +0x10e
+test-apple-fdb/tests.(*FdbTest).worker(0xc0000c6230)
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/FdbTest.go:199 +0xab
+created by test-apple-fdb/tests.TestDataLog
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/DataLog_test.go:25 +0xee
+
+goroutine 51 [sleep]:
+runtime.goparkunlock(...)
+	/opt/go/src/runtime/proc.go:307
+time.Sleep(0xdf8475800)
+	/opt/go/src/runtime/time.go:105 +0x159
+test-apple-fdb/tests.(*FdbTest).timerMinute(0xc0000c6230)
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/FdbTest.go:32 +0x168
+created by test-apple-fdb/tests.TestDataLog
+	/home/pvv/IdeaProjects/test-apple-fdb/tests/DataLog_test.go:29 +0x129
+
+rax    0x0
+rbx    0x7f8849bfb481
+rcx    0x7f88490d5428
+rdx    0x6
+rdi    0x4aae
+rsi    0x4ab2
+rbp    0x7f8849465700
+rsp    0x7f8844f754c8
+r8     0x7f8844f75100
+r9     0x7f8849cac981
+r10    0x8
+r11    0x202
+r12    0x7f8838000930
+r13    0x7f8844f75740
+r14    0x0
+r15    0x7f8849d55a76
+rip    0x7f88490d5428
+rflags 0x202
+cs     0x33
+fs     0x0
+gs     0x0
+
+Process finished with exit code 1
